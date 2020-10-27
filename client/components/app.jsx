@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './header-navbar';
+import Hero from './hero';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -19,7 +20,10 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <Header />
+      <>
+        <Header />
+        <Hero />
+      </>
     );
   }
 }
