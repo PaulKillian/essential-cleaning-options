@@ -2,6 +2,17 @@ body {
 	font-family: 'Merriweather', serif;
 }
 
+#logo {
+	height: 70px;
+	width: 65px;
+}
+
+#line {
+	height: 10px;
+	width: 100%;
+	background-color: #D3FF9B;
+}
+
 #water {
 	height: 609.5px;;
 	width: 50%;
@@ -15,12 +26,17 @@ body {
 	background: linear-gradient( #1d1968, #01075e, #020024);
 }
 
-#logo {
-	height: 70px;
-	width: 65px;
-}
-
 #hero-text {
 	z-index: 1;
 	position: absolute;
+}
+
+#background {
+	height: 97vh;
+	background-color: #fafff2;
+}
+#main-items {
+	height: 350px;
+	width: 100px;
+	z-index: 1;
 }
