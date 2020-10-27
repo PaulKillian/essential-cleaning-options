@@ -1,4 +1,26 @@
+body {
+	font-family: 'Merriweather', serif;
+}
+
 #water {
-	height: auto;
-	width: 100%;
+	height: 609.5px;;
+	width: 50%;
+	position: relative;
+	filter: brightness(60%)
+}
+
+#right-hero {
+	height: 609.5px;;
+	width: 50%;
+	background: linear-gradient( #1d1968, #01075e, #020024);
+}
+
+#logo {
+	height: 70px;
+	width: 65px;
+}
+
+#hero-text {
+	z-index: 1;
+	position: absolute;
 }
