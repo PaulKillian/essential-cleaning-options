@@ -1,7 +1,8 @@
 import React from 'react';
 import Header from './header-navbar';
 import Hero from './hero';
-import MainContent from './main-content';
+import Cards from './cards';
+import Footer from './footer';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -24,7 +25,8 @@ export default class App extends React.Component {
       <>
         <Header />
         <Hero />
-        <MainContent />
+        <Cards/>
+        <Footer />
       </>
     );
   }
