@@ -9,6 +9,7 @@ import Hero from './hero';
 import Cards from './cards';
 import Reviews from './reviews';
 import Footer from './footer';
+import Carpet from './carpet';
 
 export default function App() {
   return (
@@ -18,8 +19,8 @@ export default function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/reviews">
-            <About />
+          <Route path="/carpet-cleaning">
+            <CarpetCleaning />
           </Route>
           <Route path="/dashboard">
             <Dashboard />
@@ -42,13 +43,10 @@ function Home() {
   );
 }
 
-function About() {
+function CarpetCleaning() {
   return (
     <>
-      <Header />
-      <div>
-        <h2>About</h2>
-      </div>
+      <Carpet />
     </>
   );
 }
@@ -56,7 +54,6 @@ function About() {
 function Dashboard() {
   return (
     <>
-      <Header />
       <div>
         <h2>Dashboard</h2>
       </div>
