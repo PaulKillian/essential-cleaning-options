@@ -1,9 +1,10 @@
 body {
 	font-family: 'Merriweather', serif;
+	overflow-x: hidden;
 }
 
 #logo {
-	height: 80px;
+	height: 50px;
 	width: 100px;
 }
 
@@ -13,22 +14,18 @@ body {
 	background-color: #D3FF9B;
 }
 
-#water {
-	height: auto;
-	width: 100%;
-	position: relative;
-	filter: brightness(70%)
-}
-
-#right-hero {
-	height: 609.5px;;
-	width: 50%;
-	background: linear-gradient( #1d1968, #01075e, #020024);
+.text {
+	max-height: 400px;
+	max-width: 80%;
 }
 
 #hero-text {
 	z-index: 1;
 	color: rgb(204, 204, 204);
+}
+
+.logo {
+	z-index: 1;
 }
 
 #background {
@@ -42,7 +39,70 @@ body {
 }
 
 .bg-hero {
-	background-color: #D3FF9B;
-	height: 10px;
+	background-color: #00AB3A;
+	height: 5px;
 	width: 100%;
+}
+
+.font-color {
+	color: #00AB3A;
+}
+
+.carousel-indicators li {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 30px;
+		height: 7px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #00AB3A;
+    background-clip: padding-box;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: 0.5;
+		transition: opacity 0.6s ease;
+}
+
+.paralax {
+	background: linear-gradient( rgba(2, 2, 2, 0.1), rgba(2, 2, 2, 0.1) ),
+	url(https://anima-uploads.s3.amazonaws.com/projects/5f9b77ac2a9b34eeacd2ed63/releases/5f9c1a870009f876421d958d/img/rectangle-22@1x.png);
+	min-height: 550px;
+	max-height: 600px;
+	background-attachment: fixed;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-bottom: solid 5px #00AB3A;
+	box-shadow: 0 16px 12px -12px black;
+}
+
+h1 {
+	margin: 50px auto;
+	text-align: center;
+	text-shadow: -1px -1px 0px rgba(238, 233, 233, 0.3), 1px 1px 0px rgba(0, 0, 0, 0.8);
+	color: #00AB3A;
+	opacity: 0.7;
+	font: 700 40px 'Bitter';
+}
+
+.paralax-title {
+    color: white;
+    width: 40vw;
+    padding: 2rem;
+    align-self: center;
+    background-color: rgba(0, 0, 0, 0.483);
+    border-top-right-radius: 80px;
+		border-bottom-right-radius: 80px;
+		border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    box-shadow: 0 0 60px 30px #fff, 0 0 100px 60px #f0f, 0 0 140px 90px #0ff;
+    font-size: 45px;
+    font-family: mario;
+    text-shadow: 4px 4px #b90000;
+}
+
+.dropdown-width {
+	width: 264px;
 }
