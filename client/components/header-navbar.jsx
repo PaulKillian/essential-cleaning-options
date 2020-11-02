@@ -1,8 +1,6 @@
 import React from 'react';
 import 'bootstrap';
-import {
-  Link
-} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Header(props) {
   return (
@@ -24,7 +22,7 @@ function Header(props) {
                   <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">What I Do</a>
                   <div className="dropdown-menu dropdown-width" aria-labelledby="navbarDropdownMenuLink">
-                    <Link to="/" className="text-muted px-2">Carpet Cleaning</Link><br></br>
+                    <Link to="/carpet-cleaning" className="text-muted px-2">Carpet Cleaning</Link><br></br>
                     <Link to="/" className="text-muted px-2">Area Rug Cleaning</Link><br></br>
                     <Link to="/" className="text-muted px-2">Furniture/Upholstrey Cleaning</Link><br></br>
                     <Link to="/" className="text-muted px-2">Tile/Grout Cleaning</Link><br></br>
