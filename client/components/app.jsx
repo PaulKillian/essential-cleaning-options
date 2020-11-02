@@ -1,33 +1,65 @@
 import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from 'react-router-dom';
 import Header from './header-navbar';
 import Hero from './hero';
 import Cards from './cards';
+import Reviews from './reviews';
 import Footer from './footer';
 
-export default class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      view: 'header'
-    };
-  }
+export default function App() {
+  return (
+    <Router>
+      <div>
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/reviews">
+            <About />
+          </Route>
+          <Route path="/dashboard">
+            <Dashboard />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
+  );
+}
 
-  componentDidMount() {
-    fetch('/api/health-check')
-      .then(res => res.json())
-      .then(data => this.setState({ message: data.message || data.error }))
-      .catch(err => this.setState({ message: err.message }))
-      .finally(() => this.setState({ isLoading: false }));
-  }
+function Home() {
+  return (
+    <>
+      <Header />
+      <Hero />
+      <Cards />
+      <Reviews />
+      <Footer />
+    </>
+  );
+}
 
-  render() {
-    return (
-      <>
-        <Header />
-        <Hero />
-        <Cards/>
-        <Footer />
-      </>
-    );
-  }
+function About() {
+  return (
+    <>
+      <Header />
+      <div>
+        <h2>About</h2>
+      </div>
+    </>
+  );
+}
+
+function Dashboard() {
+  return (
+    <>
+      <Header />
+      <div>
+        <h2>Dashboard</h2>
+      </div>
+    </>
+  );
 }
