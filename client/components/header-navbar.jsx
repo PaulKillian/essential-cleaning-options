@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function Header(props) {
   return (
@@ -16,17 +16,19 @@ function Header(props) {
             <div className="collapse navbar-collapse" id="navbarNavDropdown">
               <ul className="navbar-nav">
                 <li className="nav-item mt-2">
-                  <Link to="/" className="text-muted">Home</Link>
+                  <NavLink to="/" exact className="nav-link text-muted">
+                    Home
+                  </NavLink>
                 </li>
                 <li className="nav-item dropdown ml-3">
                   <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">What I Do</a>
                   <div className="dropdown-menu dropdown-width" aria-labelledby="navbarDropdownMenuLink">
-                    <Link to="/carpet-cleaning" className="text-muted px-2">Carpet Cleaning</Link><br></br>
-                    <Link to="/" className="text-muted px-2">Area Rug Cleaning</Link><br></br>
-                    <Link to="/" className="text-muted px-2">Furniture/Upholstrey Cleaning</Link><br></br>
-                    <Link to="/" className="text-muted px-2">Tile/Grout Cleaning</Link><br></br>
-                    <Link to="/" className="text-muted px-2">Auto Detailing</Link>
+                    <NavLink to="/carpet-cleaning" className="nav-link text-muted px-2">Carpet Cleaning</NavLink><br></br>
+                    <NavLink to="/" className="text-muted px-2">Area Rug Cleaning</NavLink><br></br>
+                    <NavLink to="/" className="text-muted px-2">Furniture/Upholstrey Cleaning</NavLink><br></br>
+                    <NavLink to="/" className="text-muted px-2">Tile/Grout Cleaning</NavLink><br></br>
+                    <NavLink to="/" className="text-muted px-2">Auto Detailng</NavLink>
                   </div>
                 </li>
                 <li className="nav-item ml-3">
