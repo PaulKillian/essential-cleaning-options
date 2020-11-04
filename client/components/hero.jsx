@@ -1,7 +1,4 @@
 import React from 'react';
-import AOS from 'aos';
-
-AOS.init();
 
 function Hero() {
   return (

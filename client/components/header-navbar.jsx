@@ -14,8 +14,8 @@ function Header(props) {
               <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul className="navbar-nav">
-                <li className="nav-item mt-2">
+              <ul className="navbar-nav mt-2">
+                <li className="nav-item">
                   <NavLink to="/" exact className="nav-link text-muted">
                     Home
                   </NavLink>
@@ -32,10 +32,13 @@ function Header(props) {
                   </div>
                 </li>
                 <li className="nav-item ml-3">
-                  <a className="nav-link" href="#">Reviews</a>
+                  <NavLink to="/reviews" className="nav-link" href="#">Reviews</NavLink>
                 </li>
                 <li className="nav-item ml-3">
                   <a className="nav-link" href="#">Contact</a>
+                </li>
+                <li className="nav-item ml-3">
+                  <NavLink to="/estimate" className="nav-link" href="#">Schedule Estimate</NavLink>
                 </li>
               </ul>
             </div>
