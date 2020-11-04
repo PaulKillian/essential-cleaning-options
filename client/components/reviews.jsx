@@ -5,7 +5,7 @@ function Review() {
     <>
       <div className="d-flex justify-content-center">
         <p className="position-absolute text-font mt-5 pt-5 text-white">REVIEWS</p>
-        <img className="w-100 carpet-h position-relative" src="/images/reviews.jpg"></img>
+        <img className="w-100 carpet-h position-relative" src="/images/review4.jpg"></img>
       </div>
       <div className="container d-flex justify-content-center mt-5 mb-5 px-5 w-50">
         <div>
