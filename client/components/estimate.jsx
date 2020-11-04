@@ -4,8 +4,8 @@ class Estimate extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      firstName: '',
-      lastName: '',
+      name: '',
+      email: '',
       subject: '',
       message: ''
     };
@@ -36,14 +36,14 @@ class Estimate extends React.Component {
         <div className="col-12 mx-3 mt-4 d-flex flex-column">
           <div className="row mx-2 my-4 justify-content-center">
             <div className="col-6">
-              <form action='mailto:psk65lava@gmail.com' method='POST'className="mt-5">
+              <form action="/estimate" id="contact-form" method="POST" role="form" className="mt-5">
                 <div className="form-row">
                   <div className="form-group col">
-                    <label className="text-muted mb-0">First Name</label>
+                    <label className="text-muted mb-0">Name</label>
                     <input
                       type="text"
                       className="form-control"
-                      name="firstName"
+                      name="Name"
                       value={this.state.name}
                       onChange={this.handleChangeInputs}
                     />
@@ -51,12 +51,12 @@ class Estimate extends React.Component {
                 </div>
                 <div className="form-row">
                   <div className="form-group col-12">
-                    <label className="text-muted mb-0">Last Name</label>
+                    <label className="text-muted mb-0">Email</label>
                     <input
                       type="text"
                       className="form-control"
-                      name="lastName"
-                      value={this.state.lastName}
+                      name="email"
+                      value={this.state.email}
                       onChange={this.handleChangeInputs}
                     />
                   </div>

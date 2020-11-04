@@ -109,13 +109,14 @@ h1 {
 
 .carpet-h {
 	max-height: 550px;
-	filter: brightness(65%);
+	filter: brightness(50%);
 }
 
 .text-font {
 	font-family: 'Lustria', serif;
 	z-index: 1;
 	font-size: 100px;
+	top: 5rem;
 }
 
 .main-color {
