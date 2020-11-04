@@ -106,3 +106,28 @@ h1 {
 .dropdown-width {
 	width: 264px;
 }
+
+.carpet-h {
+	max-height: 550px;
+	filter: brightness(65%);
+}
+
+.text-font {
+	font-family: 'Lustria', serif;
+	z-index: 1;
+	font-size: 100px;
+}
+
+.main-color {
+	color: #00AB3A
+}
+
+.transition-fade {
+  transition: 3000ms;
+	opacity: 1;
+}
+
+.main-width {
+	min-height: 550px;
+  max-height: 600px;
+}

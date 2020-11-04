@@ -1,62 +1,122 @@
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from 'react-router-dom';
+import { AnimatePresence, motion } from 'framer-motion';
+import { Switch, Route, useLocation } from 'react-router-dom';
+
 import Header from './header-navbar';
 import Hero from './hero';
 import Cards from './cards';
-import Reviews from './reviews';
+import Review from './reviews';
 import Footer from './footer';
 import Carpet from './carpet';
+import Estimate from './estimate';
 
-export default function App() {
-  return (
-    <Router>
-      <div>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/carpet-cleaning">
-            <CarpetCleaning />
-          </Route>
-          <Route path="/dashboard">
-            <Dashboard />
-          </Route>
-        </Switch>
-      </div>
-    </Router>
-  );
-}
+function App() {
+  const location = useLocation();
 
-function Home() {
   return (
     <>
       <Header />
+      <AnimatePresence>
+        <Switch location={location} key={location.pathname}>
+          <Route path="/carpet-cleaning" component={CarpetCleaning} />
+          <Route path="/estimate" component={EstimateCalendar} />
+          <Route path="/reviews" component={Reviews} />
+          <Route path="/" component={Home} />
+        </Switch>
+      </AnimatePresence>
+    </>
+  );
+}
+
+const pageVariants = {
+  initial: {
+    opacity: 0,
+    y: '100vw',
+    scale: 1
+  },
+  in: {
+    opacity: 1,
+    y: 1,
+    scale: 1
+  },
+  out: {
+    opacity: 0,
+    y: '-100vw',
+    scale: 10
+  }
+};
+
+const pageTransition = {
+  type: 'tween',
+  stiffness: 20,
+  ease: 'anticipate',
+  duration: 0.7
+};
+
+const pageStyle = {
+  position: 'absolute'
+};
+
+function Home() {
+  return (
+    <motion.div
+      style={pageStyle}
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={pageVariants}
+      transition={pageTransition}
+    >
       <Hero />
       <Cards />
-      <Reviews />
       <Footer />
-    </>
+    </motion.div>
   );
 }
 
 function CarpetCleaning() {
   return (
-    <>
+    <motion.div
+      style={pageStyle}
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={pageVariants}
+      transition={pageTransition}
+    >
       <Carpet />
-    </>
+    </motion.div>
   );
 }
 
-function Dashboard() {
+function EstimateCalendar() {
   return (
-    <>
-      <div>
-        <h2>Dashboard</h2>
-      </div>
-    </>
+    <motion.div
+      style={pageStyle}
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={pageVariants}
+      transition={pageTransition}
+    >
+      <Estimate />
+    </motion.div>
   );
 }
+
+function Reviews() {
+  return (
+    <motion.div
+      style={pageStyle}
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={pageVariants}
+      transition={pageTransition}
+    >
+      <Review />
+    </motion.div>
+  );
+}
+
+export default App;
