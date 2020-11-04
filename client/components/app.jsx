@@ -5,9 +5,10 @@ import { Switch, Route, useLocation } from 'react-router-dom';
 import Header from './header-navbar';
 import Hero from './hero';
 import Cards from './cards';
-import Reviews from './reviews';
+import Review from './reviews';
 import Footer from './footer';
 import Carpet from './carpet';
+import Estimate from './estimate';
 
 function App() {
   const location = useLocation();
@@ -18,6 +19,8 @@ function App() {
       <AnimatePresence>
         <Switch location={location} key={location.pathname}>
           <Route path="/carpet-cleaning" component={CarpetCleaning} />
+          <Route path="/estimate" component={EstimateCalendar} />
+          <Route path="/reviews" component={Reviews} />
           <Route path="/" component={Home} />
         </Switch>
       </AnimatePresence>
@@ -28,18 +31,18 @@ function App() {
 const pageVariants = {
   initial: {
     opacity: 0,
-    x: '-100vw',
-    scale: 0.8
+    y: '100vw',
+    scale: 1
   },
   in: {
     opacity: 1,
-    x: 0,
+    y: 1,
     scale: 1
   },
   out: {
     opacity: 0,
-    x: '100vw',
-    scale: 0.5
+    y: '-100vw',
+    scale: 10
   }
 };
 
@@ -66,7 +69,6 @@ function Home() {
     >
       <Hero />
       <Cards />
-      <Reviews />
       <Footer />
     </motion.div>
   );
@@ -83,6 +85,36 @@ function CarpetCleaning() {
       transition={pageTransition}
     >
       <Carpet />
+    </motion.div>
+  );
+}
+
+function EstimateCalendar() {
+  return (
+    <motion.div
+      style={pageStyle}
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={pageVariants}
+      transition={pageTransition}
+    >
+      <Estimate />
+    </motion.div>
+  );
+}
+
+function Reviews() {
+  return (
+    <motion.div
+      style={pageStyle}
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={pageVariants}
+      transition={pageTransition}
+    >
+      <Review />
     </motion.div>
   );
 }
