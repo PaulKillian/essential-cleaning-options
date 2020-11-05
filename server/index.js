@@ -23,20 +23,24 @@ app.get('/api/health-check', (req, res, next) => {
 });
 
 app.post('/api/estimate', (req, res) => {
+  const gmail = process.env.GMAIL_PASS.toString();
   const transport = nodemailer.createTransport({
-    host: 'smtp.gmail.com',
-    port: 465,
+    host: 'smtp.mail.gmail.com',
+    port: 587,
+    service: 'gmail',
+    secure: false,
     auth: {
-      user: 'psk65lava@gmail.com',
-      pass: '584ad599c82ff5'
-    }
+      user: 'essentialcleaningoptions@gmail.com',
+      pass: gmail
+    },
+    debug: false,
+    logger: true
   });
   const mailAppearance = {
-    from: 'ken@ymail.com',
-    to: 'psk65lava@gmail.com',
+    from: `${req.body.email}`,
+    to: 'essentialcleaningoptions@gmail.com',
     subject: 'New estimate message',
-    text:
-      `
+    text: `
       Name: ${req.body.name}
       Email: ${req.body.email}
       Subject: ${req.body.subject}
@@ -44,13 +48,11 @@ app.post('/api/estimate', (req, res) => {
   };
   transport.sendMail(mailAppearance, (error, response) => {
     if (error) {
-      res.render('contact-failure');
+      res.json({ error: 'error' });
     } else {
-      res.render('contact-success');
+      res.json({ success: 'success' });
     }
   });
-  res.writeHead(301, { Location: 'index.html' });
-  res.end();
 });
 
 app.use('/api', (req, res, next) => {
