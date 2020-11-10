@@ -1,7 +1,8 @@
-body {
+html, body {
 	font-family: 'Merriweather', serif;
 	overflow-x: hidden;
 }
+
 
 #logo {
 	height: 50px;
@@ -108,7 +109,7 @@ h1 {
 }
 
 .carpet-h {
-	max-height: 550px;
+	max-height: 376px;
 	filter: brightness(50%);
 }
 
@@ -133,21 +134,118 @@ h1 {
   max-height: 600px;
 }
 
-.ml16 {
-  color: #402d2d;
-  padding: 40px 0;
-  font-weight: 800;
-  font-size: 2em;
-  text-transform: uppercase;
-  letter-spacing: 0.5em;
-  overflow: hidden;
+h1.ml8 {
+  font-weight: 900;
+  font-size: 4.5em;
+  color: #fff;
+  width: 3em;
+  height: 3em;
 }
 
-.ml16 .letter {
+.ml8 .letters-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  height: 1em;
+}
+
+.ml8 .letters {
+  position: relative;
+  z-index: 2;
   display: inline-block;
-  line-height: 1em;
+  line-height: 0.7em;
+  right: -0.12em;
+  top: -0.2em;
 }
 
+.ml8 .bang {
+  font-size: 1.4em;
+  top: auto;
+  left: -0.06em;
+}
+
+.ml8 .circle {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}
+
+.ml8 .circle-white {
+  width: 3em;
+  height: 3em;
+  border: 2px dashed white;
+  border-radius: 2em;
+}
+
+.ml8 .circle-dark {
+  width: 2.2em;
+  height: 2.2em;
+  background-color: #4f7b86;
+  border-radius: 3em;
+  z-index: 1;
+}
+
+.ml8 .circle-dark-dashed {
+  border-radius: 2.4em;
+  background-color: transparent;
+  border: 2px dashed #4f7b86;
+  width: 2.3em;
+  height: 2.3em;
+}
+
+.footer-color {
+	width: 100%;
+	height: 400px;
+
+}
+
+.bar-color {
+	background-color: #00AB3A
+}
+
+.hero-banner--overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.box {
+    font-family: Arial;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    color: white;
+    border: 40px solid transparent;
+		border-image: url(/images/clean.svg);
+    border-image-slice: 100%;
+    border-image-width: 60px;
+		padding: 15px;
+		margin: 16px;
+}
+
+.icon-size {
+	height: 40px;
+	width: 40px;
+}
+
+.left-footer-image {
+	left: 6rem;
+}
+
+.bg-off-white {
+	background-color: #f8f8ff
+}
 .hidden {
-	display: none
+	display: none;
 }
