@@ -9,6 +9,9 @@ import Review from './reviews';
 import Footer from './footer';
 import Carpet from './carpet';
 import Estimate from './estimate';
+import AreaRug from './area-rug';
+import Furniture from './futnture';
+import Grout from './grout';
 
 function App() {
   const location = useLocation();
@@ -21,6 +24,9 @@ function App() {
           <Route path="/carpet-cleaning" component={CarpetCleaning} />
           <Route path="/estimate" component={EstimateCalendar} />
           <Route path="/reviews" component={Reviews} />
+          <Route path="/area-rug" component={Area} />
+          <Route path="/furniture-upholstrey" component={Upholstrey} />
+          <Route path="/grout-tile" component={Tile} />
           <Route path="/" component={Home} />
         </Switch>
       </AnimatePresence>
@@ -36,7 +42,7 @@ const pageVariants = {
   },
   in: {
     opacity: 1,
-    y: 1,
+    y: 0.4,
     scale: 1
   },
   out: {
@@ -59,7 +65,7 @@ const pageStyle = {
 
 function Home() {
   return (
-    <motion.div
+    <motion.div className="bg-off-white"
       style={pageStyle}
       initial="initial"
       animate="in"
@@ -115,6 +121,51 @@ function Reviews() {
       transition={pageTransition}
     >
       <Review />
+    </motion.div>
+  );
+}
+
+function Area() {
+  return (
+    <motion.div
+      style={pageStyle}
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={pageVariants}
+      transition={pageTransition}
+    >
+      <AreaRug />
+    </motion.div>
+  );
+}
+
+function Upholstrey() {
+  return (
+    <motion.div
+      style={pageStyle}
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={pageVariants}
+      transition={pageTransition}
+    >
+      <Furniture />
+    </motion.div>
+  );
+}
+
+function Tile() {
+  return (
+    <motion.div
+      style={pageStyle}
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={pageVariants}
+      transition={pageTransition}
+    >
+      <Grout />
     </motion.div>
   );
 }

@@ -25,9 +25,9 @@ function Header(props) {
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">What I Do</a>
                   <div className="dropdown-menu dropdown-width" aria-labelledby="navbarDropdownMenuLink">
                     <NavLink to="/carpet-cleaning" className="nav-link text-muted px-2">Carpet Cleaning</NavLink><br></br>
-                    <NavLink to="/" className="text-muted px-2">Area Rug Cleaning</NavLink><br></br>
-                    <NavLink to="/" className="text-muted px-2">Furniture/Upholstrey Cleaning</NavLink><br></br>
-                    <NavLink to="/" className="text-muted px-2">Tile/Grout Cleaning</NavLink><br></br>
+                    <NavLink to="/area-rug" className="text-muted px-2">Area Rug Cleaning</NavLink><br></br>
+                    <NavLink to="/furniture-upholstrey" className="text-muted px-2">Furniture/Upholstrey Cleaning</NavLink><br></br>
+                    <NavLink to="/grout-tile" className="text-muted px-2">Tile/Grout Cleaning</NavLink><br></br>
                     <NavLink to="/" className="text-muted px-2">Auto Detailng</NavLink>
                   </div>
                 </li>
