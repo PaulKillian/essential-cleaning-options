@@ -76,7 +76,7 @@ class Estimate extends React.Component {
     return (
       <>
         <div className="d-flex justify-content-center">
-          <p className="position-absolute text-font mt-5 pt-5 text-white">SCHEDULE ESTIMATE</p>
+          <p className="position-absolute text-font mt-4 text-white">SCHEDULE ESTIMATE</p>
           <img className="w-100 carpet-h position-relative" src="/images/schedule.jpg"></img>
         </div>
         <h1 className="ml16 d-none">Your Message Has Been Sent!</h1>
