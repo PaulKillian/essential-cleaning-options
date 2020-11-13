@@ -1,12 +1,23 @@
 html, body {
-	font-family: 'Merriweather', serif;
-	overflow-x: hidden;
+  overflow-x: hidden;
+}
+
+@font-face {
+    font-family: Transyl-Regular;
+    src: url("/Transyl-Regular.ttf") format("opentype");
+}
+body {
+  font-family: 'Vescona', Fallback, sans-serif;
 }
 
 
 #logo {
 	height: 50px;
 	width: 100px;
+}
+
+.no-overflow {
+  overflow-x: hidden;
 }
 
 #line {
@@ -88,22 +99,6 @@ h1 {
 	font: 700 40px 'Bitter';
 }
 
-.paralax-title {
-    color: white;
-    width: 40vw;
-    padding: 2rem;
-    align-self: center;
-    background-color: rgba(0, 0, 0, 0.483);
-    border-top-right-radius: 80px;
-		border-bottom-right-radius: 80px;
-		border-top-left-radius: 80px;
-    border-bottom-left-radius: 80px;
-    box-shadow: 0 0 60px 30px #fff, 0 0 100px 60px #f0f, 0 0 140px 90px #0ff;
-    font-size: 45px;
-    font-family: mario;
-    text-shadow: 4px 4px #b90000;
-}
-
 .dropdown-width {
 	width: 264px;
 }
@@ -114,10 +109,30 @@ h1 {
 }
 
 .text-font {
-	font-family: 'Lustria', serif;
+	font-family: 'Transyl-Regular', Fallback, sans-serif;
 	z-index: 1;
-	font-size: 100px;
-	top: 5rem;
+	font-size: 50px;
+	top: 14rem;
+}
+
+li {
+  font-family: 'Transyl-Regular', Fallback, sans-serif;
+}
+
+.text-font1 {
+	font-family: 'Transyl-Regular', Fallback, sans-serif;
+  font-size: 100px;
+  z-index: 1;
+	top: 4rem;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+}
+
+.carpet-position {
+  right: 5rem
 }
 
 .main-color {
@@ -206,7 +221,7 @@ h1.ml8 {
 }
 
 .bar-color {
-	background-color: #00AB3A
+	background-image: url(images/06.jpg);
 }
 
 .hero-banner--overlay {
@@ -227,7 +242,7 @@ h1.ml8 {
     font-weight: bold;
     color: white;
     border: 40px solid transparent;
-		border-image: url(/images/clean.svg);
+		border-image: url(/images/leaf.png);
     border-image-slice: 100%;
     border-image-width: 60px;
 		padding: 15px;
@@ -248,4 +263,132 @@ h1.ml8 {
 }
 .hidden {
 	display: none;
+}
+
+.shadowed {
+    filter: drop-shadow(0 0 0.10rem rgb(0, 0, 0));
+}
+
+.shadowed-text {
+    filter: drop-shadow(0 0 0.1rem rgb(1, 100, 14));
+}
+
+.info-dimensions {
+  height: 400px;
+}
+
+.scale {
+  transform: scale(2)
+}
+
+@media only screen and (min-width: 375px) {
+  .scale {
+    transform: scale(1)
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .scale {
+    transform: scale(1)
+  }
+}
+
+.side-menu {
+  top: 0;
+  height: 100vh;
+  width: 0;
+  z-index: 1;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: white;
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+  right: 0;
+  z-index: 4;
+}
+
+.show {
+  width: 33%;
+}
+
+.link {
+  color: black;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  width: 15rem;
+  cursor: pointer;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.block {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.top {
+  z-index: 1;
+}
+
+.rotate {
+  transform: rotate(-3deg);
+  width: 100%;
+  position: relative;
+  right: 20rem;
+  bottom: 12rem;
+  height: 200px
+}
+
+.accent-height {
+  height: 203px;
+    bottom: 55rem;
+    left: -1rem;
+    padding-top: 54px;
+    width: 103%;
+}
+
+.up {
+  bottom: 1rem;
+}
+
+.bottom {
+  z-index: -1;
+}
+
+.phone-height {
+  height: 100px;
+}
+
+.animate {
+  animation: slide-left 1s;
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.menu-bg {
+  background-image: url("images/07.jpg");
 }
