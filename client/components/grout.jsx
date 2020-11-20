@@ -5,9 +5,11 @@ function Grout() {
   AOS.init();
   return (
     <>
-      <div className="d-flex justify-content-center">
-        <p className="position-absolute text-font mt-4 text-white">TILE AND GROUT CLEANING</p>
-        <img className="w-100 carpet-h position-relative" src="/images/grout.png"></img>
+      <div className="col-12 mb-5 scale bottom">
+        <div className="d-flex justify-content-center align-items-center flex-column">
+          <p className=" text-font mt-4 shadowed-text text-dark">TILE/GROUT CLEANING</p>
+          <img className="w-50 h-75 mt-3 shadowed" src="/images/tileg.jpg"></img>
+        </div>
       </div>
       <div className="row d-flex mt-5 justify-content-center">
         <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/gDUOQQSSbl0"

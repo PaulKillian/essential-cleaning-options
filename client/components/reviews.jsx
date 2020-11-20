@@ -3,14 +3,15 @@ import React from 'react';
 function Review() {
   return (
     <>
-      <div className="d-flex justify-content-center">
-        <p className="position-absolute text-font mt-4 text-white">REVIEWS</p>
-        <img className="w-100 carpet-h position-relative" src="/images/review4.jpg"></img>
+      <div className="col-12 scale bottom">
+        <div className="d-flex justify-content-center align-items-center flex-column">
+          <p className=" text-font mt-4 shadowed-text text-dark">Reviews</p>
+          <img className="w-25 h-50 mt-3 shadowed" src="/images/reviews.png"></img>
+        </div>
       </div>
       <div className="container d-flex justify-content-center mt-5 mb-5 px-5 w-50">
         <div>
-          <h3 className="text-center">REVIEWS</h3>
-          <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel" data-interval="6000">
+          <div id="carouselExampleIndicators" className=" mt-5 carousel slide" data-ride="carousel" data-interval="6000">
             <ol className="carousel-indicators">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
               <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
