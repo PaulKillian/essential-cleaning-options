@@ -1,15 +1,13 @@
+/* * {    outline: 1px solid red; } */
+
 html, body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
-@font-face {
-    font-family: Transyl-Regular;
-    src: url("/Transyl-Regular.ttf") format("opentype");
-}
 body {
-  font-family: 'Vescona', Fallback, sans-serif;
+  font-family: 'Merriweather', serif;
 }
-
 
 #logo {
 	height: 50px;
@@ -28,7 +26,8 @@ body {
 
 .text {
 	max-height: 400px;
-	max-width: 80%;
+  max-width: 80%;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 #hero-text {
@@ -109,18 +108,19 @@ h1 {
 }
 
 .text-font {
-	font-family: 'Transyl-Regular', Fallback, sans-serif;
+	font-family: 'Merriweather', serif;
 	z-index: 1;
 	font-size: 50px;
 	top: 14rem;
 }
 
-li {
-  font-family: 'Transyl-Regular', Fallback, sans-serif;
+li,
+p {
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 .text-font1 {
-	font-family: 'Transyl-Regular', Fallback, sans-serif;
+	font-family: 'Merriweather', serif;
   font-size: 100px;
   z-index: 1;
 	top: 4rem;
@@ -259,7 +259,10 @@ h1.ml8 {
 }
 
 .bg-off-white {
-	background-color: #f8f8ff
+  /* background-color: #f8f8ff; */
+  background-image: url("/images/46.jpg");
+  height: auto;
+  margin: 0;
 }
 .hidden {
 	display: none;
@@ -290,6 +293,12 @@ h1.ml8 {
 @media only screen and (min-width: 768px) {
   .scale {
     transform: scale(1)
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .show {
+      width: 78%;
   }
 }
 
@@ -391,4 +400,220 @@ h1.ml8 {
 
 .menu-bg {
   background-image: url("images/07.jpg");
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.carousel-wrapper{
+  height:400px;
+  position:relative;
+  width:800px;
+  margin:0 auto;
+}
+.carousel-item{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  padding:25px 50px;
+  opacity:0;
+  transition: all 2s ease-in-out;
+  display: inline-block;
+}
+.arrow{
+  border: solid black;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 12px;
+}
+
+.arrow-prev{
+  left:-30px;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%) rotate(135deg);
+}
+
+.clean {
+  background-image: url(/images/clean.jpg);
+  width: 100%;
+  height: auto;
+}
+
+.arrow-next{
+    right:-30px;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%) rotate(-45deg);
+  }
+
+.light{
+  color:rgb(105, 37, 37);
+}
+
+@media (max-width: 480px) {
+      .arrow, .light .arrow {
+        background-size: 10px;
+        background-position: 10px 50%;
+      }
+    }
+
+
+/*Select every element*/
+/* [id^="item"] {
+    display: none;
+  } */
+
+.item-1 {
+  z-index: 2;
+  opacity: 1;
+  background: linear-gradient( rgba(2, 2, 2, 0.50), rgba(2, 2, 2, 0.50) ), url(/images/fast.jpg);
+  background-size: cover;
+  }
+.item-2{
+  background: linear-gradient( rgba(2, 2, 2, 0.50), rgba(2, 2, 2, 0.50) ), url(/images/low.jpg);
+  background-size: cover;
+}
+.item-3{
+  background: linear-gradient( rgba(2, 2, 2, 0.50), rgba(2, 2, 2, 0.50) ), url(/images/chemical_free.jpg);
+  background-size: cover;
+}
+
+*:target ~ .item-1 {
+    opacity: 0;
+  }
+
+#item-1:target ~ .item-1 {
+    opacity: 1;
+  }
+
+#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
+  }
+
+.section {
+    text-align: center;
+    font-size: 3em;
+    font-family: arial;
+}
+
+.carpet-s {
+	background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("../images/carpet4.jpg");
+  height: 500px;
+  background-size: cover;
+}
+
+.grout-s {
+	background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("../images/grout.png");
+  height: 500px;
+  background-size: cover;
+}
+
+.upholstrey-s {
+	background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("../images/couch2.jpg");
+  height: 500px;
+  background-size: cover;
+}
+
+.area-s {
+	background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("../images/fast1.jpg");
+  height: 500px;
+  background-size: cover;
+}
+
+.shadowed {
+    filter: drop-shadow(0 0.30rem 0.30rem rgb(163, 163, 163));
+}
+
+.contain {
+  position: relative;
+  width: 100%;
+  background-size: cover;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlayL {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #005021;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .2s ease;
+}
+
+.overlayR {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: #005021;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .2s ease;
+}
+
+.containTL:hover .overlayL {
+  width: 100%;
+  background: linear-gradient( rgba(51, 122, 253, 0.3), rgba(51, 122, 253, 0.3) ), url("../images/carpet5.jpg");
+  height: 498px;
+  background-size: cover;
+}
+
+.containBL:hover .overlayL {
+  width: 100%;
+  background: linear-gradient( rgba(51, 122, 253, 0.3), rgba(51, 122, 253, 0.3) ), url("../images/area.jpg");
+  height: 498px;
+  background-size: cover;
+}
+
+.containTR:hover .overlayR {
+  width: 100%;
+  left: 0;
+  background: linear-gradient( rgba(51, 122, 253, 0.3), rgba(51, 122, 253, 0.3) ), url("../images/couch.jpg");
+  height: 498px;
+  background-size: cover;
+}
+
+.containBR:hover .overlayR {
+  width: 100%;
+  left: 0;
+  background: linear-gradient( rgba(51, 122, 253, 0.3), rgba(51, 122, 253, 0.3) ), url("../images/tileg.jpg");
+  height: 498px;
+  background-size: cover;
+}
+
+.text{
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.center-card-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  right: 7rem;
+  top: 1.7rem;
 }

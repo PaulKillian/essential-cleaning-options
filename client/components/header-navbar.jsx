@@ -45,25 +45,14 @@ class Navbar extends React.Component {
     return (
       <>
         <div className={modalStyles} onClick={this.hideMenu}></div>
-        <div className="d-flex justify-content-end sticky">
-          <i className="fa fa-bars fa-3x text-primary position-absolute pr-5 pt-3 top sticky" onClick={() => this.handleToggleClick()}></i>
+        <div className="d-flex justify-content-end sticky top">
+          <h4 className="position-absolute text-white menu">MENU</h4>
+          <i className="fa fa-bars fa-3x text-primary position-absolute pr-5 pt-3 top sticky pointer" onClick={() => this.handleToggleClick()}></i>
         </div>
         <div className={cssClass} onClick={this.hideMenu}>
           <ul className="navbar-nav mt-2">
             <li className="nav-item ml-5 mb-2">
               <NavLink to="/" exact className="nav-link text-white text-left">Home</NavLink>
-            </li>
-            <li className="nav-item ml-5 mb-2">
-              <NavLink to="/carpet-cleaning" className="nav-link text-white text-left">Carpet Cleaning</NavLink>
-            </li>
-            <li className="nav-item ml-5 mb-2">
-              <NavLink to="/area-rug" className="nav-link text-white text-left">Area Rug Cleaning</NavLink>
-            </li>
-            <li className="nav-item ml-5 mb-2">
-              <NavLink to="/furniture-upholstrey" className="nav-link text-white text-left">Furniture/Upholstrey Cleaning</NavLink>
-            </li>
-            <li className="nav-item ml-5 mb-2">
-              <NavLink to="/grout-tile" className="nav-link text-white text-left">Tile/Grout Cleaning</NavLink>
             </li>
             <li className="nav-item ml-5 mb-2">
               <NavLink to="/auto-detailing" className="nav-link text-white text-left">Auto Detailng</NavLink>
