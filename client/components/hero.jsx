@@ -6,7 +6,7 @@ function Hero() {
       <div className="bg-off-white">
         <div className="d-flex justify-content-center">
           <img className="position-absolute mt-5 pt-5
-        text" src="/images/logo8.png "></img>
+            text" src="/images/logo8.png"></img>
         </div>
         <div className="paralax"></div>
       </div>
