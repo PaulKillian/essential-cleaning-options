@@ -47,7 +47,7 @@ class Navbar extends React.Component {
         <div className={modalStyles} onClick={this.hideMenu}></div>
         <div className="d-flex justify-content-end sticky top">
           <h4 className="position-absolute text-white menu">MENU</h4>
-          <i className="fa fa-bars fa-3x text-primary position-absolute pr-5 pt-3 top sticky pointer" onClick={() => this.handleToggleClick()}></i>
+          <i className="fa fa-bars fa-3x hamburger-color position-absolute pr-5 pt-3 top sticky pointer" onClick={() => this.handleToggleClick()}></i>
         </div>
         <div className={cssClass} onClick={this.hideMenu}>
           <ul className="navbar-nav mt-2">
@@ -58,7 +58,7 @@ class Navbar extends React.Component {
               <NavLink to="/auto-detailing" className="nav-link text-white text-left">Auto Detailng</NavLink>
             </li>
             <li className="nav-item ml-5 mb-2">
-              <NavLink to="/reviews" className="nav-link text-white text-left">Reviews</NavLink>
+              <NavLink to="/testimonials" className="nav-link text-white text-left">Testimonials</NavLink>
             </li>
             <li className="nav-item ml-5 mb-2">
               <NavLink to="/contact" className="nav-link text-white text-left">Contact Us</NavLink>
