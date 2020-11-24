@@ -19,7 +19,7 @@ function App() {
       <AnimatePresence>
         <Switch location={location} key={location.pathname}>
           <Route path="/estimate" component={EstimateCalendar} />
-          <Route path="/reviews" component={Reviews} />
+          <Route path="/testimonials" component={Reviews} />
           <Route path="/auto-detailing" component={Detailing} />
           <Route path="/contact" component={ContactMe} />
           <Route path="/" component={Home} />
@@ -61,7 +61,7 @@ const pageStyle = {
 
 function Home() {
   return (
-    <motion.div className="bg-off-white col-12"
+    <motion.div className="col-12 border border-10 mrble shadowed paralax-main"
       style={pageStyle}
       initial="initial"
       animate="in"
@@ -79,7 +79,7 @@ function Home() {
 
 // function CarpetCleaning() {
 //   return (
-//     <motion.div className="bg-off-white col-12"
+//     <motion.div className="bg-off-white border-10 border shadowed"
 //       style={pageStyle}
 //       initial="initial"
 //       animate="in"
@@ -95,7 +95,7 @@ function Home() {
 
 function EstimateCalendar() {
   return (
-    <motion.div className="bg-off-white col-12"
+    <motion.div className="bg-off-white border-10 border shadowed w-100"
       style={pageStyle}
       initial="initial"
       animate="in"
@@ -111,7 +111,7 @@ function EstimateCalendar() {
 
 function Reviews() {
   return (
-    <motion.div className="bg-off-white col-12"
+    <motion.div className="bg-blue border-10 border shadowed"
       style={pageStyle}
       initial="initial"
       animate="in"
@@ -127,7 +127,7 @@ function Reviews() {
 
 // function Area() {
 //   return (
-//     <motion.div className="bg-off-white col-12"
+//     <motion.div className="bg-off-white border-10 border shadowed"
 //       style={pageStyle}
 //       initial="initial"
 //       animate="in"
@@ -143,7 +143,7 @@ function Reviews() {
 
 // function Upholstrey() {
 //   return (
-//     <motion.div className="bg-off-white col-12"
+//     <motion.div className="bg-off-white border-10 border shadowed"
 //       style={pageStyle}
 //       initial="initial"
 //       animate="in"
@@ -159,7 +159,7 @@ function Reviews() {
 
 // function Tile() {
 //   return (
-//     <motion.div className="bg-off-white col-12"
+//     <motion.div className="bg-off-white border-10 border shadowed"
 //       style={pageStyle}
 //       initial="initial"
 //       animate="in"
@@ -175,7 +175,7 @@ function Reviews() {
 
 function Detailing() {
   return (
-    <motion.div className="bg-off-white col-12"
+    <motion.div className="bg-blue border-10 border shadowed"
       style={pageStyle}
       initial="initial"
       animate="in"
@@ -191,7 +191,7 @@ function Detailing() {
 
 function ContactMe() {
   return (
-    <motion.div className="bg-off-white col-12"
+    <motion.div className="bg-blue border-10 border shadowed w-100"
       style={pageStyle}
       initial="initial"
       animate="in"
