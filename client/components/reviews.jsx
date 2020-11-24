@@ -5,7 +5,7 @@ function Review() {
     <>
       <div className="col-12 scale bottom">
         <div className="d-flex justify-content-center align-items-center flex-column">
-          <p className=" text-font mt-4 shadowed-text text-dark">Reviews</p>
+          <p className=" text-font mt-4 shadowed-text text-dark">Testimonials</p>
           <img className="w-25 h-50 mt-3 shadowed" src="/images/reviews.png"></img>
         </div>
       </div>
