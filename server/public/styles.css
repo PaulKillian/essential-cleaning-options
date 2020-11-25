@@ -59,23 +59,6 @@ body {
 	color: #00AB3A;
 }
 
-.carousel-indicators li {
-    box-sizing: content-box;
-    flex: 0 1 auto;
-    width: 30px;
-		height: 7px;
-    margin-right: 3px;
-    margin-left: 3px;
-    text-indent: -999px;
-    cursor: pointer;
-    background-color: #00AB3A;
-    background-clip: padding-box;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    opacity: 0.5;
-		transition: opacity 0.6s ease;
-}
-
 .paralax {
 	background: linear-gradient( rgba(2, 2, 2, 0.1), rgba(2, 2, 2, 0.1) ),
 	url(https://anima-uploads.s3.amazonaws.com/projects/5f9b77ac2a9b34eeacd2ed63/releases/5f9c1a870009f876421d958d/img/rectangle-22@1x.png);
@@ -233,6 +216,10 @@ h1.ml8 {
   box-shadow: inset 0px 0px 10px 0px rgba(146, 146, 146, 0.9);
 }
 
+.inset {
+  box-shadow: inset 0px 0px 5px 0px rgba(2, 33, 172, 0.9);
+}
+
 .border-5{
     border-width: 10px !important;
     background-color: #ffffff;
@@ -295,18 +282,12 @@ h1.ml8 {
 }
 
 .hamburger-color {
-  color: #388E8E
+  color: #01ab3b
 }
 
 .hidden {
 	display: none;
 }
-
-/* .shadow-box {
-    /* filter: drop-shadow(0 0 0.20rem rgb(0, 0, 0)); */
-    box-shadow: -6px, -6px, 26px 0 rgba(0, 0, 0, 0.83);
-    box-shadow: 6px, 6px, 16px 0 rgba(0, 0, 0, 0.51);
-} */
 
 .shadowed-text {
     filter: drop-shadow(0 0.20rem 0.20rem rgb(0, 0, 0));
@@ -317,6 +298,10 @@ h1.ml8 {
 }
 
 .scale {
+  transform: scale(2)
+}
+
+.scale1 {
   transform: scale(2)
 }
 
@@ -371,10 +356,25 @@ h1.ml8 {
   top: 0;
   left: 0;
   bottom: 0;
-  width: 89vw;
+  width: 95.3vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 2;
+}
+
+.modal-overlay1 {
+  position: absolute;
+  top: -26rem;
+  left: 28rem;
+  bottom: 0;
+  width: 95.3vw;
+  height: 64vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.main-back {
+  background-image: url('images/bac.jpg');
 }
 
 .block {
@@ -415,7 +415,7 @@ h1.ml8 {
 }
 
 .phone-height {
-  height: 100px;
+  height: 250px;
 }
 
 .animate {
@@ -436,7 +436,14 @@ h1.ml8 {
 
 .menu-bg {
   background-image: url("images/07.jpg");
+  max-height: 444px;
 }
+
+.menu-bg2 {
+  background-image: url("images/07.jpg");
+  max-height: 551px;
+}
+
 
 .pointer {
   cursor: pointer;
@@ -518,7 +525,7 @@ h1.ml8 {
 }
 
 .shadowed {
-    filter: drop-shadow(0.20rem 0.30rem 0.30rem rgb(117, 117, 117));
+    filter: drop-shadow(0.20rem 0.30rem 0.30rem rgb(0, 0, 0));
 }
 
 .contain {
@@ -613,4 +620,198 @@ h1.ml8 {
 .foot1 {
   background-image: url("../images/foot1.jpg");
   background-size: cover;
+}
+
+@keyframes tonext {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: 100%;
+  }
+  98% {
+    left: 100%;
+  }
+  99% {
+    left: 0;
+  }
+}
+
+@keyframes tostart {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: -300%;
+  }
+  98% {
+    left: -300%;
+  }
+  99% {
+    left: 0;
+  }
+}
+
+@keyframes snap {
+  96% {
+    scroll-snap-align: center;
+  }
+  97% {
+    scroll-snap-align: none;
+  }
+  99% {
+    scroll-snap-align: none;
+  }
+  100% {
+    scroll-snap-align: center;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  scrollbar-color: transparent transparent; /* thumb and track color */
+  scrollbar-width: 0px;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: none;
+}
+
+* {
+  -ms-overflow-style: none;
+}
+
+ol, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel {
+  position: relative;
+  padding-top: 17%;
+  filter: drop-shadow(0 0 10px #0003);
+  perspective: 100px;
+}
+
+.carousel__viewport {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  overflow-x: scroll;
+  counter-reset: item;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  height: 200px;
+}
+
+.carousel__slide {
+  position: relative;
+  flex: 0 0 100%;
+  width: 100%;
+  counter-increment: item;
+}
+
+
+.carousel__snapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: center;
+}
+
+@media (hover: hover) {
+  .carousel__snapper {
+    animation-name: tonext, snap;
+    animation-timing-function: ease;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+
+  .carousel__slide:last-child .carousel__snapper {
+    animation-name: tostart, snap;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel__snapper {
+    animation-name: none;
+  }
+}
+
+.carousel:hover .carousel__snapper,
+.carousel:focus-within .carousel__snapper {
+  animation-name: none;
+}
+
+.carousel__navigation {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+.carousel__navigation-list,
+.carousel__navigation-item {
+  display: inline-block;
+}
+
+.carousel__navigation-button {
+  display: inline-block;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #ffffff;
+  background-clip: content-box;
+  border: 0.25rem solid transparent;
+  border-radius: 50%;
+  font-size: 0;
+  transition: transform 0.1s;
+}
+
+.carousel::before,
+.carousel::after,
+.carousel__prev,
+.carousel__next {
+  position: absolute;
+  top: 0;
+  margin-top: 37.5%;
+  width: 4rem;
+  height: 4rem;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  font-size: 0;
+  outline: 0;
+}
+
+.carousel::before,
+.carousel__prev {
+  left: -1rem;
+}
+
+.carousel::after,
+.carousel__next {
+  right: -1rem;
+}
+
+.carousel::before {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='0,50 80,100 80,0' fill='%23fff'/%3E%3C/svg%3E");
+}
+
+.carousel::after {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
 }
