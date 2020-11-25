@@ -525,7 +525,7 @@ h1.ml8 {
 }
 
 .shadowed {
-    filter: drop-shadow(0.20rem 0.30rem 0.30rem rgb(0, 0, 0));
+    filter: drop-shadow(0.20rem 0.30rem 0.30rem rgb(56, 56, 56));
 }
 
 .contain {
