@@ -75,7 +75,7 @@ class Estimate extends React.Component {
   render() {
     return (
       <>
-        <div className="col-12 scale bottom main-back">
+        <div className="col-12 scale bottom foot1">
           <div className="d-flex justify-content-center align-items-center flex-column">
             <p className=" text-font mt-4 text-white">SCHEDULE ESTIMATE</p>
             <img className="w-25 h-50 mt-3" src="/images/calendar3.jpg"></img>
