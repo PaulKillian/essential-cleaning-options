@@ -75,10 +75,10 @@ class Estimate extends React.Component {
   render() {
     return (
       <>
-        <div className="col-12 scale bottom bg-blue">
+        <div className="col-12 scale bottom main-back">
           <div className="d-flex justify-content-center align-items-center flex-column">
-            <p className=" text-font mt-4 shadowed-text text-dark">SCHEDULE ESTIMATE</p>
-            <img className="w-25 h-50 mt-3 shadowed" src="/images/calendar2.png"></img>
+            <p className=" text-font mt-4 text-white">SCHEDULE ESTIMATE</p>
+            <img className="w-25 h-50 mt-3" src="/images/calendar3.jpg"></img>
           </div>
         </div>
         <h1 className="ml16 d-none">Your Message Has Been Sent!</h1>
@@ -91,7 +91,7 @@ class Estimate extends React.Component {
                     <label className="text-muted mb-0">Name</label>
                     <input
                       type="text"
-                      className="form-control"
+                      className="form-control inset"
                       name="name"
                       value={this.state.name}
                       onChange={this.handleChangeInputs}
@@ -104,7 +104,7 @@ class Estimate extends React.Component {
                     <label className="text-muted mb-0">Email</label>
                     <input
                       type="text"
-                      className="form-control"
+                      className="form-control inset"
                       name="email"
                       value={this.state.email}
                       onChange={this.handleChangeInputs}
@@ -115,7 +115,7 @@ class Estimate extends React.Component {
                     <label className="text-muted mb-0">Subject</label>
                     <input
                       type="text"
-                      className="form-control"
+                      className="form-control inset"
                       name="subject"
                       value={this.state.subject}
                       onChange={this.handleChangeInputs}
@@ -126,7 +126,7 @@ class Estimate extends React.Component {
                     <label className="text-muted mb-0">Your Message</label>
                     <textarea
                       type="text"
-                      className="form-control"
+                      className="form-control inset"
                       name="message"
                       value={this.state.message}
                       onChange={this.handleChangeInputs}
@@ -135,7 +135,7 @@ class Estimate extends React.Component {
                   </div>
                 </div>
                 <div className="d-flex justify-content-center">
-                  <button type="submit" className="btn shadow bg-button text-muted w-25">SEND MESSAGE</button>
+                  <button type="submit" className="btn shadow bg-button bg-white text-dark w-50">SEND MESSAGE</button>
                 </div>
               </form>
             </div>
