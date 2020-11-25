@@ -1,6 +1,7 @@
 import React from 'react';
 
 function Hero() {
+  window.scrollTo(0, 0);
   return (
     <>
       <div className="bg-off-white">
@@ -10,6 +11,7 @@ function Hero() {
         </div>
         <div className="paralax"></div>
       </div>
+
     </>
   );
 }

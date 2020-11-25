@@ -13,6 +13,10 @@ class Navbar extends React.Component {
     this.hideMenu = this.hideMenu.bind(this);
   }
 
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   handleToggleClick(event) {
     this.setState(function (state) {
       if (!this.state.isShown) {
@@ -46,8 +50,8 @@ class Navbar extends React.Component {
       <>
         <div className={modalStyles} onClick={this.hideMenu}></div>
         <div className="d-flex justify-content-end sticky top">
-          <h4 className="position-absolute text-white menu">MENU</h4>
-          <i className="fa fa-bars fa-3x hamburger-color position-absolute pr-5 pt-3 top sticky pointer" onClick={() => this.handleToggleClick()}></i>
+          <h4 className="position-absolute text-white shadowed-text menu">MENU</h4>
+          <i className="fa fa-bars fa-3x hamburger-color shadowed-text position-absolute pr-5 pt-3 top sticky pointer" onClick={() => this.handleToggleClick()}></i>
         </div>
         <div className={cssClass} onClick={this.hideMenu}>
           <ul className="navbar-nav mt-2">

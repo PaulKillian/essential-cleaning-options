@@ -13,7 +13,6 @@ import Contact from './contact-form';
 
 function App() {
   const location = useLocation();
-
   return (
     <>
       <AnimatePresence>
@@ -61,7 +60,7 @@ const pageStyle = {
 
 function Home() {
   return (
-    <motion.div className="col-12 border border-10 mrble shadowed paralax-main"
+    <motion.div className="col-12 border border-10 mrble paralax-main"
       style={pageStyle}
       initial="initial"
       animate="in"
@@ -79,7 +78,7 @@ function Home() {
 
 // function CarpetCleaning() {
 //   return (
-//     <motion.div className="bg-off-white border-10 border shadowed"
+//     <motion.div className="bg-off-white border-10 border"
 //       style={pageStyle}
 //       initial="initial"
 //       animate="in"
@@ -95,7 +94,7 @@ function Home() {
 
 function EstimateCalendar() {
   return (
-    <motion.div className="bg-off-white border-10 border shadowed w-100"
+    <motion.div className="bg-off-white border-10 border w-100 main-back"
       style={pageStyle}
       initial="initial"
       animate="in"
@@ -111,7 +110,7 @@ function EstimateCalendar() {
 
 function Reviews() {
   return (
-    <motion.div className="bg-blue border-10 border shadowed"
+    <motion.div className="border-10 border main-back"
       style={pageStyle}
       initial="initial"
       animate="in"
@@ -127,7 +126,7 @@ function Reviews() {
 
 // function Area() {
 //   return (
-//     <motion.div className="bg-off-white border-10 border shadowed"
+//     <motion.div className="bg-off-white border-10 border"
 //       style={pageStyle}
 //       initial="initial"
 //       animate="in"
@@ -143,7 +142,7 @@ function Reviews() {
 
 // function Upholstrey() {
 //   return (
-//     <motion.div className="bg-off-white border-10 border shadowed"
+//     <motion.div className="bg-off-white border-10 border"
 //       style={pageStyle}
 //       initial="initial"
 //       animate="in"
@@ -159,7 +158,7 @@ function Reviews() {
 
 // function Tile() {
 //   return (
-//     <motion.div className="bg-off-white border-10 border shadowed"
+//     <motion.div className="bg-off-white border-10 border"
 //       style={pageStyle}
 //       initial="initial"
 //       animate="in"
@@ -175,7 +174,7 @@ function Reviews() {
 
 function Detailing() {
   return (
-    <motion.div className="bg-blue border-10 border shadowed"
+    <motion.div className="border-10 border main-back"
       style={pageStyle}
       initial="initial"
       animate="in"
@@ -191,7 +190,7 @@ function Detailing() {
 
 function ContactMe() {
   return (
-    <motion.div className="bg-blue border-10 border shadowed w-100"
+    <motion.div className="border-10 border w-100 main-back"
       style={pageStyle}
       initial="initial"
       animate="in"
