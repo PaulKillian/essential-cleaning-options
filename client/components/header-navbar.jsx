@@ -54,7 +54,7 @@ class Navbar extends React.Component {
           <i className="fa fa-bars fa-3x hamburger-color shadowed-text position-absolute pr-5 pt-3 top sticky pointer" onClick={() => this.handleToggleClick()}></i>
         </div>
         <div className={cssClass} onClick={this.hideMenu}>
-          <ul className="navbar-nav mt-2">
+          <ul className="navbar-nav mt-2 menu-text-size shadowed backdrop">
             <li className="nav-item ml-5 mb-2">
               <NavLink to="/" exact className="nav-link text-white text-left">Home</NavLink>
             </li>
@@ -69,6 +69,9 @@ class Navbar extends React.Component {
             </li>
             <li className="nav-item ml-5 mb-2">
               <NavLink to="/estimate" className="nav-link text-white text-left">Schedule Estimate</NavLink>
+            </li>
+            <li className="nav-item ml-4 mb-2">
+              <img src="images/1.png"></img>
             </li>
           </ul>
         </div>

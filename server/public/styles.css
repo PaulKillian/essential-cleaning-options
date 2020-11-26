@@ -214,6 +214,10 @@ h1.ml8 {
   border-width: 30px !important;
   background-color: #f8f8ff;
   box-shadow: inset 0px 0px 10px 0px rgba(146, 146, 146, 0.9);
+  background-attachment: fixed;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .inset {
@@ -290,7 +294,7 @@ h1.ml8 {
 }
 
 .shadowed-text {
-    filter: drop-shadow(0 0.20rem 0.20rem rgb(0, 0, 0));
+    filter: drop-shadow(0 0.10rem 0.10rem rgb(105, 105, 105));
 }
 
 .info-dimensions {
@@ -356,8 +360,8 @@ h1.ml8 {
   top: 0;
   left: 0;
   bottom: 0;
-  width: 95.3vw;
-  height: 100vh;
+  width: 96.1vw;
+  height: 96vh;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 2;
 }
@@ -436,7 +440,7 @@ h1.ml8 {
 
 .menu-bg {
   background-image: url("images/07.jpg");
-  max-height: 444px;
+  max-height: 691px;
 }
 
 .menu-bg2 {
@@ -525,7 +529,15 @@ h1.ml8 {
 }
 
 .shadowed {
-    filter: drop-shadow(0.20rem 0.30rem 0.30rem rgb(0, 0, 0));
+    filter: drop-shadow(0.10rem 0.10rem 0.10rem rgb(105, 105, 105));
+}
+
+.align {
+  text-align: justify;
+}
+
+.carousel-height {
+  min-height: 464px;
 }
 
 .contain {
@@ -714,7 +726,7 @@ ol, li {
   counter-reset: item;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
-  height: 200px;
+  height: 207px;
 }
 
 .carousel__slide {
@@ -814,4 +826,20 @@ ol, li {
 
 .carousel::after {
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
+}
+
+*{
+margin: 0;
+padding: 0;
+}
+
+.simple{
+border: 1px solid #4C3C1B;
+padding: 5px;
+width: 300px;
+background-color: #ffffff;
+}
+
+.menu-text-size {
+  font-size: 30px;
 }

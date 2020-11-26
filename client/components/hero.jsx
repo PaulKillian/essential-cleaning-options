@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Hero() {
+function Hero(props) {
   window.scrollTo(0, 0);
   return (
     <>

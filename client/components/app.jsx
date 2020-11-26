@@ -94,7 +94,7 @@ function Home() {
 
 function EstimateCalendar() {
   return (
-    <motion.div className="bg-off-white border-10 border w-100 main-back"
+    <motion.div className="bg-off-white border-10 border w-100 foot1"
       style={pageStyle}
       initial="initial"
       animate="in"
@@ -110,7 +110,7 @@ function EstimateCalendar() {
 
 function Reviews() {
   return (
-    <motion.div className="border-10 border main-back"
+    <motion.div className="border-10 border foot1"
       style={pageStyle}
       initial="initial"
       animate="in"
@@ -174,7 +174,7 @@ function Reviews() {
 
 function Detailing() {
   return (
-    <motion.div className="border-10 border main-back"
+    <motion.div className="div1 border-10 border foot1"
       style={pageStyle}
       initial="initial"
       animate="in"
@@ -190,7 +190,7 @@ function Detailing() {
 
 function ContactMe() {
   return (
-    <motion.div className="border-10 border w-100 main-back"
+    <motion.div className="border-10 border w-100 foot1"
       style={pageStyle}
       initial="initial"
       animate="in"
