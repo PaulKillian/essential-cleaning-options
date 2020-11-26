@@ -174,7 +174,7 @@ function Reviews() {
 
 function Detailing() {
   return (
-    <motion.div className="border-10 border foot1"
+    <motion.div className="div1 border-10 border foot1"
       style={pageStyle}
       initial="initial"
       animate="in"
