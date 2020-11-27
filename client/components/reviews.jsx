@@ -40,9 +40,17 @@ function Review() {
               </p>
               <div className="carousel__snapper"></div>
             </li>
+            <li id="carousel__slide5"
+              className="carousel__slide">
+              <p>We have known Ken Mendoza for about eight years of which we started using Ken&apos;s services about five years.  He has cleaned our carpets at least once a year since, he also has cleaned grout between the floor titles and he has detailed one of our cars. He is a one man operation who puts all his energy into his work and and is extremely detailed in his work. Every project he has done for us we have receive more than we asked for. We highly recommend him.
+                <br></br><br></br>Wayne &amp; Donna Nash -
+              Orange CA
+              </p>
+              <div className="carousel__snapper"></div>
+            </li>
           </ol>
           <aside className="carousel__navigation shadowed mb-5">
-            <ol className="carousel__navigation-list">
+            <ol className="carousel__navigation-list pointer">
               <li className="carousel__navigation-item">
                 <a href="#carousel__slide1"
                   className="carousel__navigation-button">Go to slide 1</a>
@@ -58,6 +66,10 @@ function Review() {
               <li className="carousel__navigation-item">
                 <a href="#carousel__slide4"
                   className="carousel__navigation-button">Go to slide 4</a>
+              </li>
+              <li className="carousel__navigation-item">
+                <a href="#carousel__slide5"
+                  className="carousel__navigation-button">Go to slide 5</a>
               </li>
             </ol>
           </aside>
