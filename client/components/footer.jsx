@@ -8,7 +8,7 @@ class Footer extends React.Component {
     return (
       <>
         <footer className="pt-3 m-4">
-          <div className="w-100 foot1 shadowed">
+          <div className=" foot1 shadowed">
             <div className="mt-4 pt-3 ml-3 mb-3 col-2">
               <img src="/images/ken.jpg"></img>
             </div>
