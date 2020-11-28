@@ -43,7 +43,7 @@ function Review() {
             <li id="carousel__slide5"
               className="carousel__slide">
               <p>We have known Ken Mendoza for about eight years of which we started using Ken&apos;s services about five years.  He has cleaned our carpets at least once a year since, he also has cleaned grout between the floor titles and he has detailed one of our cars. He is a one man operation who puts all his energy into his work and and is extremely detailed in his work. Every project he has done for us we have receive more than we asked for. We highly recommend him.
-                <br></br><br></br>Wayne &amp; Donna Nash -
+                <br></br><br></br>Wayne &amp; Donna Nash,
               Orange CA
               </p>
               <div className="carousel__snapper"></div>
