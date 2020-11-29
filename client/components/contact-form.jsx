@@ -78,7 +78,7 @@ class Contact extends React.Component {
         <div className="col-12 scale bottom">
           <div className="d-flex justify-content-center align-items-center flex-column">
             <p className="text-font mt-4 shadowed-text text-white">CONTACT US</p>
-            <img className="mt-3 shadowed phone-height" src="/images/contact4.jpg"></img>
+            <img className="mt-3 shadowed phone-height" src="/images/contact3.png"></img>
           </div>
         </div>
         <h1 className="ml16 d-none">Your Message Has Been Sent!</h1>

@@ -21,12 +21,12 @@ class Footer extends React.Component {
                 <img className="ml-4 icon-size" src="/images/mail.png"></img>
                 <div>essentialcleaningoptions@gmail.com</div>
               </div>
-              <div className="d-flex mt-5 pt-5 justify-content-end">
-                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/gDUOQQSSbl0"
-                  frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+            </div>
+            <div className="d-flex mt-5 pt-5 justify-content-end">
+              <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/gDUOQQSSbl0"
+                frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
                 picture-in-picture" allowFullScreen>
-                </iframe>
-              </div>
+              </iframe>
             </div>
           </div>
         </footer>
