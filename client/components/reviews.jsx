@@ -6,7 +6,7 @@ function Review() {
       <div className="col-12 scale bottom">
         <div className="d-flex justify-content-center align-items-center flex-column">
           <p className="text-font mt-4 shadowed-text text-white">Testimonials</p>
-          <img className="w-25 h-50 mt-3 shadowed" src="/images/reviews.png"></img>
+          <img className="w-25 h-50 mt-3 shadowed" src="/images/reviews.png" alt="image of stars"></img>
         </div>
       </div>
       <div className="row flex justify-content-center carousel-height text-white ">
