@@ -2,6 +2,8 @@ import React from 'react';
 import 'bootstrap';
 import { NavLink } from 'react-router-dom';
 import AOS from 'aos';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 AOS.init();
 
@@ -31,6 +33,8 @@ class Navbar extends React.Component {
 
   hideMenu() {
     this.setState(function () {
+      const side = document.querySelector('.block');
+      side.classList.add('menu-bg');
       return { isShown: false };
     });
   }
@@ -40,7 +44,7 @@ class Navbar extends React.Component {
     let cssClass = 'side-menu menu-bg text-white shadowed';
     if (!this.state.isShown) {
       modalStyles += ' hide';
-      cssClass = 'side-menu pt-4 menu-bg';
+      cssClass = 'side-menu pt-4 ';
     } else {
       modalStyles += ' block';
       cssClass += ' show pt-4';
@@ -51,7 +55,7 @@ class Navbar extends React.Component {
         <div className={modalStyles} onClick={this.hideMenu}></div>
         <div className="d-flex justify-content-end sticky top">
           <h4 className="position-absolute text-white shadowed-text menu">MENU</h4>
-          <i className="fa fa-bars fa-3x hamburger-color shadowed-text position-absolute pr-5 pt-3 top sticky pointer" onClick={() => this.handleToggleClick()}></i>
+          <FontAwesomeIcon icon={faBars} size="3x" className="hamburger-color mr-5 mt-3 shadowed-text position-absolute top sticky pointer" onClick={() => this.handleToggleClick()}/>
         </div>
         <div className={cssClass} onClick={this.hideMenu}>
           <ul className="navbar-nav mt-2 menu-text-size shadowed backdrop">
@@ -71,7 +75,7 @@ class Navbar extends React.Component {
               <NavLink to="/estimate" className="nav-link text-white text-left">Schedule Estimate</NavLink>
             </li>
             <li className="nav-item ml-4 mb-2">
-              <img src="images/1.png"></img>
+              <img src="images/1.png" alt="image of logo"></img>
             </li>
           </ul>
         </div>

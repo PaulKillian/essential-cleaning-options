@@ -78,7 +78,7 @@ class Estimate extends React.Component {
         <div className="col-12 scale bottom foot1">
           <div className="d-flex justify-content-center align-items-center flex-column">
             <p className=" text-font mt-4 shadowed-text text-white">SCHEDULE ESTIMATE</p>
-            <img className="w-25 h-50 shadowed mt-3" src="/images/calendar3.jpg"></img>
+            <img className="w-25 h-50 shadowed mt-3" src="/images/calendar3.webp" alt="image of calendar"></img>
           </div>
         </div>
         <h1 className="ml16 d-none">Your Message Has Been Sent!</h1>

@@ -8,10 +8,26 @@ const staticMiddleware = require('./static-middleware');
 const sessionMiddleware = require('./session-middleware');
 
 const app = express();
+const compression = require('compression');
 
+app.use(compression());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use(express.static('src'));
+app.use(
+  express.static('src', 'public', {
+    etag: true,
+    lastModified: true,
+    setHeaders: (res, path) => {
+      const hashRegExp = new RegExp('\\.[0-9a-f]{8}\\.');
+
+      if (path.endsWith('.html')) {
+        res.setHeader('Cache-Control', 'no-cache');
+      } else if (hashRegExp.test(path)) {
+        res.setHeader('Cache-Control', 'max-age=31536000');
+      }
+    }
+  })
+);
 app.use(staticMiddleware);
 app.use(sessionMiddleware);
 app.use(express.json());

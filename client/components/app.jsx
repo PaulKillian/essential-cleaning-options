@@ -1,15 +1,17 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Switch, Route, useLocation } from 'react-router-dom';
 
-import Navbar from './header-navbar';
-import Hero from './hero';
-import Cards from './cards';
-import Review from './reviews';
-import Footer from './footer';
-import Estimate from './estimate';
-import Auto from './auto';
-import Contact from './contact-form';
+const Navbar = lazy(() => import('./header-navbar'));
+const Hero = lazy(() => import('./hero'));
+const Cards = lazy(() => import('./cards'));
+const Review = lazy(() => import('./reviews'));
+const Footer = lazy(() => import('./footer'));
+const Estimate = lazy(() => import('./estimate'));
+const Auto = lazy(() => import('./auto'));
+const Contact = lazy(() => import('./contact-form'));
+
+const renderLoader = () => <p>...Loading</p>;
 
 function App() {
   const location = useLocation();
@@ -18,7 +20,7 @@ function App() {
       <AnimatePresence>
         <Switch location={location} key={location.pathname}>
           <Route path="/estimate" component={EstimateCalendar} />
-          <Route path="/testimonials" component={Reviews} />
+          <Route path="/testimonials" component={Testimonials} />
           <Route path="/auto-detailing" component={Detailing} />
           <Route path="/contact" component={ContactMe} />
           <Route path="/" component={Home} />
@@ -68,29 +70,15 @@ function Home() {
       variants={pageVariants}
       transition={pageTransition}
     >
-      <Navbar />
-      <Hero />
-      <Cards />
-      <Footer />
+      <Suspense fallback={renderLoader()}>
+        <Navbar />
+        <Hero />
+        <Cards />
+        <Footer />
+      </Suspense>
     </motion.div>
   );
 }
-
-// function CarpetCleaning() {
-//   return (
-//     <motion.div className="bg-off-white border-10 border"
-//       style={pageStyle}
-//       initial="initial"
-//       animate="in"
-//       exit="out"
-//       variants={pageVariants}
-//       transition={pageTransition}
-//     >
-//       <Navbar />
-//       <Carpet />
-//     </motion.div>
-//   );
-// }
 
 function EstimateCalendar() {
   return (
@@ -102,13 +90,15 @@ function EstimateCalendar() {
       variants={pageVariants}
       transition={pageTransition}
     >
-      <Navbar />
-      <Estimate />
+      <Suspense fallback={renderLoader()}>
+        <Navbar />
+        <Estimate />
+      </Suspense>
     </motion.div>
   );
 }
 
-function Reviews() {
+function Testimonials() {
   return (
     <motion.div className="border-10 border foot1"
       style={pageStyle}
@@ -118,59 +108,13 @@ function Reviews() {
       variants={pageVariants}
       transition={pageTransition}
     >
-      <Navbar />
-      <Review />
+      <Suspense fallback={renderLoader()}>
+        <Navbar />
+        <Review />
+      </Suspense>
     </motion.div>
   );
 }
-
-// function Area() {
-//   return (
-//     <motion.div className="bg-off-white border-10 border"
-//       style={pageStyle}
-//       initial="initial"
-//       animate="in"
-//       exit="out"
-//       variants={pageVariants}
-//       transition={pageTransition}
-//     >
-//       <Navbar />
-//       <AreaRug />
-//     </motion.div>
-//   );
-// }
-
-// function Upholstrey() {
-//   return (
-//     <motion.div className="bg-off-white border-10 border"
-//       style={pageStyle}
-//       initial="initial"
-//       animate="in"
-//       exit="out"
-//       variants={pageVariants}
-//       transition={pageTransition}
-//     >
-//       <Navbar />
-//       <Furniture />
-//     </motion.div>
-//   );
-// }
-
-// function Tile() {
-//   return (
-//     <motion.div className="bg-off-white border-10 border"
-//       style={pageStyle}
-//       initial="initial"
-//       animate="in"
-//       exit="out"
-//       variants={pageVariants}
-//       transition={pageTransition}
-//     >
-//       <Navbar />
-//       <Grout />
-//     </motion.div>
-//   );
-// }
 
 function Detailing() {
   return (
@@ -182,8 +126,10 @@ function Detailing() {
       variants={pageVariants}
       transition={pageTransition}
     >
-      <Navbar />
-      <Auto />
+      <Suspense fallback={renderLoader()}>
+        <Navbar />
+        <Auto />
+      </Suspense>
     </motion.div>
   );
 }
@@ -198,8 +144,10 @@ function ContactMe() {
       variants={pageVariants}
       transition={pageTransition}
     >
-      <Navbar />
-      <Contact />
+      <Suspense fallback={renderLoader()}>
+        <Navbar />
+        <Contact />
+      </Suspense>
     </motion.div>
   );
 }
