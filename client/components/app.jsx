@@ -10,6 +10,8 @@ const Footer = lazy(() => import('./footer'));
 const Estimate = lazy(() => import('./estimate'));
 const Auto = lazy(() => import('./auto'));
 const Contact = lazy(() => import('./contact-form'));
+const Carpet = lazy(() => import('./carpet-gallery'));
+const Upholstrey = lazy(() => import('./upholstrey-gallery'));
 
 const renderLoader = () => <p>...Loading</p>;
 
@@ -23,6 +25,8 @@ function App() {
           <Route path="/testimonials" component={Testimonials} />
           <Route path="/auto-detailing" component={Detailing} />
           <Route path="/contact" component={ContactMe} />
+          <Route path="/carpet-gallery" component={CarpetGallery} />
+          <Route path="/upholstrey-gallery" component={UpholstreyGallery} />
           <Route path="/" component={Home} />
         </Switch>
       </AnimatePresence>
@@ -147,6 +151,42 @@ function ContactMe() {
       <Suspense fallback={renderLoader()}>
         <Navbar />
         <Contact />
+      </Suspense>
+    </motion.div>
+  );
+}
+
+function CarpetGallery() {
+  return (
+    <motion.div className="border-10 border w-100 foot1"
+      style={pageStyle}
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={pageVariants}
+      transition={pageTransition}
+    >
+      <Suspense fallback={renderLoader()}>
+        <Navbar />
+        <Carpet />
+      </Suspense>
+    </motion.div>
+  );
+}
+
+function UpholstreyGallery() {
+  return (
+    <motion.div className="border-10 border w-100 foot1"
+      style={pageStyle}
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={pageVariants}
+      transition={pageTransition}
+    >
+      <Suspense fallback={renderLoader()}>
+        <Navbar />
+        <Upholstrey />
       </Suspense>
     </motion.div>
   );
