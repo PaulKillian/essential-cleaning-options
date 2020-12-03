@@ -9,9 +9,9 @@ const Review = lazy(() => import('./reviews'));
 const Footer = lazy(() => import('./footer'));
 const Estimate = lazy(() => import('./estimate'));
 const Auto = lazy(() => import('./auto'));
-const Contact = lazy(() => import('./contact-form'));
+// const Contact = lazy(() => import('./contact-form'));
 const Carpet = lazy(() => import('./carpet-gallery'));
-const Upholstrey = lazy(() => import('./upholstrey-gallery'));
+const Upholstery = lazy(() => import('./upholstery-gallery'));
 
 const renderLoader = () => <p>...Loading</p>;
 
@@ -22,11 +22,10 @@ function App() {
       <AnimatePresence>
         <Switch location={location} key={location.pathname}>
           <Route path="/estimate" component={EstimateCalendar} />
-          <Route path="/testimonials" component={Testimonials} />
+          <Route path="/reviews" component={Reviews} />
           <Route path="/auto-detailing" component={Detailing} />
-          <Route path="/contact" component={ContactMe} />
           <Route path="/carpet-gallery" component={CarpetGallery} />
-          <Route path="/upholstrey-gallery" component={UpholstreyGallery} />
+          <Route path="/upholstery-gallery" component={UpholsteryGallery} />
           <Route path="/" component={Home} />
         </Switch>
       </AnimatePresence>
@@ -102,7 +101,7 @@ function EstimateCalendar() {
   );
 }
 
-function Testimonials() {
+function Reviews() {
   return (
     <motion.div className="border-10 border foot1"
       style={pageStyle}
@@ -138,24 +137,6 @@ function Detailing() {
   );
 }
 
-function ContactMe() {
-  return (
-    <motion.div className="border-10 border w-100 foot1"
-      style={pageStyle}
-      initial="initial"
-      animate="in"
-      exit="out"
-      variants={pageVariants}
-      transition={pageTransition}
-    >
-      <Suspense fallback={renderLoader()}>
-        <Navbar />
-        <Contact />
-      </Suspense>
-    </motion.div>
-  );
-}
-
 function CarpetGallery() {
   return (
     <motion.div className="border-10 border w-100 foot1"
@@ -174,7 +155,7 @@ function CarpetGallery() {
   );
 }
 
-function UpholstreyGallery() {
+function UpholsteryGallery() {
   return (
     <motion.div className="border-10 border w-100 foot1"
       style={pageStyle}
