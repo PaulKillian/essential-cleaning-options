@@ -14,14 +14,14 @@ app.use(compression());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(
-  express.static('src', 'public', {
+  express.static('public', {
     etag: true,
     lastModified: true,
     setHeaders: (res, path) => {
       const hashRegExp = new RegExp('\\.[0-9a-f]{8}\\.');
 
-      if (path.endsWith('.html')) {
-        res.setHeader('Cache-Control', 'no-cache');
+      if (path.endsWith('.js')) {
+        res.setHeader('Cache-Control', 'max-age=31536000');
       } else if (hashRegExp.test(path)) {
         res.setHeader('Cache-Control', 'max-age=31536000');
       }
@@ -41,26 +41,33 @@ app.get('/api/health-check', (req, res, next) => {
 app.post('/api/estimate', (req, res) => {
   const gmail = process.env.GMAIL_PASS.toString();
   const transport = nodemailer.createTransport({
-    host: 'smtp.mail.gmail.com',
-    port: 587,
-    service: 'gmail',
-    secure: false,
-    auth: {
-      user: 'essentialcleaningoptions@gmail.com',
-      pass: gmail
-    },
-    debug: false,
-    logger: true
+		host: 'smtp.mail.gmail.com',
+		port: 587,
+		service: 'gmail',
+		secure: false,
+		auth: {
+			user: 'essentialcleaningoptions@gmail.com',
+			pass: gmail
+		},
+		debug: false,
+		logger: true
   });
   const mailAppearance = {
-    from: `${req.body.email}`,
-    to: 'essentialcleaningoptions@gmail.com',
-    subject: 'New estimate message',
-    text: `
+		from: `${req.body.email}`,
+		to: 'essentialcleaningoptions@gmail.com',
+		subject: 'New estimate message',
+		text: `
       Name: ${req.body.name}
       Email: ${req.body.email}
       Subject: ${req.body.subject}
-      Message: ${req.body.message}`
+      Rooms: ${req.body.rooms}
+      Stairs: ${req.body.stairs}
+      Stains: ${req.body.stains}
+      Estimate: ${req.body.estimate}
+      Time: ${req.body.time}
+      Date: ${req.body.date}
+      Best Time: ${req.body.bestTime}
+      Best Date: ${req.body.bestDate}`
   };
   transport.sendMail(mailAppearance, (error, response) => {
     if (error) {
@@ -69,6 +76,37 @@ app.post('/api/estimate', (req, res) => {
       res.json({ success: 'success' });
     }
   });
+});
+
+app.post('/api/direct', (req, res) => {
+	const gmail = process.env.GMAIL_PASS.toString();
+	const transport = nodemailer.createTransport({
+		host: 'smtp.mail.gmail.com',
+		port: 587,
+		service: 'gmail',
+		secure: false,
+		auth: {
+			user: 'essentialcleaningoptions@gmail.com',
+			pass: gmail
+		},
+		debug: false,
+		logger: true
+	});
+	const mailAppearance = {
+		from: `${req.body.email}`,
+		to: 'essentialcleaningoptions@gmail.com',
+		subject: 'Direct Message',
+		text: `
+      Name: ${req.body.name},
+      Phone #: ${req.body.phone}`
+	};
+	transport.sendMail(mailAppearance, (error, response) => {
+		if (error) {
+			res.json({ error: 'error' });
+		} else {
+			res.json({ success: 'success' });
+		}
+	});
 });
 
 app.use('/api', (req, res, next) => {

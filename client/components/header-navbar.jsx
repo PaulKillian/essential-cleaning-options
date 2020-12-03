@@ -58,7 +58,7 @@ class Navbar extends React.Component {
           <FontAwesomeIcon icon={faBars} size="3x" className="hamburger-color mr-5 mt-3 shadowed-text position-absolute top sticky pointer" onClick={() => this.handleToggleClick()}/>
         </div>
         <div className={cssClass} onClick={this.hideMenu}>
-          <ul className="navbar-nav mt-2 menu-text-size shadowed backdrop">
+          <ul className="navbar-nav mt-2 menu-text-size shadowed">
             <li className="nav-item ml-5 mb-2">
               <NavLink to="/" exact className="nav-link text-white text-left">Home</NavLink>
             </li>
@@ -66,10 +66,7 @@ class Navbar extends React.Component {
               <NavLink to="/auto-detailing" className="nav-link text-white text-left">Auto Detailng</NavLink>
             </li>
             <li className="nav-item ml-5 mb-2">
-              <NavLink to="/testimonials" className="nav-link text-white text-left">Testimonials</NavLink>
-            </li>
-            <li className="nav-item ml-5 mb-2">
-              <NavLink to="/contact" className="nav-link text-white text-left">Contact Us</NavLink>
+              <NavLink to="/reviews" className="nav-link text-white text-left">Reviews</NavLink>
             </li>
             <li className="nav-item ml-5 mb-2">
               <NavLink to="/estimate" className="nav-link text-white text-left">Schedule Estimate</NavLink>
