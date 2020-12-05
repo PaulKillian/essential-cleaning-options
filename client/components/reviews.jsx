@@ -55,6 +55,13 @@ function Review() {
               </p>
               <div className="carousel__snapper"></div>
             </li>
+            <li id="carousel__slide7"
+              className="carousel__slide">
+              <p>Ken Mendoza has worked on my car a few times, and I continue to go back to him because his work is top shelf. He is professional, detailed, and his work is amazing, making my 2007 exterior brilliant and like-new with great attention to detail. Next time, I am definitely going to have him do the full detail, because I know I&apos;ll be as pleased with the interior. I highly recommend Ken to anyone who wants their car restored to a striking condition. This guy knows his stuff!
+                <br></br><br></br>Jeff Scattareggia
+              </p>
+              <div className="carousel__snapper"></div>
+            </li>
           </ol>
           <aside className="carousel__navigation shadowed mb-5">
             <ol className="carousel__navigation-list pointer">
@@ -81,6 +88,10 @@ function Review() {
               <li className="carousel__navigation-item">
                 <a href="#carousel__slide6"
                   className="carousel__navigation-button">Go to slide 6</a>
+              </li>
+              <li className="carousel__navigation-item">
+                <a href="#carousel__slide7"
+                  className="carousel__navigation-button">Go to slide 7</a>
               </li>
             </ol>
           </aside>
