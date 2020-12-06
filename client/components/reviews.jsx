@@ -58,13 +58,10 @@ function Review() {
             <li id="carousel__slide7"
               className="carousel__slide">
               <p>Ken has been  washing and detailing my car for a number of months now.  His work has been fabulous and I have received comments on how good my car looks.  I
-
               have him come to my home once a month and he either washes or details my car.  I depend on him to tell me the best way to keep my car looking good.  He is
-
               someone I trust to take care of my car.  I would not take my car anywhere else now.  It is so convenient and it costs me less to have him come to my house
-
               than it did when I took my car to a car spa.  I highly recommend Ken.
-                <br></br><br></br>Jeff Scattareggia
+                <br></br><br></br>Rich Mraule
               </p>
               <div className="carousel__snapper"></div>
             </li>
