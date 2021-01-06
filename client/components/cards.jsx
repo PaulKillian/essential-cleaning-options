@@ -5,9 +5,9 @@ function Cards() {
   return (
     <>
       <div className="d-flex justify-content-center display-4 mt-5">
-        <div data-aos="fade-up" data-aos-duration="2000" className="mr-5 text-white simple shadowed col-5 carpet-s containTL center-card-text">VLM Carpet
+        <div data-aos="fade-up" data-aos-duration="2000" className="mr-5 text-white simple shadowed col-lg-5 col-md-12 col-sm-12 carpet-s containTL center-card-text">VLM Carpet
           <div className="overlayL">
-              <div className="blur">
+            <div className="blur">
               <p className="lead p-5 text-justify">I provide low moisture carpet cleaning with the use of
                 a rotary and or Orbital machine and provide a plant
                 based low moisture encapsulating green cleaner for all
@@ -21,7 +21,7 @@ function Cards() {
             </div>
           </div>
         </div>
-        <div data-aos="fade-up" data-aos-duration="2000" className="text-white simple shadowed col-5 upholstrey-s containTR center-card-text">Furniture/Upholstery
+        <div data-aos="fade-up" data-aos-duration="2000" className="text-white simple shadowed col-lg-5 col-md-12 col-sm-12 upholstrey-s containTR center-card-text">Furniture/Upholstery
           <div className="overlayR">
             <div className="blur">
               <p className="lead p-5 text-justify">I provide low moisture carpet cleaning with the use of
@@ -33,24 +33,6 @@ function Cards() {
               either a soft brush or carpet fiber pad followed by a
               cotton or microfiber pad for dirt and soil removal from
               the carpet fibers.</p>
-              <NavLink to="/upholstrey-gallery" className="nav-link text-white text-center">Photos</NavLink>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="d-flex justify-content-center display-4 mt-5">
-        <div data-aos="fade-bottom" data-aos-duration="2000" className="mr-5 text-white simple shadowed col-5 area-s containBL center-card-text">Area Rug
-          <div className="overlayL">
-            <div className="blur">
-              <p className="lead p-5 text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-              <NavLink to="/upholstrey-gallery" className="nav-link text-white text-center">Photos</NavLink>
-            </div>
-          </div>
-        </div>
-        <div data-aos="fade-bottom" data-aos-duration="2000" className="text-white simple col-5 shadowed grout-s containBR center-card-text">Tile/Grout
-          <div className="overlayR">
-              <div className="blur">
-              <p className="lead p-5 text-justify" >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
               <NavLink to="/upholstrey-gallery" className="nav-link text-white text-center">Photos</NavLink>
             </div>
           </div>
