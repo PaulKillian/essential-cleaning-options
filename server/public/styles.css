@@ -4,6 +4,11 @@ body {
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
+
+html {
+  font-size: min(max(1rem, 4vw), 12px);
+}
+
 body {
     font-family: "Merriweather", serif;
 }
@@ -50,8 +55,8 @@ body {
 }
 .paralax {
     background: linear-gradient(rgba(2, 2, 2, 0.1), rgba(2, 2, 2, 0.1)), url("../images/main.webp");
-    min-height: 662px;
-    max-height: 662px;
+    min-height: 60vh;
+    max-height: 97vh;
     background-attachment: fixed;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -77,9 +82,10 @@ h1 {
 .text-font {
     font-family: "Merriweather", serif;
     z-index: 1;
-    font-size: 50px;
     top: 14rem;
+    font-size:4vw;
 }
+
 li,
 p {
     font-family: "Source Sans Pro", sans-serif;
@@ -286,6 +292,8 @@ h1.ml8 {
     transition: all 0.5s ease-in-out;
     right: 0;
     z-index: 4;
+    position: fixed;
+    font-size:4vw;
 }
 .show {
     width: 33%;
@@ -397,29 +405,29 @@ h1.ml8 {
 .carpet-s {
     border-radius: 10px;
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../images/carpet6.webp");
-    height: 500px;
+    height: 300px;
     background-size: cover;
 }
 .grout-s {
     border-radius: 10px;
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../images/grouta.webp");
-    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../images/appliance1.webp");
+    height: 300px;
     background-size: cover;
 }
 .upholstrey-s {
     border-radius: 10px;
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../images/coucha.webp");
-    height: 500px;
+    height: 300px;
     background-size: cover;
 }
 .area-s {
     border-radius: 10px;
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../images/fasta.webp");
-    height: 500px;
+    height: 300px;
     background-size: cover;
 }
 .shadowed {
-    filter: drop-shadow(0.1rem 0.1rem 0.1rem rgb(105, 105, 105));
+    filter: drop-shadow(0.2rem 0.2rem 0.2rem rgb(105, 105, 105));
 }
 .align {
     text-align: justify;
@@ -442,7 +450,7 @@ h1.ml8 {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #005021;
+    background-color: #6e72a3;
     overflow: hidden;
     width: 0;
     height: 100%;
@@ -450,43 +458,37 @@ h1.ml8 {
 }
 .overlayR {
     position: absolute;
-    bottom: 0;
-    left: 100%;
-    right: 0;
-    background-color: #005021;
     overflow: hidden;
     width: 0;
     height: 100%;
-    transition: 0.2s ease;
+    transition: 0.1s ease;
 }
-.containTL:hover .overlayL {
+.containTL:hover .overlayR {
     border-radius: 10px;
     width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/carpet6.webp");
-    height: 500px;
+    height: 300px;
     background-size: cover;
 }
-.containBL:hover .overlayL {
+.containBL:hover .overlayR {
     border-radius: 10px;
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/fasta.webp");
-    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/appliance1.webp");
+    height: 300px;
     background-size: cover;
 }
 .containTR:hover .overlayR {
     border-radius: 10px;
     width: 100%;
-    left: 0;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/coucha.webp");
-    height: 500px;
+    height: 300px;
     background-size: cover;
 }
 .containBR:hover .overlayR {
     border-radius: 10px;
     width: 100%;
-    left: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/grouta.webp");
-    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/appliance1.webp");
+    height: 300px;
     background-size: cover;
 }
 .text {
@@ -508,6 +510,7 @@ h1.ml8 {
 .menu {
     right: 7rem;
     top: 1.7rem;
+    font-size:2vw;
 }
 .foot1 {
     background-image: url("../images/foota.webp");
@@ -697,9 +700,9 @@ li {
 
 .blur {
   position: absolute;
-  height: 500px;
+  height: 300px;
   background: rgba(165, 165, 165, 0.4);
-	backdrop-filter: blur(5px);
+	backdrop-filter: blur(1px);
 	border-radius: 10px;
   border: 1px solid rgba(0, 81, 255, 0.2);
 }
@@ -710,4 +713,10 @@ li {
 
 .star-red {
 	color: red;
+}
+
+@media only screen and (max-width: 600px) {
+  #cards {
+    margin: 15px;
+  }
 }
