@@ -32,6 +32,17 @@
   <link rel="preload" href="main.js" as="script">
   <link rel="preload" href="https://apis.google.com/js/api.js" as="script">
   <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js" as="script">
+  <link
+  rel="stylesheet"
+  type="text/css"
+  charset="UTF-8"
+  href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+/>
 </head>
 <body>
   <main id="root"></main>
@@ -39,6 +50,11 @@
   <script src="/service-worker.js" async></script>
   <script src="https://apis.google.com/js/api.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js" defer></script>
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script><script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script>
     const terminationEvent = 'onpagehide' in self ? 'pagehide' : 'unload';
 
@@ -47,5 +63,6 @@
       // is `true`, and the state is frozen rather than terminated.
     }, {capture: true});
   </script>
+  <script>$('.single-item').slick();</script>
 </body>
 </html>

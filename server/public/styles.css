@@ -5,12 +5,11 @@ body {
     scroll-behavior: smooth;
 }
 
-html {
-  font-size: min(max(1rem, 4vw), 12px);
-}
-
 body {
     font-family: "Merriweather", serif;
+}
+h3 {
+    font-size: 3vw;
 }
 #logo {
     height: 50px;
@@ -40,6 +39,10 @@ body {
     height: 97vh;
     background-color: #f7f6f2;
 }
+img {
+    max-height: 600px;
+    max-width: 100%;
+}
 #main-items {
     height: 350px;
     width: 100px;
@@ -55,8 +58,8 @@ body {
 }
 .paralax {
     background: linear-gradient(rgba(2, 2, 2, 0.1), rgba(2, 2, 2, 0.1)), url("../images/main.webp");
-    min-height: 60vh;
-    max-height: 97vh;
+    min-height: 70vh;
+    max-height: 100vh;
     background-attachment: fixed;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -247,6 +250,7 @@ h1.ml8 {
 }
 .hamburger-color {
     color: #01ab3b;
+    font-size: 4vw;
 }
 .hidden {
     display: none;
@@ -359,7 +363,8 @@ h1.ml8 {
     z-index: -1;
 }
 .phone-height {
-    height: 250px;
+    width: 45%;
+    height: auto;
 }
 .animate {
     animation: slide-left 1s;
@@ -508,9 +513,9 @@ h1.ml8 {
     align-items: center;
 }
 .menu {
-    right: 7rem;
+    right: 4.5rem;
     top: 1.7rem;
-    font-size:2vw;
+    font-size: 2vw;
 }
 .foot1 {
     background-image: url("../images/foota.webp");
@@ -519,174 +524,6 @@ h1.ml8 {
     background-position: bottom;
     background-repeat: no-repeat;
 }
-@keyframes tonext {
-    75% {
-        left: 0;
-    }
-    95% {
-        left: 100%;
-    }
-    98% {
-        left: 100%;
-    }
-    99% {
-        left: 0;
-    }
-}
-@keyframes tostart {
-    75% {
-        left: 0;
-    }
-    95% {
-        left: -300%;
-    }
-    98% {
-        left: -300%;
-    }
-    99% {
-        left: 0;
-    }
-}
-@keyframes snap {
-    96% {
-        scroll-snap-align: center;
-    }
-    97% {
-        scroll-snap-align: none;
-    }
-    99% {
-        scroll-snap-align: none;
-    }
-    100% {
-        scroll-snap-align: center;
-    }
-}
-* {
-    box-sizing: border-box;
-    scrollbar-color: transparent transparent;
-    scrollbar-width: 0px;
-}
-*::-webkit-scrollbar {
-    width: 0;
-}
-*::-webkit-scrollbar-track {
-    background: transparent;
-}
-*::-webkit-scrollbar-thumb {
-    background: transparent;
-    border: none;
-}
-* {
-    -ms-overflow-style: none;
-}
-ol,
-li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-.carousel {
-    position: relative;
-    padding-top: 17%;
-    filter: drop-shadow(0 0 10px #0003);
-    perspective: 100px;
-}
-.carousel__viewport {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    overflow-x: scroll;
-    counter-reset: item;
-    scroll-behavior: smooth;
-    scroll-snap-type: x mandatory;
-    height: 207px;
-}
-.carousel__slide {
-    position: relative;
-    flex: 0 0 100%;
-    width: 100%;
-    counter-increment: item;
-}
-.carousel__snapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    scroll-snap-align: center;
-}
-@media (hover: hover) {
-    .carousel__snapper {
-        animation-name: tonext, snap;
-        animation-timing-function: ease;
-        animation-duration: 4s;
-        animation-iteration-count: infinite;
-    }
-    .carousel__slide:last-child .carousel__snapper {
-        animation-name: tostart, snap;
-    }
-}
-@media (prefers-reduced-motion: reduce) {
-    .carousel__snapper {
-        animation-name: none;
-    }
-}
-.carousel:hover .carousel__snapper,
-.carousel:focus-within .carousel__snapper {
-    animation-name: none;
-}
-.carousel__navigation {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    text-align: center;
-}
-.carousel__navigation-list,
-.carousel__navigation-item {
-    display: inline-block;
-}
-.carousel__navigation-button {
-    display: inline-block;
-    width: 1.5rem;
-    height: 1.5rem;
-    background-color: #ffffff;
-    background-clip: content-box;
-    border: 0.25rem solid transparent;
-    border-radius: 50%;
-    font-size: 0;
-    transition: transform 0.1s;
-}
-.carousel::before,
-.carousel::after,
-.carousel__prev,
-.carousel__next {
-    position: absolute;
-    top: 0;
-    margin-top: 37.5%;
-    width: 4rem;
-    height: 4rem;
-    transform: translateY(-50%);
-    border-radius: 50%;
-    font-size: 0;
-    outline: 0;
-}
-.carousel::before,
-.carousel__prev {
-    left: -1rem;
-}
-.carousel::after,
-.carousel__next {
-    right: -1rem;
-}
-
-/* * { */
-    /* margin: 0; */ /* padding: 0; */
-/* } */
-
 .simple {
     border: 1px solid #4c3c1b;
     padding: 5px;
@@ -694,9 +531,12 @@ li {
     background-color: #ffffff;
 }
 .menu-text-size {
-    font-size: 30px;
+    font-size: 2vw;
 }
 
+.slick-next, .slick-prev {
+    color: black;
+}
 
 .blur {
   position: absolute;
@@ -718,5 +558,25 @@ li {
 @media only screen and (max-width: 600px) {
   #cards {
     margin: 15px;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  .menu {
+    right: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .menu {
+    right: 2rem;
+    top: 1.3rem;
+    margin-right: 2px;
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .nav-item {
+    margin-left: 2rem;
   }
 }
