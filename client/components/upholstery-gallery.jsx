@@ -3,39 +3,38 @@ import Gallery from 'react-grid-gallery';
 
 function UpholsteryGallery() {
 
-  const IMAGES =
-		[{
-			src: '/images/up1.jpg',
-			thumbnail: '/images/carpetg2.webp',
-			thumbnailWidth: 320,
-			thumbnailHeight: 212,
-			tags: [{ value: 'Commercial', title: 'Commercial' }],
-			caption: 'Academic Chess Academy in Laguna Hills'
-		},
-		{
-			src: '/images/up2.jpg',
-			thumbnail: '/images/carpetg3.webp',
-			thumbnailWidth: 320,
-			thumbnailHeight: 212,
-			tags: [{ value: 'Commercial', title: 'Commercial' }],
-			caption: 'Academic Chess Academy in Laguna Hills'
-		},
-		{
-			src: '/images/up3.jpg',
-			thumbnail: '/images/carpetg1.webp',
-			thumbnailWidth: 320,
-			thumbnailHeight: 212,
-			tags: [{ value: 'Commercial', title: 'Commercial' }],
-			caption: 'Academic Chess Academy in Laguna Hills'
-		},
-		{
-			src: '/images/up4.jpg',
-			thumbnail: '/images/carpetg5.webp',
-			thumbnailWidth: 320,
-			thumbnailHeight: 212,
-			tags: [{ value: 'Residential', title: 'Residential' }],
-			caption: 'Stain Treatment - Before'
-		}];
+  const IMAGES = [{
+    src: '/images/up1.jpg',
+    thumbnail: '/images/carpetg2.webp',
+    thumbnailWidth: 320,
+    thumbnailHeight: 212,
+    tags: [{ value: 'Commercial', title: 'Commercial' }],
+    caption: 'Academic Chess Academy in Laguna Hills'
+  },
+  {
+    src: '/images/up2.jpg',
+    thumbnail: '/images/carpetg3.webp',
+    thumbnailWidth: 320,
+    thumbnailHeight: 212,
+    tags: [{ value: 'Commercial', title: 'Commercial' }],
+    caption: 'Academic Chess Academy in Laguna Hills'
+  },
+  {
+    src: '/images/up3.jpg',
+    thumbnail: '/images/carpetg1.webp',
+    thumbnailWidth: 320,
+    thumbnailHeight: 212,
+    tags: [{ value: 'Commercial', title: 'Commercial' }],
+    caption: 'Academic Chess Academy in Laguna Hills'
+  },
+  {
+    src: '/images/up4.jpg',
+    thumbnail: '/images/carpetg5.webp',
+    thumbnailWidth: 320,
+    thumbnailHeight: 212,
+    tags: [{ value: 'Residential', title: 'Residential' }],
+    caption: 'Stain Treatment - Before'
+  }];
 
   return (
     <>

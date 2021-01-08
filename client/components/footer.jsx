@@ -69,7 +69,7 @@ class Footer extends React.Component {
               </iframe>
             </div> */}
             <form onSubmit={this.SendMessage} action="/estimate" id="contact-form" method="POST" role="form" className="mt-5 text-white">
-              <div className="pb-3 pl-3">Don't Need An Estimate?</div>
+              <div className="pb-3 pl-3">Don&#39;t Need An Estimate?</div>
               <div className="form-group col-8">
                 <label className="mb-0">Name<span className="star-red">*</span></label>
                 <input

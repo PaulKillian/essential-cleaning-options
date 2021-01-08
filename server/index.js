@@ -1,3 +1,6 @@
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 require('dotenv/config');
 const express = require('express');
 const nodemailer = require('nodemailer');
@@ -6,8 +9,6 @@ const db = require('./database');
 const ClientError = require('./client-error');
 const staticMiddleware = require('./static-middleware');
 const sessionMiddleware = require('./session-middleware');
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 
 const app = express();
 const compression = require('compression');
@@ -43,22 +44,22 @@ app.get('/api/health-check', (req, res, next) => {
 app.post('/api/estimate', (req, res) => {
   const gmail = process.env.GMAIL_PASS.toString();
   const transport = nodemailer.createTransport({
-		host: 'smtp.mail.gmail.com',
-		port: 587,
-		service: 'gmail',
-		secure: false,
-		auth: {
-			user: 'essentialcleaningoptions@gmail.com',
-			pass: gmail
-		},
-		debug: false,
-		logger: true
+    host: 'smtp.mail.gmail.com',
+    port: 587,
+    service: 'gmail',
+    secure: false,
+    auth: {
+      user: 'essentialcleaningoptions@gmail.com',
+      pass: gmail
+    },
+    debug: false,
+    logger: true
   });
   const mailAppearance = {
-		from: `${req.body.email}`,
-		to: 'essentialcleaningoptions@gmail.com',
-		subject: 'New estimate message',
-		text: `
+    from: `${req.body.email}`,
+    to: 'essentialcleaningoptions@gmail.com',
+    subject: 'New estimate message',
+    text: `
       Name: ${req.body.name}
       Email: ${req.body.email}
       Subject: ${req.body.subject}
@@ -81,34 +82,34 @@ app.post('/api/estimate', (req, res) => {
 });
 
 app.post('/api/direct', (req, res) => {
-	const gmail = process.env.GMAIL_PASS.toString();
-	const transport = nodemailer.createTransport({
-		host: 'smtp.mail.gmail.com',
-		port: 587,
-		service: 'gmail',
-		secure: false,
-		auth: {
-			user: 'essentialcleaningoptions@gmail.com',
-			pass: gmail
-		},
-		debug: false,
-		logger: true
-	});
-	const mailAppearance = {
-		from: `${req.body.email}`,
-		to: 'essentialcleaningoptions@gmail.com',
-		subject: 'Direct Message',
-		text: `
+  const gmail = process.env.GMAIL_PASS.toString();
+  const transport = nodemailer.createTransport({
+    host: 'smtp.mail.gmail.com',
+    port: 587,
+    service: 'gmail',
+    secure: false,
+    auth: {
+      user: 'essentialcleaningoptions@gmail.com',
+      pass: gmail
+    },
+    debug: false,
+    logger: true
+  });
+  const mailAppearance = {
+    from: `${req.body.email}`,
+    to: 'essentialcleaningoptions@gmail.com',
+    subject: 'Direct Message',
+    text: `
       Name: ${req.body.name},
       Phone #: ${req.body.phone}`
-	};
-	transport.sendMail(mailAppearance, (error, response) => {
-		if (error) {
-			res.json({ error: 'error' });
-		} else {
-			res.json({ success: 'success' });
-		}
-	});
+  };
+  transport.sendMail(mailAppearance, (error, response) => {
+    if (error) {
+      res.json({ error: 'error' });
+    } else {
+      res.json({ success: 'success' });
+    }
+  });
 });
 
 app.use('/api', (req, res, next) => {

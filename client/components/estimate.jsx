@@ -66,9 +66,9 @@ class Estimate extends React.Component {
   }
 
   SentMessage() {
-    var form = document.getElementById('form');
+    const form = document.getElementById('form');
     form.classList.add('hidden');
-    var textWrapper = document.querySelector('.ml16');
+    const textWrapper = document.querySelector('.ml16');
     textWrapper.classList.remove('d-none');
     textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
     anime.timeline({ loop: true })
@@ -154,11 +154,11 @@ class Estimate extends React.Component {
                   <div className="form-group col-6">
                     <label className="mb-0">Stairs</label>
                     <input
-                        type="text"
-                        className="form-control shadowed"
-                        name="stairs"
-                        value={this.state.message}
-                        onChange={this.handleChangeInputs}
+                      type="text"
+                      className="form-control shadowed"
+                      name="stairs"
+                      value={this.state.message}
+                      onChange={this.handleChangeInputs}
                     />
                   </div>
                 </div>
@@ -182,7 +182,7 @@ class Estimate extends React.Component {
                       name="estimate"
                       value={this.state.message}
                       onChange={this.handleChangeInputs}
-                      />
+                    />
                   </div>
                 </div>
                 <div className="form-row">

@@ -166,7 +166,7 @@ function UpholsteryGallery() {
     >
       <Suspense fallback={renderLoader()}>
         <Navbar />
-        <Upholstrey />
+        <Upholstery />
       </Suspense>
     </motion.div>
   );
