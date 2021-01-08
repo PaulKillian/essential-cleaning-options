@@ -55,23 +55,23 @@ class Navbar extends React.Component {
         <div className={modalStyles} onClick={this.hideMenu}></div>
         <div className="d-flex justify-content-end sticky top">
           <h4 className="position-absolute text-white shadowed-text menu">MENU</h4>
-          <FontAwesomeIcon icon={faBars} size="3x" className="hamburger-color mr-5 mt-3 shadowed-text position-absolute top sticky pointer" onClick={() => this.handleToggleClick()}/>
+          <FontAwesomeIcon icon={faBars} size="3x" className="hamburger-color mr-3 mt-3 shadowed-text position-absolute top sticky pointer" onClick={() => this.handleToggleClick()}/>
         </div>
         <div className={cssClass} onClick={this.hideMenu}>
           <ul className="navbar-nav mt-2 menu-text-size shadowed">
-            <li className="nav-item ml-5 mb-2">
+            <li className="nav-item ml-3 mb-2">
               <NavLink to="/" exact className="nav-link text-white text-left">Home</NavLink>
             </li>
-            <li className="nav-item ml-5 mb-2">
+            <li className="nav-item ml-3 mb-2">
               <NavLink to="/auto-detailing" className="nav-link text-white text-left">Auto Detailng</NavLink>
             </li>
-            <li className="nav-item ml-5 mb-2">
+            <li className="nav-item ml-3 mb-2">
               <NavLink to="/reviews" className="nav-link text-white text-left">Reviews</NavLink>
             </li>
-            <li className="nav-item ml-5 mb-2">
+            <li className="nav-item ml-3 mb-2">
               <NavLink to="/estimate" className="nav-link text-white text-left">Schedule Estimate</NavLink>
             </li>
-            <li className="nav-item ml-4 mb-2">
+            <li className="nav-item ml-2 mb-2">
               <img src="images/1.png" alt="image of logo"></img>
             </li>
           </ul>
