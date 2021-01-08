@@ -26,6 +26,10 @@ function App() {
           <Route path="/auto-detailing" component={Detailing} />
           <Route path="/carpet-gallery" component={CarpetGallery} />
           <Route path="/upholstery-gallery" component={UpholsteryGallery} />
+          <Route path='/nanomaxx' component={() => {
+            window.location.href = 'www.nanomaxxgreenclean.com';
+            return null;
+          }}/>
           <Route path="/" component={Home} />
         </Switch>
       </AnimatePresence>
@@ -103,18 +107,18 @@ function EstimateCalendar() {
 
 function Reviews() {
   return (
-    // <motion.div className="border-10 border foot1"
-    //   style={pageStyle}
-    //   initial="initial"
-    //   animate="in"
-    //   exit="out"
-    //   variants={pageVariants}
-    //   transition={pageTransition}
-    // >
+    <motion.div className="border-10 border foot1"
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={pageVariants}
+      transition={pageTransition}
+    >
       <Suspense fallback={renderLoader()}>
         <Navbar />
         <Review />
       </Suspense>
+    </motion.div>
   );
 }
 
