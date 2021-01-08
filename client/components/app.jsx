@@ -103,19 +103,18 @@ function EstimateCalendar() {
 
 function Reviews() {
   return (
-    <motion.div className="border-10 border foot1"
-      style={pageStyle}
-      initial="initial"
-      animate="in"
-      exit="out"
-      variants={pageVariants}
-      transition={pageTransition}
-    >
+    // <motion.div className="border-10 border foot1"
+    //   style={pageStyle}
+    //   initial="initial"
+    //   animate="in"
+    //   exit="out"
+    //   variants={pageVariants}
+    //   transition={pageTransition}
+    // >
       <Suspense fallback={renderLoader()}>
         <Navbar />
         <Review />
       </Suspense>
-    </motion.div>
   );
 }
 
