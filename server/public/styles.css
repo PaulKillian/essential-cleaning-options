@@ -8,9 +8,10 @@ body {
 body {
     font-family: "Merriweather", serif;
 }
-h3 {
-    font-size: 3vw;
+h3{
+    font-size: 2vw;
 }
+
 #logo {
     height: 50px;
     width: 100px;
@@ -57,12 +58,9 @@ img {
     color: #00ab3a;
 }
 .paralax {
-    background: linear-gradient(rgba(2, 2, 2, 0.1), rgba(2, 2, 2, 0.1)), url("../images/main.webp");
     min-height: 70vh;
     max-height: 100vh;
-    background-attachment: fixed;
-    background-position: bottom;
-    background-repeat: no-repeat;
+    background: linear-gradient(rgba(2, 2, 2, 0.1), rgba(2, 2, 2, 0.1)) url("../images/main.webp") no-repeat fixed bottom;
     background-size: cover;
     border-bottom: solid 5px #00ab3a;
     box-shadow: 0 16px 14px -16px black;
@@ -410,25 +408,25 @@ h1.ml8 {
 .carpet-s {
     border-radius: 10px;
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../images/carpet6.webp");
-    height: 300px;
+    height: 400px;
     background-size: cover;
 }
 .grout-s {
     border-radius: 10px;
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../images/appliance1.webp");
-    height: 300px;
+    height: 400px;
     background-size: cover;
 }
 .upholstrey-s {
     border-radius: 10px;
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../images/coucha.webp");
-    height: 300px;
+    height: 400px;
     background-size: cover;
 }
 .area-s {
     border-radius: 10px;
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../images/fasta.webp");
-    height: 300px;
+    height: 400px;
     background-size: cover;
 }
 .shadowed {
@@ -472,28 +470,28 @@ h1.ml8 {
     border-radius: 10px;
     width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/carpet6.webp");
-    height: 300px;
+    height: 400px;
     background-size: cover;
 }
 .containBL:hover .overlayR {
     border-radius: 10px;
     width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/appliance1.webp");
-    height: 300px;
+    height: 400px;
     background-size: cover;
 }
 .containTR:hover .overlayR {
     border-radius: 10px;
     width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/coucha.webp");
-    height: 300px;
+    height: 400px;
     background-size: cover;
 }
 .containBR:hover .overlayR {
     border-radius: 10px;
     width: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/appliance1.webp");
-    height: 300px;
+    height: 400px;
     background-size: cover;
 }
 .text {
@@ -523,11 +521,12 @@ h1.ml8 {
     background-attachment: fixed;
     background-position: bottom;
     background-repeat: no-repeat;
+    height: 100vh;
 }
 .simple {
     border: 1px solid #4c3c1b;
     padding: 5px;
-    width: 300px;
+    width: 400px;
     background-color: #ffffff;
 }
 .menu-text-size {
@@ -540,7 +539,7 @@ h1.ml8 {
 
 .blur {
   position: absolute;
-  height: 300px;
+  height: 400px;
   background: rgba(165, 165, 165, 0.4);
 	backdrop-filter: blur(1px);
 	border-radius: 10px;
@@ -579,4 +578,10 @@ h1.ml8 {
   .nav-item {
     margin-left: 2rem;
   }
+}
+
+@media only screen and (max-width: 376px) {
+    h3 {
+       padding: 0;
+    }
 }
