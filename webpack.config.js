@@ -5,51 +5,55 @@ const clientPath = path.join(__dirname, 'client/');
 const publicPath = path.join(__dirname, 'server/public/');
 
 module.exports = {
-  resolve: {
-    extensions: ['.js', '.jsx']
-  },
-  entry: clientPath,
-  output: {
-    filename: 'main.js',
-    path: publicPath
-  },
-  module: {
-    rules: [
-      {
-        test: /\.jsx/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: [
-              [
-                'env',
-                {
-                  modules: false,
-                  useBuiltIns: true,
-                  targets: {
-                    browsers: ['> 1%', 'last 2 versions', 'Firefox ESR']
-                  }
-                }
-              ]
-            ],
-            plugins: ['@babel/plugin-transform-react-jsx']
-          }
-        }
-      }
-    ]
-  },
-  devtool: 'source-map',
-  devServer: {
-    contentBase: publicPath,
-    historyApiFallback: true,
-    host: '0.0.0.0',
-    port: process.env.DEV_SERVER_PORT,
-    proxy: {
-      '/api': `http://localhost:${process.env.PORT}`
-    },
-    stats: 'minimal',
-    watchContentBase: true
-  }
+	resolve: {
+		extensions: ['.js', '.jsx']
+	},
+	entry: clientPath,
+	output: {
+		filename: 'main.js',
+		path: publicPath
+	},
+	module: {
+		rules: [
+			{
+				test: /\.css$/,
+				use: ['style-loader', 'css-loader']
+			},
+			{
+				test: /\.jsx/,
+				use: {
+					loader: 'babel-loader',
+					options: {
+						presets: [
+							[
+								'env',
+								{
+									modules: false,
+									useBuiltIns: true,
+									targets: {
+										browsers: ['> 1%', 'last 2 versions', 'Firefox ESR']
+									}
+								}
+							]
+						],
+						plugins: ['@babel/plugin-transform-react-jsx']
+					}
+				}
+			}
+		]
+	},
+	devtool: 'source-map',
+	devServer: {
+		contentBase: publicPath,
+		historyApiFallback: true,
+		host: '0.0.0.0',
+		port: process.env.DEV_SERVER_PORT,
+		proxy: {
+			'/api': `http://localhost:${process.env.PORT}`
+		},
+		stats: 'minimal',
+		watchContentBase: true
+	}
 };
 
 module.exports = {

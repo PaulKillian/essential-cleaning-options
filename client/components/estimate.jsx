@@ -97,9 +97,9 @@ class Estimate extends React.Component {
           </div>
         </div>
         <h1 className="ml16 d-none">Your Message Has Been Sent!</h1>
-        <div id="form" className="col-12 mx-3 mt-4 d-flex flex-column">
+        <div id="form" className="col-lg-12 mt-4 d-flex flex-column">
           <div className="row mx-2 my-4 justify-content-center">
-            <div className="col-6">
+            <div className="col-lg-6 col-md-10 col-sm-12 mt-4">
               <form onSubmit={this.SendMessage} action="/estimate" id="contact-form" method="POST" role="form" className="mt-5 text-white">
                 <div className="form-row">
                   <div className="form-group col-6">
@@ -165,7 +165,7 @@ class Estimate extends React.Component {
 
                 <div className="form-row">
                   <div className="form-group col-6">
-                    <label className="mb-0">Stains</label>
+                    <label className="mb-0">How Many Stains</label>
                     <input
                       type="text"
                       className="form-control shadowed"
@@ -175,7 +175,7 @@ class Estimate extends React.Component {
                     />
                   </div>
                   <div className="form-group col-6">
-                    <label className="mb-0">Estimated Square Footage</label>
+                    <label className="mb-0">Estimated Sq. Footage</label>
                     <input
                       type="text"
                       className="form-control shadowed"
@@ -230,7 +230,7 @@ class Estimate extends React.Component {
                   </div>
                 </div>
                 <div className="d-flex justify-content-center">
-                  <button type="submit" className="btn shadow bg-white w-25">SEND MESSAGE</button>
+                  <button type="submit" className="btn shadow bg-white col-sm-3 col-md-4 col-lg-4">SEND MESSAGE</button>
                 </div>
               </form>
             </div>
