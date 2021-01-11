@@ -6,7 +6,7 @@ function Cards() {
     <>
       <div className="mt-5 container-fluid">
         <div className="row d-flex justify-content-lg-around">
-          <div id="cards" data-aos="fade-up" data-aos-duration="2000" className="col-lg-3 col-md-10 mb-3
+          <div id="cards"  className="col-lg-3 col-md-10 mb-3
             text-white shadowed carpet-s containTL center-card-text">
             <h1 className="shadowed text-white">Carpet Cleaning</h1>
             <div className="overlayR">
@@ -24,7 +24,7 @@ function Cards() {
               </div>
             </div>
           </div>
-          <div id="cards" data-aos="fade-up" data-aos-duration="2000" className="col-lg-3 col-md-10 mb-3
+          <div id="cards"  className="col-lg-3 col-md-10 mb-3
             shadowed upholstrey-s containTR center-card-text text-white">
             <h1 className="text-white shadowed">Furniture Upholstery</h1>
             <div className="overlayR">
@@ -46,7 +46,7 @@ function Cards() {
               </div>
             </div>
           </div>
-          <div id="cards" data-aos="fade-up" data-aos-duration="2000" className="col-lg-3 col-md-10 mb-3
+          <div id="cards"  className="col-lg-3 col-md-10 mb-3
             shadowed grout-s containBR center-card-text text-white">
             <h1 className="text-white shadowed">Appliance Cleaning</h1>
             <div className="overlayR">
