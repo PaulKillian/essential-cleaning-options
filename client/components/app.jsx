@@ -107,7 +107,8 @@ function EstimateCalendar() {
 
 function Reviews() {
   return (
-    <motion.div className="border-10 border foot1"
+    <motion.div className="border-10 border foot1 position-relative"
+      style={pageStyle}
       initial="initial"
       animate="in"
       exit="out"
@@ -115,7 +116,7 @@ function Reviews() {
       transition={pageTransition}
     >
       <Suspense fallback={renderLoader()}>
-        <Navbar />
+        <Navbar className="position-absolute"/>
         <Review />
       </Suspense>
     </motion.div>

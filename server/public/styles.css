@@ -8,10 +8,12 @@ body {
 body {
     font-family: "Merriweather", serif;
 }
-h3{
+h3, h2{
     font-size: 2vw;
 }
-
+.position {
+    top: 5rem;
+}
 #logo {
     height: 50px;
     width: 100px;
@@ -25,8 +27,8 @@ h3{
     background-color: #d3ff9b;
 }
 .text {
-    max-height: 400px;
-    max-width: 80%;
+    max-height: 700px;
+    max-width: 100%;
     font-family: "Source Sans Pro", sans-serif;
 }
 #hero-text {
@@ -58,9 +60,12 @@ img {
     color: #00ab3a;
 }
 .paralax {
-    min-height: 70vh;
+     background: linear-gradient(rgba(2, 2, 2, 0.1), rgba(2, 2, 2, 0.1)), url("../images/main.webp");
+    min-height: 100vh;
     max-height: 100vh;
-    background: linear-gradient(rgba(2, 2, 2, 0.1), rgba(2, 2, 2, 0.1)) url("../images/main.webp") no-repeat fixed bottom;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
     background-size: cover;
     border-bottom: solid 5px #00ab3a;
     box-shadow: 0 16px 14px -16px black;
@@ -521,7 +526,7 @@ h1.ml8 {
     background-attachment: fixed;
     background-position: bottom;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: auto;
 }
 .simple {
     border: 1px solid #4c3c1b;
@@ -532,6 +537,7 @@ h1.ml8 {
 .menu-text-size {
     font-size: 2vw;
 }
+
 
 .slick-next, .slick-prev {
     color: black;
