@@ -4,9 +4,10 @@ import { NavLink } from 'react-router-dom';
 function Cards() {
   return (
     <>
+      <div id="services"></div>
       <div className="mt-5 container-fluid">
         <div className="row d-flex justify-content-lg-around">
-          <div id="cards"  className="col-lg-3 col-md-10 mb-3
+          <div id="cards" data-aos="flip-up" data-aos-duration="2000" className="col-lg-3 col-md-10 mb-3
             text-white shadowed carpet-s containTL center-card-text">
             <h1 className="shadowed text-white">Carpet Cleaning</h1>
             <div className="overlayR">
@@ -24,9 +25,9 @@ function Cards() {
               </div>
             </div>
           </div>
-          <div id="cards"  className="col-lg-3 col-md-10 mb-3
+          <div id="cards" data-aos="flip-up" data-aos-duration="2000" className="col-lg-3 col-md-10 mb-3
             shadowed upholstrey-s containTR center-card-text text-white">
-            <h1 className="text-white shadowed">Furniture Upholstery</h1>
+            <h1 className="text-white shadowed">Upholstery Cleaning</h1>
             <div className="overlayR">
               <div className="blur">
                 <p className="p-2 text-center">This results in less re-soiling and faster drying times.
@@ -46,16 +47,17 @@ function Cards() {
               </div>
             </div>
           </div>
-          <div id="cards"  className="col-lg-3 col-md-10 mb-3
+          <div id="cards" data-aos="flip-up" data-aos-duration="2000" className="col-lg-3 col-md-10 mb-3
             shadowed grout-s containBR center-card-text text-white">
-            <h1 className="text-white shadowed">Appliance Cleaning</h1>
+            <h1 className="text-white shadowed">Auto<br></br>Detailing</h1>
             <div className="overlayR">
               <div className="blur">
                 <p className="p-2 text-center">Providing cleaning with a chemical free cleaner
                 and sanitizing with steam for refrigerators and freezers. For ovens and stove tops
                  I use a non toxic bio degradable cleaner/degreaser  followed up with steam for a
                  complete sanitization. </p>
-                <NavLink to="/upholstrey-gallery" className="nav-link text-white text-center">Photos</NavLink>
+                <NavLink to="/auto-detailing" className="nav-link text-white text-center">Photos</NavLink>
+                <NavLink to="/auto-detailing" className="nav-link text-white text-center">Detailing Services and Prices</NavLink>
               </div>
             </div>
           </div>
