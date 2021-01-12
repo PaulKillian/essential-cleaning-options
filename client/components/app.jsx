@@ -2,18 +2,17 @@ import React, { lazy, Suspense } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Switch, Route, useLocation } from 'react-router-dom';
 
-const Navbar = lazy(() => import('./header-navbar'));
-const Hero = lazy(() => import('./hero'));
-const Cards = lazy(() => import('./cards'));
-const Review = lazy(() => import('./reviews'));
-const Footer = lazy(() => import('./footer'));
-const Estimate = lazy(() => import('./estimate'));
-const Auto = lazy(() => import('./auto'));
-// const Contact = lazy(() => import('./contact-form'));
-const Carpet = lazy(() => import('./carpet-gallery'));
-const Upholstery = lazy(() => import('./upholstery-gallery'));
-
-const renderLoader = () => <p>...Loading</p>;
+export const Navbar = lazy(() => import('./header-navbar')),
+  Hero = lazy(() => import('./hero')),
+  Cards = lazy(() => import('./cards')),
+  Review = lazy(() => import('./reviews')),
+  Footer = lazy(() => import('./footer')),
+  Estimate = lazy(() => import('./estimate')),
+  Auto = lazy(() => import('./auto')),
+  AutoEstimate = lazy(() => import('./auto-estimate')),
+  Carpet = lazy(() => import('./carpet-gallery')),
+  Upholstery = lazy(() => import('./upholstery-gallery')),
+  renderLoader = () => <p>...Loading</p>;
 
 function App() {
   const location = useLocation();
@@ -21,15 +20,12 @@ function App() {
     <>
       <AnimatePresence>
         <Switch location={location} key={location.pathname}>
-          <Route path="/estimate" component={EstimateCalendar} />
+          <Route path="/carpet-estimate" component={EstimateCalendar} />
+          <Route path="/auto-estimate" component={AutoEstimateCalendar} />
           <Route path="/reviews" component={Reviews} />
           <Route path="/auto-detailing" component={Detailing} />
           <Route path="/carpet-gallery" component={CarpetGallery} />
           <Route path="/upholstery-gallery" component={UpholsteryGallery} />
-          <Route path='/nanomaxx' component={() => {
-            window.location.href = 'www.nanomaxxgreenclean.com';
-            return null;
-          }}/>
           <Route path="/" component={Home} />
         </Switch>
       </AnimatePresence>
@@ -62,15 +58,9 @@ const pageTransition = {
   duration: 0.7
 };
 
-const pageStyle = {
-  position: 'absolute'
-
-};
-
 function Home() {
   return (
-    <motion.div className="col-12 border border-10 mrble paralax-main"
-      style={pageStyle}
+    <motion.div id='main' className="col-12 border border-10 position-absolute mrble paralax-main"
       initial="initial"
       animate="in"
       exit="out"
@@ -89,8 +79,7 @@ function Home() {
 
 function EstimateCalendar() {
   return (
-    <motion.div className="bg-off-white border-10 border w-100 foot1"
-      style={pageStyle}
+    <motion.div id='main' className="bg-off-white border-10 position-absolute border w-100 foot1"
       initial="initial"
       animate="in"
       exit="out"
@@ -104,11 +93,27 @@ function EstimateCalendar() {
     </motion.div>
   );
 }
+function AutoEstimateCalendar() {
+  return (
+    <motion.div id='main' className="bg-off-white border-10 position-absolute border w-100 foot1"
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={pageVariants}
+      transition={pageTransition}
+    >
+      <Suspense fallback={renderLoader()}>
+        <Navbar />
+        <AutoEstimate />
+      </Suspense>
+    </motion.div>
+  );
+}
+
 
 function Reviews() {
   return (
-    <motion.div className="border-10 border foot1 position-relative"
-      style={pageStyle}
+    <motion.div id='main' className="border-10 border foot1 position-relative"
       initial="initial"
       animate="in"
       exit="out"
@@ -125,8 +130,7 @@ function Reviews() {
 
 function Detailing() {
   return (
-    <motion.div className="div1 border-10 border foot1"
-      style={pageStyle}
+    <motion.div id='main' className="div1 border-10 position-absolute border foot1"
       initial="initial"
       animate="in"
       exit="out"
@@ -143,8 +147,7 @@ function Detailing() {
 
 function CarpetGallery() {
   return (
-    <motion.div className="border-10 border w-100 foot1"
-      style={pageStyle}
+    <motion.div id='main' className="border-10 position-absolute border w-100 foot1"
       initial="initial"
       animate="in"
       exit="out"
@@ -161,8 +164,7 @@ function CarpetGallery() {
 
 function UpholsteryGallery() {
   return (
-    <motion.div className="border-10 border w-100 foot1"
-      style={pageStyle}
+    <motion.div id='main' className="border-10 position-absolute border w-100 foot1"
       initial="initial"
       animate="in"
       exit="out"

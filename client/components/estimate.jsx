@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import anime from 'animejs/lib/anime.es.js';
 
 class Estimate extends React.Component {
@@ -85,6 +85,12 @@ class Estimate extends React.Component {
         easing: 'easeOutExpo',
         delay: 1000
       });
+  }
+
+  componentDidMount() {
+    const main = document.getElementById('main');
+    main.classList.remove('position-absolute');
+    main.classList.add('position-absolute');
   }
 
   render() {
@@ -187,7 +193,7 @@ class Estimate extends React.Component {
                 </div>
                 <div className="form-row">
                   <div className="form-group col-6">
-                    <label className="mb-0">Time of Completion</label>
+                    <label className="mb-0">Time of Service</label>
                     <input
                       type="text"
                       className="form-control shadowed"
@@ -197,7 +203,7 @@ class Estimate extends React.Component {
                     />
                   </div>
                   <div className="form-group col-6">
-                    <label className="mb-0">Date of Completion</label>
+                    <label className="mb-0">Date of Service</label>
                     <input
                       type="text"
                       className="form-control shadowed"

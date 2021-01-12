@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import AOS from 'aos';
 
 AOS.init();
 
 function Auto() {
+  useEffect(() => {
+    const main = document.getElementById('main');
+    main.classList.remove('position-absolute');
+    main.classList.add('position-absolute');
+  });
   return (
     <>
       <div className="col-12 mb-5 top scale bottom position-relative">
