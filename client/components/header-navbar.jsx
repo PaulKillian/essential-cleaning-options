@@ -60,16 +60,21 @@ class Navbar extends React.Component {
         <div className={cssClass} onClick={this.hideMenu}>
           <ul className="navbar-nav mt-2 menu-text-size shadowed">
             <li className="nav-item ml-3 mb-2">
-              <NavLink to="/" exact className="nav-link text-white text-left">Home</NavLink>
+              <NavLink to="/" exact className="nav-link text-white text-left">HOME</NavLink>
             </li>
             <li className="nav-item ml-3 mb-2">
-              <NavLink to="/auto-detailing" className="nav-link text-white text-left">Auto Detailng</NavLink>
+              <NavLink to="/" className="nav-link text-white text-left">SERVICES</NavLink>
             </li>
             <li className="nav-item ml-3 mb-2">
-              <NavLink to="/reviews" className="nav-link text-white text-left">Reviews</NavLink>
+              <NavLink to="/reviews" className="nav-link text-white text-left">REVIEWS</NavLink>
+            </li>
+            <div className={'nav-item line ml-3 mb-2 text-left'}></div>
+            <li className="nav-item ml-3 mb-2 text-left">SCHEDULE ESTIMATE:</li>
+            <li className="nav-item ml-3 mb-2">
+              <NavLink to="/carpet-estimate" className="nav-link text-white text-left">CARPET/UPHOLSTERY</NavLink>
             </li>
             <li className="nav-item ml-3 mb-2">
-              <NavLink to="/estimate" className="nav-link text-white text-left">Schedule Estimate</NavLink>
+              <NavLink to="/auto-estimate" className="nav-link text-white text-left">AUTO DETAILING</NavLink>
             </li>
             <li className="nav-item ml-2 mb-2">
               <img src="images/1.png" alt="image of logo"></img>

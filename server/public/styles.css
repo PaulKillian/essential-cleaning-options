@@ -4,7 +4,6 @@ body {
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
-
 body {
     font-family: "Merriweather", serif;
 }
@@ -25,6 +24,11 @@ h3, h2{
     height: 10px;
     width: 100%;
     background-color: #d3ff9b;
+}
+.line {
+    height: 2px;
+    background-color: blue;
+    width: 92%;
 }
 .text {
     max-height: 700px;
@@ -317,8 +321,8 @@ h1.ml8 {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 96.1vw;
-    height: 96vh;
+    width: 94.1vw;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     z-index: 2;
 }
@@ -418,7 +422,7 @@ h1.ml8 {
 }
 .grout-s {
     border-radius: 10px;
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../images/appliance1.webp");
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../images/auto.webp");
     height: 400px;
     background-size: cover;
 }
@@ -559,7 +563,9 @@ h1.ml8 {
 .star-red {
 	color: red;
 }
-
+.nav-link {
+     padding: 0;
+}
 @media only screen and (max-width: 600px) {
   #cards {
     margin: 15px;
@@ -579,6 +585,17 @@ h1.ml8 {
     margin-right: 2px;
   }
 }
+@media only screen and (max-width: 600px) {
+    .modal-overlay {
+        width: 84.1vw;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .modal-overlay {
+        width: 92.1vw;
+    }
+}
 
 @media only screen and (max-width: 376px) {
   .nav-item {
@@ -590,4 +607,20 @@ h1.ml8 {
     h3 {
        padding: 0;
     }
+}
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.fadein {
+    opacity: 0;
+    -moz-transition: opacity 1.5s;
+    -webkit-transition: opacity 1.5s;
+    -o-transition: opacity 1.5s;
+    transition: opacity 1.5s;
 }
