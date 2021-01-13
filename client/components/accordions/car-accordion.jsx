@@ -23,8 +23,8 @@ export default function CarAccordion() {
         >
           <div>Prices</div>
         </AccordionSummary>
-        <AccordionDetails>
-          <div className={'text-center'}>
+        <AccordionDetails className={'bg-success text-white shadowed'}>
+          <div>
             <p>Small $25 - $30<br></br>Approximate Time: 1 hour<br></br></p>
             <p>Medium $30 - $35<br></br>Approximate Time: 1.5 hours<br></br></p>
             <p>Large $35-$40<br></br>Approximate Time: 1 hour 45 minutes</p>

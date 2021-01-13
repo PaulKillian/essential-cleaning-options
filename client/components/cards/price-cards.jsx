@@ -11,21 +11,6 @@ function PriceCards() {
         <div id={'price-card'} className={'mt-2 border-0 rounded text-white col-6-sm col-lg-7 col-md-12 shadowed'}>
           <div className={'bg-dark '}>
             <h2 className={'pt-2 text-center'}>Basic Interior Cleaning</h2>
-            <p className={'text-center'}>What the service will include:</p>
-            <hr className={'bg-white'}></hr>
-            <ul className={'pb-2 bg-white text-dark pr-2'}>
-              <li>Thorough dusting &amp; vacuuming</li>
-              <li>Vacuum Trunk area (optional)</li>
-              <li>Wiping down all interior surfaces with interior detailer or</li>
-              <li>APC - All purpose cleaner or detail cleaning product.
-                (Depending on level of soil on surfaces)</li>
-              <li>Cleaning interior glass and windows</li>
-              <li>This is a basic or maintenance cleaning of the interior. I only offer this
-                service to vehicles that do not need a deep thorough cleaning. If the
-                vehicle requires a deeper cleaning? I can provide a higher level more
-                detailed interior service</li>
-            </ul>
-            <hr className={'bg-white'}></hr>
           </div>
           <BasicAccordion mb={1}/>
         </div>

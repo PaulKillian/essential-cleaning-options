@@ -23,8 +23,8 @@ export default function PaintAccordion() {
         >
           <div>Prices</div>
         </AccordionSummary>
-        <AccordionDetails>
-          <div className={'text-center'}>
+        <AccordionDetails className={'bg-success text-white shadowed'}>
+          <div>
             <p>Small $175<br></br>Approximate Time: 2 hours<br></br></p>
             <p>Medium $200<br></br>Approximate Time: 2.5 hours<br></br></p>
             <p>Large $225<br></br>Approximate Time: 3 hours</p>

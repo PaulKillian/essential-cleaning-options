@@ -23,8 +23,8 @@ export default function DeepAccordion() {
         >
           <div>Prices</div>
         </AccordionSummary>
-        <AccordionDetails>
-          <div className={'text-center'}>
+        <AccordionDetails className={'bg-success text-white shadowed'}>
+          <div>
             <p>Small $125 - $150<br></br>Approximate Time: 3 hours<br></br></p>
             <p>Medium $150 - $175<br></br>Approximate Time: 3.5 hour<br></br></p>
             <p>Large $175 - $200<br></br>Approximate Time: 4 hours</p>
