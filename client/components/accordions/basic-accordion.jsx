@@ -11,10 +11,6 @@ const useStyles = makeStyles(() => ({
   }
 }));
 
-const theme = {
-  spacing: 8,
-}
-
 export default function BasicAccordion() {
   const classes = useStyles();
   return (
