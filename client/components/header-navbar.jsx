@@ -53,31 +53,36 @@ class Navbar extends React.Component {
     return (
       <>
         <div className={modalStyles} onClick={this.hideMenu}></div>
-        <div className="d-flex justify-content-end sticky top">
-          <h4 className="position-absolute text-white shadowed-text menu">MENU</h4>
-          <FontAwesomeIcon icon={faBars} size="3x" className="hamburger-color mr-3 mt-3 shadowed-text position-absolute top sticky pointer" onClick={() => this.handleToggleClick()}/>
+        <div className={ 'd-flex justify-content-end top col-sm-12 col-md-12 col-lg-12 position-absolute pr-3 mt-3' }>
+          <div className={ 'd-flex justify-content-end col-sm-2 col-md-2 col-lg-2' }>
+            <div className={'center-card-text mr-2'}>
+              <h2 className={ 'text-white shadowed-text align-content-center' }>MENU</h2>
+            </div>
+            <FontAwesomeIcon icon={faBars} size="3x" className="hamburger-color shadowed-text  top pointer"
+              onClick={() => this.handleToggleClick()}/>
+          </div>
         </div>
         <div className={cssClass} onClick={this.hideMenu}>
           <ul className="navbar-nav mt-2 menu-text-size shadowed">
             <li className="nav-item ml-3 mb-2">
-              <NavLink to="/" exact className="nav-link text-white text-left">HOME</NavLink>
+              <NavLink to="/" exact className="nav-link text-white text-center">HOME</NavLink>
             </li>
             <li className="nav-item ml-3 mb-2">
-              <NavLink to="/" className="nav-link text-white text-left">SERVICES</NavLink>
+              <NavLink to="/" className="nav-link text-white text-center">SERVICES</NavLink>
             </li>
             <li className="nav-item ml-3 mb-2">
-              <NavLink to="/reviews" className="nav-link text-white text-left">REVIEWS</NavLink>
+              <NavLink to="/reviews" className="nav-link text-white text-center">REVIEWS</NavLink>
             </li>
-            <div className={'nav-item line ml-3 mb-2 text-left'}></div>
-            <li className="nav-item ml-3 mb-2 text-left">SCHEDULE ESTIMATE:</li>
+            <div className={'nav-item line ml-3 mb-2 text-center'}></div>
+            <li className="nav-item ml-3 mb-2 text-center">SCHEDULE ESTIMATE:</li>
             <li className="nav-item ml-3 mb-2">
-              <NavLink to="/carpet-estimate" className="nav-link text-white text-left">CARPET/UPHOLSTERY</NavLink>
+              <NavLink to="/carpet-estimate" className="nav-link text-white text-center">CARPET/UPHOLSTERY</NavLink>
             </li>
-            <li className="nav-item ml-3 mb-2">
-              <NavLink to="/auto-estimate" className="nav-link text-white text-left">AUTO DETAILING</NavLink>
+            <li className="nav-item ml-3">
+              <NavLink to="/auto-estimate" className="nav-link text-white text-center">AUTO DETAILING</NavLink>
             </li>
             <li className="nav-item ml-2 mb-2">
-              <img src="images/1.png" alt="image of logo"></img>
+              <img id='logo-m' src="images/1.png" alt="image of logo"></img>
             </li>
           </ul>
         </div>

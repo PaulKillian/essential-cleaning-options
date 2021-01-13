@@ -19,7 +19,7 @@ export default function Review() {
           <img className="w-25 h-50 shadowed" src="/images/reviews.png" alt="image of stars"></img>
         </div>
       </div>
-      <div className='col-sm-6 col-md-9 col-lg-10 mt-5 container text-justify'>
+      <div className='col-sm-9 col-md-11 col-lg-10 mt-5 container text-justify'>
         <Slider className={'text-white'} {...settings}>
           <div>
             <h3 className={'px-3'}>Ken has been a vendor for our company for several years. He is prompt, trustworthy and does a thorough and comprehensive job. He also is proactive. If he sees a problem he will point it out and help us resolve it or point us to someone who can. We have been very pleased with his service and his ongoing consistency. You can count on Ken to do what he says in a timely and efficient manner.

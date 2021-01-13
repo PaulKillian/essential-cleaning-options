@@ -6,8 +6,8 @@ function Cards() {
     <>
       <div id="services"></div>
       <div className="mt-5 container-fluid">
-        <div className="row d-flex justify-content-lg-around">
-          <div id="cards" data-aos="flip-up" data-aos-duration="2000" className="col-lg-3 col-md-10 mb-3
+        <div className="row d-flex justify-content-around">
+          <div id="cards" className="col-lg-3 col-md-11 mb-3
             text-white shadowed carpet-s containTL center-card-text">
             <h1 className="shadowed text-white">Carpet Cleaning</h1>
             <div className="overlayR">
@@ -25,7 +25,7 @@ function Cards() {
               </div>
             </div>
           </div>
-          <div id="cards" data-aos="flip-up" data-aos-duration="2000" className="col-lg-3 col-md-10 mb-3
+          <div id="cards" className="col-lg-3 col-md-11 mb-3
             shadowed upholstrey-s containTR center-card-text text-white">
             <h1 className="text-white shadowed">Upholstery Cleaning</h1>
             <div className="overlayR">
@@ -43,11 +43,10 @@ function Cards() {
                   My main product is Nano-Maxx which is a plant based
                   registered green cleaner that has a zero residue and is
                   totally safe and effective.</p>
-                <NavLink to="/nanomaxx" className="nav-link text-white text-center">Go to nanomaxxgreenclean.com for more information:</NavLink>
               </div>
             </div>
           </div>
-          <div id="cards" data-aos="flip-up" data-aos-duration="2000" className="col-lg-3 col-md-10 mb-3
+          <div id="cards" className="col-lg-3 col-md-11 mb-3
             shadowed grout-s containBR center-card-text text-white">
             <h1 className="text-white shadowed">Auto<br></br>Detailing</h1>
             <div className="overlayR">
@@ -57,7 +56,7 @@ function Cards() {
                  I use a non toxic bio degradable cleaner/degreaser  followed up with steam for a
                  complete sanitization. </p>
                 <NavLink to="/auto-detailing" className="nav-link text-white text-center">Photos</NavLink>
-                <NavLink to="/auto-detailing" className="nav-link text-white text-center">Detailing Services and Prices</NavLink>
+                <NavLink to="/prices" className="nav-link text-white text-center">Detailing Services and Prices</NavLink>
               </div>
             </div>
           </div>

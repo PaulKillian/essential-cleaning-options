@@ -10,12 +10,21 @@ body {
 h3, h2{
     font-size: 2vw;
 }
+.nav-link:hover {
+    transform: scale(1.2);
+}
 .position {
     top: 5rem;
 }
 #logo {
     height: 50px;
     width: 100px;
+}
+#logo-m {
+    min-height: 10vh;
+    min-width: 20vw;
+    max-height: 40vh;
+    max-width: 50vw;
 }
 .no-overflow {
     overflow-x: hidden;
@@ -46,7 +55,9 @@ h3, h2{
     height: 97vh;
     background-color: #f7f6f2;
 }
-img {
+.dimensions {
+    min-height: 265px;
+    min-width: 100%;
     max-height: 600px;
     max-width: 100%;
 }
@@ -485,7 +496,7 @@ h1.ml8 {
 .containBL:hover .overlayR {
     border-radius: 10px;
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/appliance1.webp");
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/auto.webp");
     height: 400px;
     background-size: cover;
 }
@@ -499,7 +510,7 @@ h1.ml8 {
 .containBR:hover .overlayR {
     border-radius: 10px;
     width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/appliance1.webp");
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/auto.webp");
     height: 400px;
     background-size: cover;
 }
@@ -532,6 +543,17 @@ h1.ml8 {
     background-repeat: no-repeat;
     height: auto;
 }
+
+.auto-estimate {
+    background: linear-gradient(
+            rgba(2, 2, 2, 0.50), rgba(2, 2, 2, 0.50) ),
+    url("../images/auto-estimate.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: auto;
+}
 .simple {
     border: 1px solid #4c3c1b;
     padding: 5px;
@@ -541,12 +563,9 @@ h1.ml8 {
 .menu-text-size {
     font-size: 2vw;
 }
-
-
 .slick-next, .slick-prev {
     color: black;
 }
-
 .blur {
   position: absolute;
   height: 400px;
@@ -555,34 +574,18 @@ h1.ml8 {
 	border-radius: 10px;
   border: 1px solid rgba(0, 81, 255, 0.2);
 }
-
 .text-justify {
 	text-align: justify;
 }
-
 .star-red {
 	color: red;
 }
 .nav-link {
      padding: 0;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 990px) {
   #cards {
     margin: 15px;
-  }
-}
-
-@media only screen and (min-width: 375px) {
-  .menu {
-    right: 3.5rem;
-  }
-}
-
-@media only screen and (max-width: 376px) {
-  .menu {
-    right: 2rem;
-    top: 1.3rem;
-    margin-right: 2px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -590,37 +593,23 @@ h1.ml8 {
         width: 84.1vw;
     }
 }
-
 @media only screen and (min-width: 600px) {
     .modal-overlay {
         width: 92.1vw;
     }
 }
-
 @media only screen and (max-width: 376px) {
   .nav-item {
     margin-left: 2rem;
   }
 }
-
 @media only screen and (max-width: 376px) {
     h3 {
        padding: 0;
     }
 }
-@keyframes slideInFromLeft {
-    0% {
-        transform: translateX(-100%);
+@media only screen and (max-width: 800px) {
+    .paralax {
+        min-height: 60vh;
     }
-    100% {
-        transform: translateX(0);
-    }
-}
-
-.fadein {
-    opacity: 0;
-    -moz-transition: opacity 1.5s;
-    -webkit-transition: opacity 1.5s;
-    -o-transition: opacity 1.5s;
-    transition: opacity 1.5s;
 }

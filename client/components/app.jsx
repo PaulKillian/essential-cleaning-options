@@ -2,17 +2,18 @@ import React, { lazy, Suspense } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Switch, Route, useLocation } from 'react-router-dom';
 
-export const Navbar = lazy(() => import('./header-navbar')),
-  Hero = lazy(() => import('./hero')),
-  Cards = lazy(() => import('./cards')),
-  Review = lazy(() => import('./reviews')),
-  Footer = lazy(() => import('./footer')),
-  Estimate = lazy(() => import('./estimate')),
-  Auto = lazy(() => import('./auto')),
-  AutoEstimate = lazy(() => import('./auto-estimate')),
-  Carpet = lazy(() => import('./carpet-gallery')),
-  Upholstery = lazy(() => import('./upholstery-gallery')),
-  renderLoader = () => <p>...Loading</p>;
+export const Navbar = lazy(() => import('./header-navbar'));
+const Hero = lazy(() => import('./hero'));
+const Cards = lazy(() => import('./cards'));
+const Review = lazy(() => import('./reviews'));
+const Footer = lazy(() => import('./footer'));
+const Estimate = lazy(() => import('./estimate'));
+const Auto = lazy(() => import('./auto'));
+const AutoEstimate = lazy(() => import('./auto-estimate'));
+const Carpet = lazy(() => import('./carpet-gallery'));
+const Upholstery = lazy(() => import('./upholstery-gallery'));
+const Price = lazy(() => import('./price-cards'));
+const renderLoader = () => <p>...Loading</p>;
 
 function App() {
   const location = useLocation();
@@ -26,6 +27,7 @@ function App() {
           <Route path="/auto-detailing" component={Detailing} />
           <Route path="/carpet-gallery" component={CarpetGallery} />
           <Route path="/upholstery-gallery" component={UpholsteryGallery} />
+          <Route path="/prices" component={DetailPrices} />
           <Route path="/" component={Home} />
         </Switch>
       </AnimatePresence>
@@ -58,9 +60,15 @@ const pageTransition = {
   duration: 0.7
 };
 
+const pageStyle = {
+  position: 'absolute'
+
+};
+
 function Home() {
   return (
-    <motion.div id='main' className="col-12 border border-10 position-absolute mrble paralax-main"
+    <motion.div id='main' className="col-12 border border-10 mrble paralax-main"
+      style={pageStyle}
       initial="initial"
       animate="in"
       exit="out"
@@ -79,7 +87,8 @@ function Home() {
 
 function EstimateCalendar() {
   return (
-    <motion.div id='main' className="bg-off-white border-10 position-absolute border w-100 foot1"
+    <motion.div id='main' className="bg-off-white border-10 border w-100 foot1"
+      style={pageStyle}
       initial="initial"
       animate="in"
       exit="out"
@@ -95,7 +104,8 @@ function EstimateCalendar() {
 }
 function AutoEstimateCalendar() {
   return (
-    <motion.div id='main' className="bg-off-white border-10 position-absolute border w-100 foot1"
+    <motion.div id='main' className="bg-off-white border-10 border w-100 auto-estimate"
+      style={pageStyle}
       initial="initial"
       animate="in"
       exit="out"
@@ -110,10 +120,10 @@ function AutoEstimateCalendar() {
   );
 }
 
-
 function Reviews() {
   return (
     <motion.div id='main' className="border-10 border foot1 position-relative"
+      style={pageStyle}
       initial="initial"
       animate="in"
       exit="out"
@@ -130,7 +140,8 @@ function Reviews() {
 
 function Detailing() {
   return (
-    <motion.div id='main' className="div1 border-10 position-absolute border foot1"
+    <motion.div id='main' className="div1 border-10 border foot1"
+      style={pageStyle}
       initial="initial"
       animate="in"
       exit="out"
@@ -147,7 +158,8 @@ function Detailing() {
 
 function CarpetGallery() {
   return (
-    <motion.div id='main' className="border-10 position-absolute border w-100 foot1"
+    <motion.div id='main' className="border-10 border w-100 foot1"
+      style={pageStyle}
       initial="initial"
       animate="in"
       exit="out"
@@ -164,7 +176,8 @@ function CarpetGallery() {
 
 function UpholsteryGallery() {
   return (
-    <motion.div id='main' className="border-10 position-absolute border w-100 foot1"
+    <motion.div id='main' className="border-10 border w-100 foot1"
+      style={pageStyle}
       initial="initial"
       animate="in"
       exit="out"
@@ -174,6 +187,24 @@ function UpholsteryGallery() {
       <Suspense fallback={renderLoader()}>
         <Navbar />
         <Upholstery />
+      </Suspense>
+    </motion.div>
+  );
+}
+
+function DetailPrices() {
+  return (
+    <motion.div id='main' className="border-10 border w-100 foot1"
+      style={pageStyle}
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={pageVariants}
+      transition={pageTransition}
+    >
+      <Suspense fallback={renderLoader()}>
+        <Navbar />
+        <Price />
       </Suspense>
     </motion.div>
   );

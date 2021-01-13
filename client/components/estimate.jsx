@@ -98,14 +98,13 @@ class Estimate extends React.Component {
       <>
         <div className="col-12 scale bottom">
           <div className="d-flex justify-content-center align-items-center flex-column">
-            <p className="text-font mt-4 shadowed-text text-white">Schedule Estimate</p>
-            <img className="mt-3 shadowed phone-height" src="/images/calendar3.webp" alt="image of contact icons"></img>
+            <p className="text-font shadowed-text text-white">Schedule Estimate</p>
           </div>
         </div>
         <h1 className="ml16 d-none">Your Message Has Been Sent!</h1>
-        <div id="form" className="col-lg-12 mt-4 d-flex flex-column">
+        <div id="form" className="col-lg-12 d-flex flex-column">
           <div className="row mx-2 my-4 justify-content-center">
-            <div className="col-lg-6 col-md-10 col-sm-12 mt-4">
+            <div className="col-lg-6 col-md-10 col-sm-12">
               <form onSubmit={this.SendMessage} action="/estimate" id="contact-form" method="POST" role="form" className="mt-5 text-white">
                 <div className="form-row">
                   <div className="form-group col-6">

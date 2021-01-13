@@ -53,6 +53,8 @@ class Footer extends React.Component {
             <div className="col-2">
               <img src="/images/ken.jpg" alt="image of ken mendoza"></img>
             </div>
+            <p className={'col-5 text-white text-center'}>
+              <hr></hr>Independently owned and operated in South Orange County since 2014</p>
             <div className="text-white shadowed">
               <div className="col-12">
                 <img className="mb-2 ml-4 icon-size" src="/images/telephone.png" alt="image of telephone"></img>

@@ -19,15 +19,15 @@ function Hero(props) {
   });
   return (
     <>
-      <div className="paralax text-white d-flex justify-content-center align-items-center">
-        <img className="sizing mb-5 position-absolute lazyload fadeIn"
+      <div className="paralax text-white d-flex justify-content-center align-items-end pb-5">
+        <div className={ 'text-center' }>
+          <h4>SERVICES</h4>
+          <FontAwesomeIcon className={'text-center pointer fa-2x'} onClick={scroll} icon={faArrowDown} />
+        </div>
+        <img id='main' className="mb-5 dimensions position-absolute lazyload fadeIn"
           alt="image of logo"
           src="/images/logo-m3.png"
         />
-        <div className='position position-relative'>
-          <h2>SERVICES</h2>
-          <FontAwesomeIcon className={'pointer'} onClick={scroll} icon={faArrowDown} />
-        </div>
       </div>
     </>
   );
