@@ -96,6 +96,9 @@ class Estimate extends React.Component {
   render() {
     return (
       <>
+        <div className={'bottom'}>
+          <video id="video" src='./images/3.mp4'></video>
+        </div>
         <div className="col-12 scale bottom">
           <div className="d-flex justify-content-center align-items-center flex-column">
             <p className="text-font shadowed-text text-white">Schedule Estimate</p>
