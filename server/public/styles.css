@@ -546,7 +546,7 @@ h1.ml8 {
 
 .auto-estimate {
     background: linear-gradient(
-            rgba(2, 2, 2, 0.50), rgba(2, 2, 2, 0.50) ),
+            rgba(2, 2, 2.1, 0.50), rgba(2, 2, 2, 0.50) ),
     url("../images/auto-estimate.jpg");
     background-size: cover;
     background-attachment: fixed;
