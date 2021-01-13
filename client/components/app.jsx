@@ -4,15 +4,15 @@ import { Switch, Route, useLocation } from 'react-router-dom';
 
 export const Navbar = lazy(() => import('./header-navbar'));
 const Hero = lazy(() => import('./hero'));
-const Cards = lazy(() => import('./cards'));
+const Cards = lazy(() => import('./cards/cards'));
 const Review = lazy(() => import('./reviews'));
 const Footer = lazy(() => import('./footer'));
-const Estimate = lazy(() => import('./estimate'));
-const Auto = lazy(() => import('./auto'));
-const AutoEstimate = lazy(() => import('./auto-estimate'));
-const Carpet = lazy(() => import('./carpet-gallery'));
-const Upholstery = lazy(() => import('./upholstery-gallery'));
-const Price = lazy(() => import('./price-cards'));
+const Estimate = lazy(() => import('./esitmates/estimate'));
+const Auto = lazy(() => import('./galleries/auto-gallery'));
+const AutoEstimate = lazy(() => import('./esitmates/auto-estimate'));
+const Carpet = lazy(() => import('./galleries/carpet-gallery'));
+const Upholstery = lazy(() => import('./galleries/upholstery-gallery'));
+const Price = lazy(() => import('./cards/price-cards'));
 const renderLoader = () => <p>...Loading</p>;
 
 function App() {

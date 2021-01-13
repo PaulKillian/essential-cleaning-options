@@ -3,7 +3,7 @@ import AOS from 'aos';
 
 AOS.init();
 
-function Auto() {
+function AutoGallery() {
   useEffect(() => {
     const main = document.getElementById('main');
     main.classList.remove('position-absolute');
@@ -35,4 +35,4 @@ function Auto() {
   );
 }
 
-export default Auto;
+export default AutoGallery;
