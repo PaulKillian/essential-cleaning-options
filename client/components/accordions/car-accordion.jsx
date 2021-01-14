@@ -21,6 +21,23 @@ export default function CarAccordion() {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
+          <div>What the service will include:</div>
+        </AccordionSummary>
+        <AccordionDetails className={'bg-success text-white shadowed'}>
+          <ul>
+            <li>Complete Hand wash and dry</li>
+            <li>Clean and Detail wheels &amp; Dress Tires</li>
+            <li>Clean door jambs</li>
+            <li>Clean exterior glass and windows</li>
+          </ul>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+        >
           <div>Prices</div>
         </AccordionSummary>
         <AccordionDetails className={'bg-success text-white shadowed'}>

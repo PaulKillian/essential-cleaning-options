@@ -463,6 +463,20 @@ h1.ml8 {
     width: 100%;
     background-size: cover;
 }
+.price1:hover,
+.price2:hover,
+.price3:hover {
+    transform: scale(1.2)
+}
+.price1:hover {
+    border: solid blue;
+}
+.price2:hover {
+    border: solid green;
+}
+.price3:hover {
+    border: solid orange;
+}
 .image {
     display: block;
     width: 100%;
