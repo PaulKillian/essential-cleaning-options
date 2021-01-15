@@ -22,15 +22,15 @@ function PriceCards() {
           </ul>
         </div>
         <div className={'d-flex justify-content-around col-lg-7 align-items-center'}>
-          <div className={'bg-white rounded price1 text-center p-2'}>
+          <div className={'bg-white rounded price1 text-center col-lg-4 col-sm-11'}>
             <h4 className={'bg-primary p-5'}>Small</h4>
             <p><span className={'text-info h3'}>$40 - $50</span><br></br>Approximate Time:<br></br>1 hour 30 minutes</p>
           </div>
-          <div className={'bg-white rounded price2 text-center p-2'}>
+          <div className={'bg-white rounded price2 text-center col-lg-4 col-sm-11'}>
             <h4 className={'bg-success p-5'}>Medium</h4>
             <p><span className={'text-info h3'}>$50 - $60</span><br></br>Approximate Time:<br></br>1 hour 45 minutes</p>
           </div>
-          <div className={'bg-white rounded price3 text-center p-2'}>
+          <div className={'bg-white rounded price3 text-center col-lg-4 col-sm-11'}>
             <h4 className={'bg-warning p-5'}>Large</h4>
             <p><span className={'text-info h3'}>$60 - $65</span><br></br>Approximate Time:<br></br>2 hours</p>
           </div>
@@ -56,15 +56,15 @@ function PriceCards() {
           </ul>
         </div>
         <div className={'d-flex justify-content-around col-lg-7 align-items-center'}>
-          <div className={'bg-white rounded price1 text-center p-2'}>
+          <div className={'bg-white rounded price1 text-center col-lg-4 col-sm-11'}>
             <h4 className={'bg-primary p-5'}>Small</h4>
             <p><span className={'text-info h3'}>$125 - $150</span><br></br>Approximate Time:<br></br>3 hours</p>
           </div>
-          <div className={'bg-white rounded price2 text-center p-2'}>
+          <div className={'bg-white rounded price2 text-center col-lg-4 col-sm-11'}>
             <h4 className={'bg-success p-5'}>Medium</h4>
             <p><span className={'text-info h3'}>$150 - $175</span><br></br>Approximate Time:<br></br>3.5 hours</p>
           </div>
-          <div className={'bg-white rounded price3 text-center p-2'}>
+          <div className={'bg-white rounded price3 text-center col-lg-4 col-sm-11'}>
             <h4 className={'bg-warning p-5'}>Large</h4>
             <p><span className={'text-info h3'}>$175 - $200</span><br></br>Approximate Time:<br></br>4 hours</p>
           </div>
@@ -86,16 +86,16 @@ function PriceCards() {
               wax or Graphene coating for up to 6 months of clear coat protection</p>
           </div>
         </div>
-        <div className={'d-flex justify-content-around col-lg-7 align-items-center'}>
-          <div className={'bg-white rounded price1 p-2'}>
+        <div className={'d-flex justify-content-around mb-2 col-lg-7 align-items-center'}>
+          <div className={'bg-white rounded price1 col-lg-4 col-sm-11'}>
             <h4 className={'bg-primary p-5'}>Small</h4>
             <p><span className={'text-info h3'}>$40 - $50</span><br></br>Approximate Time:<br></br>1 hour 30 minutes</p>
           </div>
-          <div className={'bg-white rounded price2 text-center p-2'}>
+          <div className={'bg-white rounded price2 text-center col-lg-4 col-sm-11'}>
             <h4 className={'bg-success p-5'}>Medium</h4>
             <p><span className={'text-info h3'}>$40 - $50</span>$<br></br>Approximate Time:<br></br>1 hour 45 minutes</p>
           </div>
-          <div className={'bg-white rounded price3 text-center p-2'}>
+          <div className={'bg-white rounded price3 text-center col-lg-4 col-sm-11'}>
             <h4 className={'bg-warning p-5'}>Large</h4>
             <p><span className={'text-info h3'}>$40 - $50</span><br></br>Approximate Time:<br></br>2 hours</p>
           </div>
@@ -114,15 +114,15 @@ function PriceCards() {
           </ul>
         </div>
         <div className={'d-flex justify-content-around col-lg-7 align-items-center'}>
-          <div className={'bg-white rounded price1 text-center p-2'}>
+          <div className={'bg-white rounded price1 text-center col-lg-4 col-sm-11'}>
             <h4 className={'bg-primary p-5'}>Small</h4>
             <p><span className={'text-info h3'}>$40 - $50</span><br></br>Approximate Time:<br></br>1 hour</p>
           </div>
-          <div className={'bg-white rounded price2 text-center p-2'}>
+          <div className={'bg-white rounded price2 text-center col-lg-4 col-sm-11'}>
             <h4 className={'bg-success p-5'}>Medium</h4>
             <p><span className={'text-info h3'}>$40 - $50</span><br></br>Approximate Time:<br></br>1.5 hours</p>
           </div>
-          <div className={'bg-white rounded price3 text-center p-2'}>
+          <div className={'bg-white rounded price3 text-center col-lg-4 col-sm-11'}>
             <h4 className={'bg-warning p-5'}>Large</h4>
             <p><span className={'text-info h3'}>$40 - $50</span><br></br>Approximate Time:<br></br>1 hour 45 minutes</p>
           </div>
