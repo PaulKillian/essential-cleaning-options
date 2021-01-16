@@ -19,16 +19,26 @@ function Hero(props) {
   });
   return (
     <>
-      <div className="paralax text-white d-flex justify-content-center align-items-end pb-5">
+      <div className="paralax text-white  pb-5">
+        <div className={'d-flex'}>
+          <div className={'display-1'}><span className={'text-primary'}>E</span>
+            <span className={'text-success'}>C</span><span className={'text-white'}>O</span>
+          </div>
+          <div className={'flex justify-content-center align-items-center'}>
+            <div>
+              <div className={'display-2 text-primary'}>ESSENTIAL</div>
+            </div>
+            <div className={'d-flex'}>
+              <div className={'display-2 text-success'}>CLEANING</div>
+              <div className={'display-2 text-white'}>OPTIONS</div>
+            </div>
+          </div>
+        </div>
+      </div>
         <div className={ 'text-center' }>
           <h4>SERVICES</h4>
           <FontAwesomeIcon className={'text-center pointer fa-2x'} onClick={scroll} icon={faArrowDown} />
         </div>
-        <img id='main' className="mb-5 dimensions position-absolute lazyload fadeIn"
-          alt="image of logo"
-          src="/images/logo-m3.png"
-        />
-      </div>
     </>
   );
 }
