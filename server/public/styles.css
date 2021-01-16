@@ -16,6 +16,14 @@ h3, h2{
 .position {
     top: 5rem;
 }
+.display-1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20vw;
+}
+.display-2 {
+    font-family: 'Lora', serif;
+    font-size: 5vw;
+}
 #logo {
     height: 50px;
     width: 100px;
