@@ -10,9 +10,18 @@ body {
 h3, h2{
     font-size: 2vw;
 }
+span {
+    right: 3rem;
+}
+.top1 {
+    z-index: 2;
+}
 .nav-link:hover {
     transform: scale(1.2);
 }
+/*#eco {*/
+/*    padding-right: 63px;*/
+/*}*/
 .position {
     top: 5rem;
 }
@@ -21,6 +30,10 @@ h3, h2{
     font-size: 20vw;
 }
 .display-2 {
+    font-family: 'Lora', serif;
+    font-size: 9vw;
+}
+.display-3 {
     font-family: 'Lora', serif;
     font-size: 5vw;
 }
@@ -635,3 +648,15 @@ h1.ml8 {
         min-height: 60vh;
     }
 }
+/*@media only screen and (max-width: 1140px) {*/
+/*    #eco {*/
+/*        padding-left: 30px;*/
+/*    }*/
+/*}*/
+/*@media only (max-width: 376px) {*/
+/*    #eco {*/
+/*        padding-left: 75px;*/
+/*    }*/
+/*}*/
+
+

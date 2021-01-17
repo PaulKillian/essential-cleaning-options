@@ -19,26 +19,31 @@ function Hero(props) {
   });
   return (
     <>
-      <div className="paralax text-white  pb-5">
-        <div className={'d-flex'}>
-          <div className={'display-1'}><span className={'text-primary'}>E</span>
-            <span className={'text-success'}>C</span><span className={'text-white'}>O</span>
+      <div id="eco" className={'paralax d-flex justify-content-center'}>
+
+        <div className="text-white d-flex justify-content-left align-items-center pb-5">
+
+          <div className={'display-1 d-flex col-5 justify-content-center'}>
+            <div className={'text-primary col-2 top1'}>E</div>
+            <div className={'text-success col-2 top'}>C</div>
+            <div className={'text-white col-2'}>O</div>
           </div>
-          <div className={'flex justify-content-center align-items-center'}>
+
+          <div className={'d-flex flex-column'}>
             <div>
               <div className={'display-2 text-primary'}>ESSENTIAL</div>
             </div>
             <div className={'d-flex'}>
-              <div className={'display-2 text-success'}>CLEANING</div>
-              <div className={'display-2 text-white'}>OPTIONS</div>
+              <div className={'display-3 text-success'}>CLEANING</div>
+              <div className={'display-3 text-white'}>OPTIONS</div>
             </div>
           </div>
         </div>
       </div>
-        <div className={ 'text-center' }>
-          <h4>SERVICES</h4>
-          <FontAwesomeIcon className={'text-center pointer fa-2x'} onClick={scroll} icon={faArrowDown} />
-        </div>
+      <div className={ 'text-center' }>
+        <h4>SERVICES</h4>
+        <FontAwesomeIcon className={'text-center pointer fa-2x'} onClick={scroll} icon={faArrowDown} />
+      </div>
     </>
   );
 }
