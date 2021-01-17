@@ -19,9 +19,9 @@ function Hero(props) {
   });
   return (
     <>
-      <div id="eco" className={'paralax d-flex justify-content-center'}>
+      <div className={'paralax d-flex justify-content-center col-12'}>
 
-        <div className="text-white d-flex justify-content-left align-items-center pb-5">
+        <div id="eco" className="text-white d-flex justify-content-left align-items-center pb-5">
 
           <div className={'display-1 d-flex col-5 justify-content-center'}>
             <div className={'text-primary col-2 top1'}>E</div>
