@@ -19,9 +19,7 @@ span {
 .nav-link:hover {
     transform: scale(1.2);
 }
-/*#eco {*/
-/*    padding-right: 63px;*/
-/*}*/
+
 .position {
     top: 5rem;
 }
@@ -648,15 +646,21 @@ h1.ml8 {
         min-height: 60vh;
     }
 }
-/*@media only screen and (max-width: 1140px) {*/
-/*    #eco {*/
-/*        padding-left: 30px;*/
-/*    }*/
-/*}*/
-/*@media only (max-width: 376px) {*/
-/*    #eco {*/
-/*        padding-left: 75px;*/
-/*    }*/
-/*}*/
+@media only screen and (max-width: 376px) {
+    .show {
+        width: 80%;
+    }
+}
+@media only screen and (min-width: 800px) {
+    #eco {
+        padding-right: 5rem;
+    }
+}
+@media only screen and (max-width: 376px) {
+    #eco {
+        padding-left: .5rem;
+        padding-right: 0;
+    }
+}
 
 
