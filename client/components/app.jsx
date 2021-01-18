@@ -140,7 +140,7 @@ function Reviews() {
 
 function Detailing() {
   return (
-    <motion.div id='main' className="div1 border foot1"
+    <motion.div id='main' className="div1 w-100 border foot1"
       style={pageStyle}
       initial="initial"
       animate="in"

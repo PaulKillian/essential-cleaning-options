@@ -18,18 +18,18 @@ function AutoGallery() {
         </div>
       </div>
       <div data-aos="flip-up" data-aos-duration="2000"
-        className="flex row mx-3 shadowed justify-content-center">
-        <img className="mt-1 simple col-3" src="images/richa.webp" alt="image of car detail"></img>
-        <img className="mt-1 simple col-3" src="images/richb.webp" alt="image of car detail"></img>
-        <img className="mt-1 simple col-3" src="images/richc.webp" alt="image of car detail"></img>
-        <img className="mt-1 simple col-3" src="images/richd.webp" alt="image of car detail"></img>
+        className="d-flex row mx-3 justify-content-center">
+        <img className="mt-1 simple col-lg-3 col-md-6 col-sm-12" src="images/richa.webp" alt="image of car detail"></img>
+        <img className="mt-1 simple col-lg-3 col-md-6 col-sm-12" src="images/richb.webp" alt="image of car detail"></img>
+        <img className="mt-1 simple col-lg-3 col-md-6 col-sm-12" src="images/richc.webp" alt="image of car detail"></img>
+        <img className="mt-1 simple col-lg-3 col-md-6 col-sm-12" src="images/richd.webp" alt="image of car detail"></img>
       </div>
       <div data-aos="flip-up" data-aos-duration="2000"
-        className="flex row mx-3 pb-4 shadowed my-3 justify-content-center">
-        <img className="mt-4 simple col-3" src="images/guya.webp" alt="image of car detail"></img>
-        <img className="mt-4 simple col-3" src="images/guyb.webp" alt="image of car detail"></img>
-        <img className="mt-4 simple col-3" src="images/guyc.webp" alt="image of car detail"></img>
-        <img className="mt-4 simple col-3" src="images/guyd.webp" alt="image of car detail"></img>
+        className="d-flex row mx-3 pb-4 my-3 justify-content-center">
+        <img className="mt-1 simple col-lg-3 col-md-6 col-sm-12" src="images/guya.webp" alt="image of car detail"></img>
+        <img className="mt-1 simple col-lg-3 col-md-6 col-sm-12" src="images/guyb.webp" alt="image of car detail"></img>
+        <img className="mt-1 simple col-lg-3 col-md-6 col-sm-12" src="images/guyc.webp" alt="image of car detail"></img>
+        <img className="mt-1 simple col-lg-3 col-md-6 col-sm-12" src="images/guyd.webp" alt="image of car detail"></img>
       </div>
     </>
   );
