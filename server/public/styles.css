@@ -512,31 +512,32 @@ img {
     width: 100%;
     height: auto;
 }
-.overlayL {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #6e72a3;
-    overflow: hidden;
-    width: 0;
-    height: 100%;
-    transition: 0.2s ease;
-}
-.overlayR {
-    position: absolute;
-    overflow: hidden;
-    width: 0;
-    height: 100%;
-    transition: 0.1s ease;
-}
-.containTL:hover .overlayR {
-    border-radius: 10px;
-    width: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/carpet6.webp");
-    height: 400px;
-    background-size: cover;
-}
+/*.overlayL {*/
+/*    position: absolute;*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    background-color: #6e72a3;*/
+/*    overflow: hidden;*/
+/*    width: 0;*/
+/*    height: 100%;*/
+/*    transition: 0.2s ease;*/
+/*}*/
+/*.overlayR {*/
+/*    position: absolute;*/
+/*    overflow: hidden;*/
+/*    width: 0;*/
+/*    height: 100%;*/
+/*    transition: 0.1s ease;*/
+/*}*/
+/*.containTL:hover .overlayR {*/
+/*    border-radius: 10px;*/
+/*    width: 100%;*/
+/*    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/carpet6.webp");*/
+/*    height: 400px;*/
+/*    background-size: cover;*/
+/*}*/
+
 .containBL:hover .overlayR {
     border-radius: 10px;
     width: 100%;
