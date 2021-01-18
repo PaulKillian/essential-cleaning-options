@@ -19,9 +19,9 @@ function Hero(props) {
   });
   return (
     <>
-      <div className={'paralax d-flex justify-content-center col-12'}>
+      <div className={'paralax d-flex justify-content-center align-items-center p-4 col-12'}>
 
-        <div id="eco" className="text-white d-flex justify-content-left align-items-center pb-5">
+        {/*<div id="eco" className="row text-white d-flex justify-content-left align-items-center pb-5">*/}
 
           <div className={'display-1 d-flex col-5 justify-content-center'}>
             <div className={'text-primary col-2 top1'}>E</div>
@@ -38,7 +38,7 @@ function Hero(props) {
               <div className={'display-3 text-white'}>OPTIONS</div>
             </div>
           </div>
-        </div>
+        {/*</div>*/}
       </div>
       <div className={ 'text-center' }>
         <h4>SERVICES</h4>

@@ -64,13 +64,8 @@ function CarpetGallery() {
   return (
     <>
       <div className="text-white text-center mt-4 mb-5 display-4">Carpet Gallery</div>
-      <div style={{
-        height: '520px'
-      }}>
+      <div className={'d-flex justify-content-center pb-5'}>
         <div style={{
-          left: '9rem',
-          position: 'relative',
-          top: '2rem',
           width: '80%'
         }}>
           < Gallery images={IMAGES} />

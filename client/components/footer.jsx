@@ -47,15 +47,15 @@ class Footer extends React.Component {
   render() {
     return (
       <>
-        <footer className="pt-3 m-4 foot1">
-          <h2 className="pb-3 pl-3 text-white text-center shadowed">For Additional Information Contact Ken</h2>
-          <div className="row shadowed flex justify-content-around">
+        <footer className="pt-3 foot1 shadowed">
+          <h2 className="pb-3 pl-3 text-white text-center">For Additional Information Contact Ken</h2>
+          <div className="row col-10 flex justify-content-around">
             <div className="col-2">
               <img src="/images/ken.jpg" alt="image of ken mendoza"></img>
             </div>
             <p className={'col-5 text-white text-center'}>
               <hr></hr>Independently owned and operated in South Orange County since 2014</p>
-            <div className="text-white shadowed">
+            <div className="text-white ">
               <div className="col-12">
                 <img className="mb-2 ml-4 icon-size" src="/images/telephone.png" alt="image of telephone"></img>
                 <div>949-254-7482</div>
