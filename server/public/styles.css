@@ -444,7 +444,16 @@ h1.ml8 {
     font-family: arial;
 }
 .mrble {
-    background-color: #f8f8ff;
+    background-color: #EEF2F7;
+}
+.card-shadow {
+    box-shadow:
+        /*0 2.8px 2.2px rgba(0, 0, 0, 0.034),*/
+        /*0 6.7px 5.3px rgba(0, 0, 0, 0.048),*/
+        /*0 12.5px 10px rgba(0, 0, 0, 0.06),*/
+        /*0 22.3px 17.9px rgba(0, 0, 0, 0.072),*/
+        0 20.8px 20.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12);
 }
 .dec-height {
     height: 53vh;
@@ -597,8 +606,10 @@ img {
 .simple {
     border: 1px solid #4c3c1b;
     padding: 5px;
-    width: 400px;
     background-color: #ffffff;
+}
+.text-shadow {
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 /*.menu-text-size {*/
 /*    font-size: 2vw;*/

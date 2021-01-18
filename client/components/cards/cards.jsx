@@ -6,8 +6,8 @@ function Cards() {
     <>
       <div id="services"></div>
       <div className="mt-5 container">
-        <div className="row d-flex justify-content-center">
-          <div className="col-lg-6 col-md-6 mb-5 bg-white shadowed">
+        <div className="row d-flex justify-content-center mb-5">
+          <div className="col-lg-6 col-md-6 bg-white card-shadow">
             <h2 className={'display-4 text-center pt-3'}>VERY LOW MOISTURE</h2>
             <hr className={'bg-dark'}></hr>
             <p className="p-2">I provide low moisture carpet cleaning with the use of
@@ -21,10 +21,10 @@ function Cards() {
               the carpet fibers.</p>
             <NavLink to="/carpet-gallery" className="nav-link text-dark text-center pb-2">Photos</NavLink>
           </div>
-          <img src="../images/carpet6.webp" className="row shadowed no-pad shadowed bottom col-lg-6 col-md-6 mb-5"></img>
+          <img src="../images/carpet6.webp" className="row no-pad bottom card-shadow col-lg-6 col-md-6"></img>
         </div>
-        <div className="row d-flex justify-content-center">
-          <div className="col-lg-6 col-md-6 mb-5 bg-white shadowed">
+        <div className="row d-flex justify-content-center mb-5">
+          <div className="col-lg-6 col-md-6 bg-white card-shadow">
             <h2 className={'display-4 text-center pt-3'}>UHOLSTERY CLEANING</h2>
             <hr className={'bg-dark'}></hr>
             <p className="p-2">This results in less re-soiling and faster drying times.
@@ -42,11 +42,11 @@ function Cards() {
               totally safe and effective.</p>
             <NavLink to="/carpet-gallery" className="nav-link text-dark text-center pb-2">Photos</NavLink>
           </div>
-          <img src="../images/coucha.webp" className="row col-lg-6 no-pad shadowed bottom col-md-6 mb-5"></img>
+          <img src="../images/coucha.webp" className="row col-lg-6 no-pad bottom card-shadow col-md-6"></img>
         </div>
-        <div className="row d-flex justify-content-center">
-          <div className="col-lg-6 col-md-6 col-sm-6 mb-5 bg-white shadowed ">
-            <h2 className={'display-4 text-center pt-3 '}>AUTO DETAILING</h2>
+        <div className="row d-flex justify-content-center mb-5">
+          <div className="col-lg-6 col-md-6 col-sm-6 bg-white card-shadow">
+            <h2 className={'display-4 text-center pt-3'}>AUTO DETAILING</h2>
             <hr className={'bg-dark'}></hr>
             <p className="p-2 text-center">Providing cleaning with a chemical free cleaner
               and sanitizing with steam for refrigerators and freezers. For ovens and stove tops
@@ -55,13 +55,13 @@ function Cards() {
             <NavLink to="/auto-detailing" className="nav-link text-dark text-center">Photos</NavLink>
             <NavLink to="/prices" className="nav-link text-dark text-center pb-5">Detailing Services and Prices</NavLink>
           </div>
-          <img src="../images/auto.webp" className="row no-pad bottom col-lg-6 col-md-6 col-sm-6 mb-5"></img>
+          <img src="../images/auto.webp" className="row no-pad bottom col-lg-6 card-shadow col-md-6 col-sm-6"></img>
         </div>
       </div>
       {/*    </div> */}
       {/*    <div id="cards" className="col-lg-3 col-md-11 mb-3 */}
-      {/*      shadowed upholstrey-s containTR center-card-text text-white"> */}
-      {/*      <h1 className="text-white shadowed">Upholstery Cleaning</h1> */}
+      {/*       upholstrey-s containTR center-card-text text-white"> */}
+      {/*      <h1 className="text-white ">Upholstery Cleaning</h1> */}
       {/*      <div className="overlayR"> */}
       {/*        <div className="blur"> */}
       {/*          <p className="p-2 text-center">This results in less re-soiling and faster drying times. */}
@@ -81,8 +81,8 @@ function Cards() {
       {/*      </div> */}
       {/*    </div> */}
       {/*    <div id="cards" className="col-lg-3 col-md-11 mb-3 */}
-      {/*      shadowed grout-s containBR center-card-text text-white"> */}
-      {/*      <h1 className="text-white shadowed">Auto<br></br>Detailing</h1> */}
+      {/*       grout-s containBR center-card-text text-white"> */}
+      {/*      <h1 className="text-white ">Auto<br></br>Detailing</h1> */}
       {/*      <div className="overlayR"> */}
       {/*        <div className="blur"> */}
       {/*          <p className="p-2 text-center">Providing cleaning with a chemical free cleaner */}
