@@ -488,14 +488,7 @@ img {
 .carousel-height {
     min-height: 464px;
 }
-.opacity {
-    opacity: 1;
-}
-.opacity2 {
-    opacity: 1;
-}
 .contain {
-}
     position: relative;
     width: 100%;
     background-size: cover;
