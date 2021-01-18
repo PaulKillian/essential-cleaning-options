@@ -488,14 +488,7 @@ img {
 .carousel-height {
     min-height: 464px;
 }
-.opacity {
-    opacity: 1;
-}
-.opacity2 {
-    opacity: 1;
-}
 .contain {
-}
     position: relative;
     width: 100%;
     background-size: cover;
@@ -519,24 +512,24 @@ img {
     width: 100%;
     height: auto;
 }
-.overlayL {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: #6e72a3;
-    overflow: hidden;
-    width: 0;
-    height: 100%;
-    transition: 0.2s ease;
-}
-.overlayR {
-    position: absolute;
-    overflow: hidden;
-    width: 0;
-    height: 100%;
-    transition: 0.1s ease;
-}
+/*.overlayL {*/
+/*    position: absolute;*/
+/*    bottom: 0;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    background-color: #6e72a3;*/
+/*    overflow: hidden;*/
+/*    width: 0;*/
+/*    height: 100%;*/
+/*    transition: 0.2s ease;*/
+/*}*/
+/*.overlayR {*/
+/*    position: absolute;*/
+/*    overflow: hidden;*/
+/*    width: 0;*/
+/*    height: 100%;*/
+/*    transition: 0.1s ease;*/
+/*}*/
 /*.containTL:hover .overlayR {*/
 /*    border-radius: 10px;*/
 /*    width: 100%;*/
