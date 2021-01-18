@@ -45,8 +45,8 @@ function Cards() {
           <img src="../images/coucha.webp" className="row col-lg-6 no-pad shadowed bottom col-md-6 mb-5"></img>
         </div>
         <div className="row d-flex justify-content-center">
-          <div className="col-lg-6 col-md-6 col-sm-6 mb-5 position-relative bg-white opacity shadowed ">
-            <h2 className={'display-4 text-center pt-3 opacity2 top'}>AUTO DETAILING</h2>
+          <div className="col-lg-6 col-md-6 col-sm-6 mb-5 bg-white shadowed ">
+            <h2 className={'display-4 text-center pt-3 '}>AUTO DETAILING</h2>
             <hr className={'bg-dark'}></hr>
             <p className="p-2 text-center">Providing cleaning with a chemical free cleaner
               and sanitizing with steam for refrigerators and freezers. For ovens and stove tops
@@ -55,7 +55,7 @@ function Cards() {
             <NavLink to="/auto-detailing" className="nav-link text-dark text-center">Photos</NavLink>
             <NavLink to="/prices" className="nav-link text-dark text-center pb-5">Detailing Services and Prices</NavLink>
           </div>
-          <img src="../images/auto.webp" className="row no-pad bottom col-lg-6 position-absolute col-md-6 col-sm-6 mb-5"></img>
+          <img src="../images/auto.webp" className="row no-pad bottom col-lg-6 col-md-6 col-sm-6 mb-5"></img>
         </div>
       </div>
       {/*    </div> */}
