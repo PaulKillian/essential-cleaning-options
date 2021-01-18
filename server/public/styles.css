@@ -702,5 +702,20 @@ img {
         opacity: .5;
     }
 }
+@media only screen and (max-width: 376px) {
+    .simple {
+        height: 450px;
+    }
+}
+@media only screen and (max-width: 769px) {
+    .simple {
+        height: 485px;
+    }
+}
+@media only screen and (max-width: 769px) {
+    .no-pad {
+        height: 248px;
+    }
+}
 
 
