@@ -49,20 +49,24 @@ class Footer extends React.Component {
       <>
         <footer className="pt-3 foot1 shadowed">
           <h2 className="pb-3 pl-3 text-white text-center">For Additional Information Contact Ken</h2>
-          <div className="row col-10 flex justify-content-around">
-            <div className="col-2">
+          <div className="row flex justify-content-around">
+            <div>
               <img src="/images/ken.jpg" alt="image of ken mendoza"></img>
             </div>
             <p className={'col-5 text-white text-center'}>
-              <hr></hr>Independently owned and operated in South Orange County since 2014</p>
-            <div className="text-white ">
-              <div className="col-12">
-                <img className="mb-2 ml-4 icon-size" src="/images/telephone.png" alt="image of telephone"></img>
+              Independently owned and operated in South Orange County since 2014</p>
+            <div id="contact" className="text-white d-flex flex-column justify-content-center">
+              <div>
+                <div className="d-flex justify-content-center">
+                  <img className="mb-2 icon-size" src="/images/telephone.png" alt="image of telephone"></img>
+                </div>
                 <div>949-254-7482</div>
               </div>
-              <div className="col-12">
-                <img className="ml-4 icon-size" src="/images/mail.png" alt="image of envelope"></img>
-                <div>essentialcleaningoptions@gmail.com</div>
+              <div className="pb-2">
+                <div className="d-flex justify-content-center">
+                  <img className="icon-size" src="/images/mail.png" alt="image of envelope"></img>
+                </div>
+                <div>eco@gmail.com</div>
               </div>
             </div>
           </div>

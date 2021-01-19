@@ -67,7 +67,7 @@ const pageStyle = {
 
 function Home() {
   return (
-    <motion.div id='main' className="col-12 border mrble paralax-main"
+    <motion.div id='main' className="col-12 mrble paralax-main"
       style={pageStyle}
       initial="initial"
       animate="in"
@@ -87,7 +87,7 @@ function Home() {
 
 function EstimateCalendar() {
   return (
-    <motion.div id='main' className="bg-off-white border w-100 foot1"
+    <motion.div id='main' className="bg-off-white w-100 foot1"
       style={pageStyle}
       initial="initial"
       animate="in"
@@ -104,7 +104,7 @@ function EstimateCalendar() {
 }
 function AutoEstimateCalendar() {
   return (
-    <motion.div id='main' className="bg-off-white border w-100 auto-estimate"
+    <motion.div id='main' className="bg-off-white w-100 auto-estimate"
       style={pageStyle}
       initial="initial"
       animate="in"
@@ -122,7 +122,7 @@ function AutoEstimateCalendar() {
 
 function Reviews() {
   return (
-    <motion.div id='main' className="border foot1 position-relative"
+    <motion.div id='main' className="foot1 position-relative"
       style={pageStyle}
       initial="initial"
       animate="in"
@@ -140,7 +140,7 @@ function Reviews() {
 
 function Detailing() {
   return (
-    <motion.div id='main' className="div1 w-100 border foot1"
+    <motion.div id='main' className="div1 w-100 foot1"
       style={pageStyle}
       initial="initial"
       animate="in"
@@ -158,7 +158,7 @@ function Detailing() {
 
 function CarpetGallery() {
   return (
-    <motion.div id='main' className="border w-100 foot1"
+    <motion.div id='main' className="w-100 foot1"
       style={pageStyle}
       initial="initial"
       animate="in"
@@ -176,7 +176,7 @@ function CarpetGallery() {
 
 function UpholsteryGallery() {
   return (
-    <motion.div id='main' className="border w-100 foot1"
+    <motion.div id='main' className="w-100 foot1"
       style={pageStyle}
       initial="initial"
       animate="in"
@@ -194,7 +194,7 @@ function UpholsteryGallery() {
 
 function DetailPrices() {
   return (
-    <motion.div id='main' className="border w-100 foot1"
+    <motion.div id='main' className="w-100 foot1"
       style={pageStyle}
       initial="initial"
       animate="in"
