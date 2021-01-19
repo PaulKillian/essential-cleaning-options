@@ -98,7 +98,7 @@ class Estimate extends React.Component {
       <>
         <div className="col-12 scale bottom">
           <div className="d-flex justify-content-center align-items-center flex-column">
-            <p className="text-font shadowed-text text-white">Schedule Estimate</p>
+            <h1 className="text-font shadowed-text text-white pt-5">Schedule Estimate</h1>
           </div>
         </div>
         <h1 className="ml16 d-none">Your Message Has Been Sent!</h1>
@@ -170,7 +170,7 @@ class Estimate extends React.Component {
 
                 <div className="form-row">
                   <div className="form-group col-6">
-                    <label className="mb-0">How Many Stains</label>
+                    <label className="mb-0">How Many Stains Are There</label>
                     <input
                       type="text"
                       className="form-control shadowed"
