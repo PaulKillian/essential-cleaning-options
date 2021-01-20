@@ -7,8 +7,8 @@ body {
 body {
     font-family: "Merriweather", serif;
 }
-h3, h2{
-    /*font-size: 4vw;*/
+h3 {
+    font-size: 3vw;
 }
 span {
     right: 3rem;
@@ -136,7 +136,8 @@ h1 {
 .text-font {
     font-family: "Merriweather", serif;
     z-index: 1;
-    top: 14rem;
+    /*top: 14rem;*/
+    font-size: 50px;
 }
 li,
 p {
@@ -644,7 +645,7 @@ img {
     padding-right: 0px;
     padding-left: 0px;
 }
-ul {
+ul.top-ul {
     list-style: none;
 }
 @media only screen and (max-width: 990px) {

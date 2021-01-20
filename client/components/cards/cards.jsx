@@ -5,7 +5,7 @@ function Cards() {
   return (
     <>
       <div className="mt-5 container">
-        <div id="services" className="row d-flex justify-content-center mb-5">
+        <div id="services" className="row d-flex sticky-top justify-content-center mb-5">
           <div className="col-lg-6 col-md-6 bg-white card-shadow">
             <h2 className={'display-4 text-center pt-3'}>VERY LOW MOISTURE</h2>
             <hr className={'bg-dark'}></hr>

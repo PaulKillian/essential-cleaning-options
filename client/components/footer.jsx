@@ -49,7 +49,7 @@ class Footer extends React.Component {
       <>
         <footer className="pt-3 bg-footer shadowed">
           <h2 className="pb-3 pl-3 text-white text-center">For Additional Information Contact Ken</h2>
-          <div className="row flex justify-content-around">
+          <div className="row flex col-sm-12 justify-content-around">
             <div>
               <img src="/images/ken.jpg" alt="image of ken mendoza"></img>
             </div>
