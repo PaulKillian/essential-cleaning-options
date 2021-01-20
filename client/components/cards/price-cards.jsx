@@ -1,19 +1,18 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCar} from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCar} from '@fortawesome/free-solid-svg-icons';
 
 function PriceCards() {
   return (
-
     <div className={'container mt-5 mb-5'}>
-      <ul className={'top-ul'}>
+      <ul className={'row top-ul col-lg-12 d-flex justify-content-around'}>
         <li><FontAwesomeIcon icon={faCar} className={'fa-3x text-primary'}/>sub/compact 2 door vehicles</li>
         <li><FontAwesomeIcon icon={faCar} className={'fa-3x text-success'}/>mid/4 door sedans &#38; hatchbacks</li>
         <li><FontAwesomeIcon icon={faCar} className={'fa-3x text-warning'}/>full/4 door sedans &#38; small SUV&#39;s</li>
       </ul>
-      <div className={'row d-flex justify-content-between'}>
-        <div id={'price-card'} className={'mt-5 rounded text-dark col-6-sm col-lg-5 col-md-12'}>
-          <div className={'bg-white price-shadow'}>
+      <div className={'row d-flex mt-5 justify-content-between'}>
+        <div id={'price-card'} className={'rounded text-dark col-6-sm col-lg-5 col-md-12'}>
+          <div className={'bg-white price-shadow price-back text-white'}>
             <h4 className={'p-2 text-center price-shadow rounded'}>Car Wash</h4>
           </div>
           <ul className={'py-4 price-shadow pr-4 bg-white'}>
@@ -25,22 +24,22 @@ function PriceCards() {
         </div>
         <div className={'d-flex flex-wrap justify-content-around mb-2 col-lg-7 align-items-center'}>
           <div className={'bg-white rounded price1 text-center price-shadow p-2 mb-2'}>
-            <h4 className={'bg-primary p-5'}>Small</h4>
+            <h4 className={'bg-primary p-3 text-white'}>Small</h4>
             <p><span className={'text-info h3'}>$25 - $30</span><br></br>Approximate Time:<br></br>1 hour</p>
           </div>
           <div className={'bg-white rounded price2 text-center price-shadow p-2 mb-2'}>
-            <h4 className={'bg-success p-5'}>Medium</h4>
+            <h4 className={'bg-success p-3 text-white'}>Medium</h4>
             <p><span className={'text-info h3'}>$30 - $35</span><br></br>Approximate Time:<br></br>1.5 hours</p>
           </div>
           <div className={'bg-white rounded price3 text-center price-shadow p-2 mb-2'}>
-            <h4 className={'bg-warning p-5'}>Large</h4>
+            <h4 className={'bg-warning p-3 text-white'}>Large</h4>
             <p><span className={'text-info h3'}>$35 - $40</span><br></br>Approximate Time:<br></br>1 hour 45 minutes</p>
           </div>
         </div>
       </div>
       <div className={'row mt-3 d-flex justify-content-between'}>
         <div id={'price-card'} className={'mt-2 rounded text-dark col-6-sm col-lg-5 col-md-12'}>
-          <div className={'bg-white'}>
+          <div className={'price-back text-white'}>
             <h4 className={'p-2 text-center price-shadow rounded'}>Basic Interior Cleaning</h4>
           </div>
           <ul className={'py-4 pr-4 bg-white price-shadow'}>
@@ -58,22 +57,22 @@ function PriceCards() {
         </div>
         <div className={'d-flex flex-wrap justify-content-around mb-3 col-lg-7 align-items-center'}>
           <div className={'bg-white rounded price1 text-center price-shadow p-2 mb-2'}>
-            <h4 className={'bg-primary p-5'}>Small</h4>
+            <h4 className={'bg-primary p-3 text-white'}>Small</h4>
             <p><span className={'text-info h3'}>$40 - $50</span><br></br>Approximate Time:<br></br>1 hour 30 minutes</p>
           </div>
           <div className={'bg-white rounded price2 text-center price-shadow p-2 mb-2'}>
-            <h4 className={'bg-success p-5'}>Medium</h4>
+            <h4 className={'bg-success p-3 text-white'}>Medium</h4>
             <p><span className={'text-info h3'}>$50 - $60</span><br></br>Approximate Time:<br></br>1 hour 45 minutes</p>
           </div>
           <div className={'bg-white rounded price3 text-center price-shadow p-2 mb-2'}>
-            <h4 className={'bg-warning p-5'}>Large</h4>
+            <h4 className={'bg-warning p-3 text-white'}>Large</h4>
             <p><span className={'text-info h3'}>$60 - $65</span><br></br>Approximate Time:<br></br>2 hours</p>
           </div>
         </div>
       </div>
       <div className={'row mt-3 d-flex justify-content-between'}>
         <div id={'price-card'} className={'rounded text-dark col-lg-5 col-md-12'}>
-          <div className={'bg-white'}>
+          <div className={'bg-white price-back text-white'}>
             <h4 className={'p-2 text-center price-shadow rounded'}>Deep Interior Cleaning</h4>
           </div>
           <ul className={'py-4 pr-4 bg-white price-shadow'}>
@@ -92,22 +91,22 @@ function PriceCards() {
         </div>
         <div className={'d-flex flex-wrap justify-content-around mb-2 col-lg-7 align-items-center'}>
           <div className={'bg-white rounded price1 text-center price-shadow p-2 mb-2'}>
-            <h4 className={'bg-primary p-5'}>Small</h4>
+            <h4 className={'bg-primary p-3 text-white'}>Small</h4>
             <p><span className={'text-info h3'}>$125 - $150</span><br></br>Approximate Time:<br></br>3 hours</p>
           </div>
           <div className={'bg-white rounded price2 text-center price-shadow p-2 mb-2'}>
-            <h4 className={'bg-success p-5'}>Medium</h4>
+            <h4 className={'bg-success p-3 text-white'}>Medium</h4>
             <p><span className={'text-info h3'}>$150 - $175</span><br></br>Approximate Time:<br></br>3.5 hours</p>
           </div>
           <div className={'bg-white rounded price3 text-center price-shadow p-2 mb-2'}>
-            <h4 className={'bg-warning p-5'}>Large</h4>
+            <h4 className={'bg-warning p-3 text-white'}>Large</h4>
             <p><span className={'text-info h3'}>$175 - $200</span><br></br>Approximate Time:<br></br>4 hours</p>
           </div>
         </div>
       </div>
       <div className={'row mt-3 d-flex justify-content-between'}>
         <div id={'price-card'} className={'mt-2 mb-2 rounded text-dark col-lg-5 col-md-12'}>
-          <div className={'bg-white'}>
+          <div className={'bg-white price-back text-white'}>
             <h4 className={'p-2 text-center price-shadow rounded'}>Clear Coat Decontamination</h4>
           </div>
           <div className={'py-4 pr-4 bg-white price-shadow'}>
@@ -125,15 +124,15 @@ function PriceCards() {
         </div>
         <div className={'d-flex flex-wrap justify-content-around col-lg-7 align-items-center my-2'}>
           <div className={'bg-white rounded price1 text-center p-2 mb-2'}>
-            <h4 className={'bg-primary p-5'}>Small</h4>
+            <h4 className={'bg-primary p-3 text-white'}>Small</h4>
             <p><span className={'text-info h3'}>$175</span><br></br>Approximate Time:<br></br>2 hours</p>
           </div>
           <div className={'bg-white rounded price2 text-center price-shadow p-2 mb-2'}>
-            <h4 className={'bg-success p-5'}>Medium</h4>
+            <h4 className={'bg-success p-3 text-white'}>Medium</h4>
             <p><span className={'text-info h3'}>$200</span><br></br>Approximate Time:<br></br>2.5 hours</p>
           </div>
           <div className={'bg-white rounded price3 text-center price-shadow p-2 mb-2'}>
-            <h4 className={'bg-warning p-5'}>Large</h4>
+            <h4 className={'bg-warning p-3 text-white'}>Large</h4>
             <p><span className={'text-info h3'}>$225</span><br></br>Approximate Time:<br></br>3 hours</p>
           </div>
         </div>
