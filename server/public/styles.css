@@ -318,7 +318,7 @@ h1.ml8 {
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    background-color: #61c87a;
+    background-color: #4c7c57;
     max-height: 789px;
     position: absolute;
     transition: all 0.1s ease-in-out;
@@ -327,7 +327,7 @@ h1.ml8 {
     position: fixed;
     font-size: 3vw;
     /*outline: 1px solid #000000;*/
-    box-shadow: inset 10px 0 7px -5px #3e3d3d;
+    box-shadow: inset 8px 0 10px -5px #3e3d3d;
 }
 .show {
     width: 33%;
@@ -728,6 +728,15 @@ ul.top-ul {
         position: relative;
         width: 100%;
         padding-left: 28px;
+    }
+    .paralax {
+        min-height: 60vh;
+        background: linear-gradient(rgba(2, 2, 2, 0.1), rgba(2, 2, 2, 0.1)), url("../images/main.webp");
+        height: auto;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 0 16px 14px -16px black;
     }
 }
 @media only screen and (max-width: 376px) {

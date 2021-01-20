@@ -60,7 +60,7 @@ class Navbar extends React.Component {
           </div>
         </div>
         <div className={cssClass} onClick={this.hideMenu}>
-          <ul className="navbar-nav mt-2 menu-text-size">
+          <ul className="navbar-nav mt-2 menu-text-size shadowed-text">
             <li className="nav-item ml-3 mb-2">
               <NavLink to="/" exact className="nav-link2 text-white text-left">HOME</NavLink>
             </li>
