@@ -140,7 +140,7 @@ function Reviews() {
 
 function Detailing() {
   return (
-    <motion.div id='main' className="div1 w-100 foot1"
+    <motion.div id='main' className="div1 w-100 bg-g"
       style={pageStyle}
       initial="initial"
       animate="in"
@@ -194,7 +194,7 @@ function UpholsteryGallery() {
 
 function DetailPrices() {
   return (
-    <motion.div id='main' className="w-100 foot1"
+    <motion.div id='main' className="w-100 bg-g"
       style={pageStyle}
       initial="initial"
       animate="in"
