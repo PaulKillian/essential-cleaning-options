@@ -49,13 +49,13 @@ class Footer extends React.Component {
       <>
         <footer className="pt-3 bg-footer shadowed">
           <h2 className="text-white text-center">For Additional Information Contact Ken</h2>
-          <div className="row flex justify-content-around align-items-center">
-            <div className={'pt-2'}>
+          <div className="row sm-col flex justify-content-around align-items-center">
+            <div className={'py-4'}>
               <img src="/images/ken.jpg" alt="image of ken mendoza"></img>
             </div>
             <p className={'text-white col-md-6 text-center'}>
               Independently owned and operated in South Orange County since 2014</p>
-            <div id="contact" className="text-white d-flex flex-column jutify-content-center">
+            <div id="contact" className="text-white d-flex flex-column justify-content-center">
               <div>
                 <div className="d-flex justify-content-center">
                   <img className="mb-2 icon-size" src="/images/telephone.png" alt="image of telephone"></img>
