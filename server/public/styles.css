@@ -1,7 +1,8 @@
 /* *{outline: 1px solid red;}*/
 html,
 body {
-    overflow-x: hidden;
+    overflow: hidden;
+    overflow-y: auto;
     scroll-behavior: smooth;
 }
 body {
@@ -695,11 +696,19 @@ ul.top-ul {
     .show {
         width: 80%;
     }
+    h2 {
+        margin-bottom: 0;
+    }
     h3 {
         padding: 0;
     }
     .nav-item {
         margin-left: 2rem;
+    }
+    .sm-col {
+        position: relative;
+        width: 100%;
+        padding-left: 28px;
     }
 }
 @media only screen and (max-width: 769px) {
