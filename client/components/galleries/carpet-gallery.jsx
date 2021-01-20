@@ -66,7 +66,7 @@ function CarpetGallery() {
       <h1 className=" text-font text-white text-center mt-4 mb-5 pt-5">Carpet Gallery</h1>
       <div className={'d-flex justify-content-center pb-5'}>
         <div style={{
-          width: '90%'
+          width: '85%'
         }}>
           < Gallery images={IMAGES} />
         </div>
