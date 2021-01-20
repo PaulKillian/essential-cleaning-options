@@ -36,20 +36,21 @@ app.use(sessionMiddleware);
 app.use(express.json());
 
 app.get('/api/health-check', (req, res, next) => {
-  db.query('select \'successfully connected\' as "message"')
-    .then(result => res.json(result.rows[0]))
-    .catch(err => next(err));
+  // eslint-disable-next-line no-console
+  console.log(res)
+   // .catch(err => next(err));
 });
 
 app.post('/api/estimate', (req, res) => {
   const gmail = process.env.GMAIL_PASS.toString();
+  const user = process.env.GMAIL_USER.toString();
   const transport = nodemailer.createTransport({
     host: 'smtp.mail.gmail.com',
     port: 587,
     service: 'gmail',
     secure: false,
     auth: {
-      user: 'essentialcleaningoptions@gmail.com',
+      user: user,
       pass: gmail
     },
     debug: false,

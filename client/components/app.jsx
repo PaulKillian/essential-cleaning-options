@@ -62,7 +62,11 @@ const pageTransition = {
 
 const pageStyle = {
   position: 'absolute'
-
+};
+const pageStyleReview = {
+  position: 'absolute',
+  height: '100vh',
+  overflow: 'hidden'
 };
 
 function Home() {
@@ -123,7 +127,7 @@ function AutoEstimateCalendar() {
 function Reviews() {
   return (
     <motion.div id='main' className="foot1 position-relative"
-      style={pageStyle}
+      style={pageStyleReview}
       initial="initial"
       animate="in"
       exit="out"

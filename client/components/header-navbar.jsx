@@ -41,10 +41,10 @@ class Navbar extends React.Component {
 
   render() {
     let modalStyles = 'modal-overlay m-0 p-0';
-    let cssClass = 'side-menu menu-bg text-white shadowed';
+    let cssClass = 'side-menu menu-bg text-white';
     if (!this.state.isShown) {
       modalStyles += ' hide';
-      cssClass = 'side-menu pt-4 ';
+      cssClass = 'side-menu menu-bg pt-4 ';
     } else {
       modalStyles += ' block';
       cssClass += ' show pt-4';
@@ -77,9 +77,6 @@ class Navbar extends React.Component {
             </li>
             <li className="nav-item ml-3">
               <NavLink to="/auto-estimate" className="nav-link2 text-white text-left">AUTO DETAILING</NavLink>
-            </li>
-            <li className="nav-item ml-2 mb-2">
-              <img id='logo-m' src="images/1.png" alt="image of logo"></img>
             </li>
           </ul>
         </div>

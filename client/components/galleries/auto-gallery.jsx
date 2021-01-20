@@ -10,7 +10,7 @@ function AutoGallery() {
     <>
       <div className="col-12 mb-5 top scale bottom position-relative">
         <div className="d-flex justify-content-center align-items-center flex-column">
-          <h1 className="text-font mt-4 shadowed-text text-white pt-5">AUTO DETAILING</h1>
+          <h1 className="text-font mt-4 text-dark pt-5">AUTO DETAILING</h1>
         </div>
       </div>
       <div className="d-flex row mx-3 justify-content-center">
