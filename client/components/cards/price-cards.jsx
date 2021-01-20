@@ -12,7 +12,7 @@ function PriceCards() {
       </ul>
       <div className={'row d-flex mt-5 justify-content-between'}>
         <div id={'price-card'} className={'rounded text-dark col-6-sm col-lg-5 col-md-12'}>
-          <div className={'bg-white price-shadow price-back text-white'}>
+          <div className={'price-shadow price-back text-white'}>
             <h4 className={'p-2 text-center price-shadow rounded'}>Car Wash</h4>
           </div>
           <ul className={'py-4 price-shadow pr-4 bg-white'}>
@@ -56,7 +56,7 @@ function PriceCards() {
           </ul>
         </div>
         <div className={'d-flex flex-wrap justify-content-around mb-3 col-lg-7 align-items-center'}>
-          <div className={'bg-white rounded price1 text-center price-shadow p-2 mb-2'}>
+          <div className={'bg-white rounded text-center price-shadow p-2 mb-2'}>
             <h4 className={'bg-primary p-3 text-white'}>Small</h4>
             <p><span className={'text-info h3'}>$40 - $50</span><br></br>Approximate Time:<br></br>1 hour 30 minutes</p>
           </div>
@@ -72,7 +72,7 @@ function PriceCards() {
       </div>
       <div className={'row mt-3 d-flex justify-content-between'}>
         <div id={'price-card'} className={'rounded text-dark col-lg-5 col-md-12'}>
-          <div className={'bg-white price-back text-white'}>
+          <div className={'price-back text-white'}>
             <h4 className={'p-2 text-center price-shadow rounded'}>Deep Interior Cleaning</h4>
           </div>
           <ul className={'py-4 pr-4 bg-white price-shadow'}>
@@ -106,7 +106,7 @@ function PriceCards() {
       </div>
       <div className={'row mt-3 d-flex justify-content-between'}>
         <div id={'price-card'} className={'mt-2 mb-2 rounded text-dark col-lg-5 col-md-12'}>
-          <div className={'bg-white price-back text-white'}>
+          <div className={'price-back text-white'}>
             <h4 className={'p-2 text-center price-shadow rounded'}>Clear Coat Decontamination</h4>
           </div>
           <div className={'py-4 pr-4 bg-white price-shadow'}>

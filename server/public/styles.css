@@ -649,8 +649,7 @@ ul.top-ul {
     list-style: none;
 }
 .price-back {
-    background-color: #000000;
-    background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+    background-color: #242424;
 }
 @media only screen and (max-width: 990px) {
   #cards {
