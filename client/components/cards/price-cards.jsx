@@ -6,8 +6,8 @@ function PriceCards() {
   return (
 
     <div className={'container mt-5 mb-5'}>
-      <ul>
-        <li><FontAwesomeIcon icon={faCar} className={'fa-3x text-primary'}/>sub/compact two door vehicles</li>
+      <ul className={'top-ul'}>
+        <li><FontAwesomeIcon icon={faCar} className={'fa-3x text-primary'}/>sub/compact 2 door vehicles</li>
         <li><FontAwesomeIcon icon={faCar} className={'fa-3x text-success'}/>mid/4 door sedans &#38; hatchbacks</li>
         <li><FontAwesomeIcon icon={faCar} className={'fa-3x text-warning'}/>full/4 door sedans &#38; small SUV&#39;s</li>
       </ul>
