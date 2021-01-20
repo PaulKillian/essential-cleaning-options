@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 function scroll() {
-  const anchor = document.querySelector('#cards');
+  const anchor = document.querySelector('#services');
   anchor.scrollIntoView({
     behavior: 'smooth',
     block: 'center'
@@ -19,7 +19,7 @@ function Hero(props) {
   });
   return (
     <>
-      <div className={'paralax d-flex justify-content-center align-items-center col-12'}>
+      <div className={'paralax d-flex justify-content-around flex-column align-items-center col-12'}>
 
         {/* <div id="eco" className="row text-white d-flex justify-content-left align-items-center pb-5"> */}
 
@@ -39,10 +39,7 @@ function Hero(props) {
           </div>
         </div>
         {/* </div> */}
-      </div>
-      <div className={ 'text-center' }>
-        <h4>SERVICES</h4>
-        <FontAwesomeIcon className={'text-center pointer fa-2x'} onClick={scroll} icon={faArrowDown} />
+        <button className={ 'text-center bg-primary text-white' } onClick={scroll}>SERVICES</button>
       </div>
     </>
   );

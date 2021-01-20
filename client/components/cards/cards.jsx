@@ -4,9 +4,8 @@ import { NavLink } from 'react-router-dom';
 function Cards() {
   return (
     <>
-      <div id="services"></div>
       <div className="mt-5 container">
-        <div className="row d-flex justify-content-center mb-5">
+        <div id="services" className="row d-flex justify-content-center mb-5">
           <div className="col-lg-6 col-md-6 bg-white card-shadow">
             <h2 className={'display-4 text-center pt-3'}>VERY LOW MOISTURE</h2>
             <hr className={'bg-dark'}></hr>
@@ -19,7 +18,7 @@ function Cards() {
               either a soft brush or carpet fiber pad followed by a
               cotton or microfiber pad for dirt and soil removal from
               the carpet fibers.</p>
-            <NavLink to="/carpet-gallery" className="nav-link text-dark text-center pb-2">Photos</NavLink>
+            <NavLink to="/carpet-gallery" className="nav-link text-dark text-center pb-5">Photos</NavLink>
           </div>
           <img src="../images/carpet6.webp" className="row no-pad bottom card-shadow col-lg-6 col-md-6"></img>
         </div>
@@ -45,7 +44,7 @@ function Cards() {
           <img src="../images/coucha.webp" className="row col-lg-6 no-pad bottom card-shadow col-md-6"></img>
         </div>
         <div className="row d-flex justify-content-center mb-5">
-          <div className="col-lg-6 col-md-6 col-sm-6 bg-white card-shadow">
+          <div className="col-lg-6 col-md-6 bg-white card-shadow">
             <h2 className={'display-4 text-center pt-3'}>AUTO DETAILING</h2>
             <hr className={'bg-dark'}></hr>
             <p className="p-2 text-center">Providing cleaning with a chemical free cleaner
@@ -55,7 +54,7 @@ function Cards() {
             <NavLink to="/auto-detailing" className="nav-link text-dark text-center">Photos</NavLink>
             <NavLink to="/prices" className="nav-link text-dark text-center pb-5">Detailing Services and Prices</NavLink>
           </div>
-          <img src="../images/auto.webp" className="row no-pad bottom col-lg-6 card-shadow col-md-6 col-sm-6"></img>
+          <img src="../images/auto.webp" className="row no-pad bottom col-lg-6 card-shadow col-md-6"></img>
         </div>
       </div>
       {/*    </div> */}

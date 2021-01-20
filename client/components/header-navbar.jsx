@@ -62,21 +62,21 @@ class Navbar extends React.Component {
         <div className={cssClass} onClick={this.hideMenu}>
           <ul className="navbar-nav mt-2 menu-text-size">
             <li className="nav-item ml-3 mb-2">
-              <NavLink to="/" exact className="nav-link text-white text-left">HOME</NavLink>
+              <NavLink to="/" exact className="nav-link2 text-white text-left">HOME</NavLink>
             </li>
             <li className="nav-item ml-3 mb-2">
-              <NavLink to="/" className="nav-link text-white text-left">SERVICES</NavLink>
+              <NavLink to="/" className="nav-link2 text-white text-left">SERVICES</NavLink>
             </li>
             <li className="nav-item ml-3 mb-2">
-              <NavLink to="/reviews" className="nav-link text-white text-left">REVIEWS</NavLink>
+              <NavLink to="/reviews" className="nav-link2 text-white text-left">REVIEWS</NavLink>
             </li>
             <div className={'nav-item line ml-3 mb-2 text-left'}></div>
             <li className="nav-item ml-3 mb-2 text-left">SCHEDULE ESTIMATE:</li>
             <li className="nav-item ml-3 mb-2">
-              <NavLink to="/carpet-estimate" className="nav-link text-white text-left">CARPET/UPHOLSTERY</NavLink>
+              <NavLink to="/carpet-estimate" className="nav-link2 text-white text-left">CARPET/UPHOLSTERY</NavLink>
             </li>
             <li className="nav-item ml-3">
-              <NavLink to="/auto-estimate" className="nav-link text-white text-left">AUTO DETAILING</NavLink>
+              <NavLink to="/auto-estimate" className="nav-link2 text-white text-left">AUTO DETAILING</NavLink>
             </li>
             <li className="nav-item ml-2 mb-2">
               <img id='logo-m' src="images/1.png" alt="image of logo"></img>

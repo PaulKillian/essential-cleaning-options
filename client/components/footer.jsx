@@ -47,7 +47,7 @@ class Footer extends React.Component {
   render() {
     return (
       <>
-        <footer className="pt-3 foot1 shadowed">
+        <footer className="pt-3 bg-footer shadowed">
           <h2 className="pb-3 pl-3 text-white text-center">For Additional Information Contact Ken</h2>
           <div className="row flex justify-content-around">
             <div>
