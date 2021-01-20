@@ -12,8 +12,8 @@ function PriceCards() {
       </ul>
       <div className={'row d-flex mt-5 justify-content-between'}>
         <div id={'price-card'} className={'rounded text-dark col-6-sm col-lg-5 col-md-12'}>
-          <div className={'price-shadow price-back text-white'}>
-            <h4 className={'p-2 text-center price-shadow rounded'}>Car Wash</h4>
+          <div className={'price-shadow text-white'}>
+            <h4 className={'p-2 text-center bg-dark price-shadow rounded'}>Car Wash</h4>
           </div>
           <ul className={'py-4 price-shadow pr-4 bg-white'}>
             <li>Complete Hand wash and dry</li>
@@ -39,8 +39,8 @@ function PriceCards() {
       </div>
       <div className={'row mt-3 d-flex justify-content-between'}>
         <div id={'price-card'} className={'mt-2 rounded text-dark col-6-sm col-lg-5 col-md-12'}>
-          <div className={'price-back text-white'}>
-            <h4 className={'p-2 text-center price-shadow rounded'}>Basic Interior Cleaning</h4>
+          <div className={'text-white'}>
+            <h4 className={'p-2 text-center bg-dark price-shadow rounded'}>Basic Interior Cleaning</h4>
           </div>
           <ul className={'py-4 pr-4 bg-white price-shadow'}>
             <li>Thorough dusting &amp; vacuuming</li>
@@ -72,8 +72,8 @@ function PriceCards() {
       </div>
       <div className={'row mt-3 d-flex justify-content-between'}>
         <div id={'price-card'} className={'rounded text-dark col-lg-5 col-md-12'}>
-          <div className={'price-back text-white'}>
-            <h4 className={'p-2 text-center price-shadow rounded'}>Deep Interior Cleaning</h4>
+          <div className={'text-white'}>
+            <h4 className={'p-2 text-center bg-dark price-shadow rounded'}>Deep Interior Cleaning</h4>
           </div>
           <ul className={'py-4 pr-4 bg-white price-shadow'}>
             <li>Thorough dusting &amp; vacuuming</li>
@@ -106,8 +106,8 @@ function PriceCards() {
       </div>
       <div className={'row mt-3 d-flex justify-content-between'}>
         <div id={'price-card'} className={'mt-2 mb-2 rounded text-dark col-lg-5 col-md-12'}>
-          <div className={'price-back text-white'}>
-            <h4 className={'p-2 text-center price-shadow rounded'}>Clear Coat Decontamination</h4>
+          <div className={'text-white'}>
+            <h4 className={'p-2 text-center bg-dark price-shadow rounded'}>Clear Coat Decontamination</h4>
           </div>
           <div className={'py-4 pr-4 bg-white price-shadow'}>
             <ul>
