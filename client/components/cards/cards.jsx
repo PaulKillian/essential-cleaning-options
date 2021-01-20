@@ -5,7 +5,7 @@ function Cards() {
   return (
     <>
       <div className="mt-5 container">
-        <div id="services" className="row d-flex sticky-top justify-content-center mb-5">
+        <div id="services" className="row mx-1 d-flex justify-content-center mb-5">
           <div className="col-lg-6 col-md-6 bg-white card-shadow">
             <h2 className={'display-4 text-center pt-3'}>VERY LOW MOISTURE</h2>
             <hr className={'bg-dark'}></hr>
@@ -22,7 +22,7 @@ function Cards() {
           </div>
           <img src="../images/carpet6.webp" className="row no-pad bottom card-shadow col-lg-6 col-md-6"></img>
         </div>
-        <div className="row d-flex justify-content-center mb-5">
+        <div className="row mx-1 d-flex justify-content-center mb-5">
           <div className="col-lg-6 col-md-6 bg-white card-shadow">
             <h2 className={'display-4 text-center pt-3'}>UHOLSTERY CLEANING</h2>
             <hr className={'bg-dark'}></hr>
@@ -43,9 +43,9 @@ function Cards() {
           </div>
           <img src="../images/coucha.webp" className="row col-lg-6 no-pad bottom card-shadow col-md-6"></img>
         </div>
-        <div className="row d-flex justify-content-center mb-5">
+        <div className="row mx-1 d-flex justify-content-center mb-5">
           <div className="col-lg-6 col-md-6 bg-white card-shadow">
-            <h2 className={'display-4 text-center pt-3'}>AUTO DETAILING</h2>
+            <h2 className={'display-4 text-center pt-3'}>AUTO<br></br>DETAILING</h2>
             <hr className={'bg-dark'}></hr>
             <p className="p-2 text-center">Providing cleaning with a chemical free cleaner
               and sanitizing with steam for refrigerators and freezers. For ovens and stove tops

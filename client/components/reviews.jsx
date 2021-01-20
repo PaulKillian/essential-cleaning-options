@@ -16,7 +16,7 @@ export default function Review() {
       <div className="col-12 scale bottom">
         <div className="d-flex justify-content-center align-items-center flex-column">
           <h1 className="text-font mt-4 shadowed-text text-white">Reviews</h1>
-          <img className="w-25 h-50 shadowed-text" src="/images/reviews.png" alt="image of stars"></img>
+          {/*<img className="w-25 h-50 shadowed-text" src="/images/reviews.png" alt="image of stars"></img>*/}
         </div>
       </div>
       <div className='col-sm-9 col-md-11 col-lg-10 mt-5 container text-left'>
