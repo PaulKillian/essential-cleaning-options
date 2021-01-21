@@ -33,7 +33,7 @@ span {
 }
 .display-3 {
     font-family: 'Lora', serif;
-    font-size: 8.3vw;
+    font-size: 8.1vw;
 }
 #logo {
     height: 50px;
@@ -573,13 +573,24 @@ img {
 .auto-estimate {
     background: linear-gradient(
             rgba(2, 2, 2.1, 0.50), rgba(2, 2, 2, 0.50) ),
-    url("../images/auto-estimate.jpg");
+    url("../images/auto-estimate1.webp");
     background-size: cover;
     background-attachment: fixed;
     background-position: bottom;
     background-repeat: no-repeat;
-    height: auto;
+    height: 100vh;
 }
+.carpet-estimate {
+    background: linear-gradient(
+            rgba(2, 2, 2.1, 0.50), rgba(2, 2, 2, 0.50) ),
+    url("../images/carpet-bg.webp");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
 .simple {
     border: 1px solid #4c3c1b;
     padding: 5px;
@@ -595,12 +606,11 @@ img {
     color: black;
 }
 .blur {
-  position: absolute;
-  height: 400px;
-  background: rgba(165, 165, 165, 0.4);
-	backdrop-filter: blur(1px);
-	border-radius: 10px;
-  border: 1px solid rgba(0, 81, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    font-family: sans-serif;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(3px);
 }
 .text-justify {
 	text-align: justify;
