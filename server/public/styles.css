@@ -573,7 +573,7 @@ img {
 .auto-estimate {
     background: linear-gradient(
             rgba(2, 2, 2.1, 0.50), rgba(2, 2, 2, 0.50) ),
-    url("../images/auto-estimate1.webp");
+    url("../images/auto-estimate.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: bottom;
@@ -582,7 +582,7 @@ img {
 .carpet-estimate {
     background: linear-gradient(
             rgba(2, 2, 2.1, 0.50), rgba(2, 2, 2, 0.50) ),
-    url("../images/carpet-bg.webp");
+    url("../images/carpet-bg2.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: bottom;
@@ -696,11 +696,6 @@ ul.top-ul {
     }
     .show {
         width: 70%;
-    }
-    .auto-estimate,
-    .carpet-estimate,
-    .foot1 {
-
     }
 }
 @media only screen and (max-width: 376px) {

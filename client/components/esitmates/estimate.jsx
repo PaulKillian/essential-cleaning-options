@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import anime from 'animejs/lib/anime.es.js';
 
 class Estimate extends React.Component {
