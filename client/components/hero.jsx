@@ -10,11 +10,6 @@ function scroll() {
 }
 
 function Hero(props) {
-  useEffect(() => {
-    const main = document.getElementById('main');
-    main.classList.remove('position-absolute');
-    main.classList.add('position-absolute');
-  });
   const x = window.matchMedia('(max-width: 768px)');
   if (x.matches) {
     return (
