@@ -91,7 +91,7 @@ function Home() {
 
 function EstimateCalendar() {
   return (
-    <motion.div id='main' className="bg-off-white h-100 w-100 carpet-estimate"
+    <motion.div id='main' className="bg-off-white w-100 carpet-estimate"
       style={pageStyle}
       initial="initial"
       animate="in"
@@ -108,7 +108,7 @@ function EstimateCalendar() {
 }
 function AutoEstimateCalendar() {
   return (
-    <motion.div id='main' className="bg-off-white h-100 w-100 auto-estimate"
+    <motion.div id='main' className="bg-off-white w-100 auto-estimate"
       style={pageStyle}
       initial="initial"
       animate="in"
@@ -126,7 +126,7 @@ function AutoEstimateCalendar() {
 
 function Reviews() {
   return (
-    <motion.div id='main' className="foot1 h-100 position-relative"
+    <motion.div id='main' className="foot1 position-relative"
       style={pageStyleReview}
       initial="initial"
       animate="in"
