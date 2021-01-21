@@ -65,7 +65,6 @@ const pageStyle = {
 };
 const pageStyleReview = {
   position: 'absolute',
-  height: '100vh',
   overflow: 'hidden'
 };
 
@@ -126,7 +125,7 @@ function AutoEstimateCalendar() {
 
 function Reviews() {
   return (
-    <motion.div id='main' className="foot1 position-relative"
+    <motion.div id='main' className="foot1"
       style={pageStyleReview}
       initial="initial"
       animate="in"
