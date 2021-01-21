@@ -697,13 +697,6 @@ ul.top-ul {
     .show {
         width: 70%;
     }
-    .auto-estimate,
-    .carpet-estimate {
-        height: 100vh;
-    }
-    .foot1 {
-        height: 100vh;
-    }
 }
 @media only screen and (max-width: 376px) {
     .simple {
@@ -752,13 +745,6 @@ ul.top-ul {
         background-repeat: no-repeat;
         background-size: cover;
         box-shadow: 0 16px 14px -16px black;
-    }
-    .auto-estimate,
-    .carpet-estimate {
-        height: 100vh;
-    }
-    .foot1 {
-        height: 100vh;
     }
     .slick-next {
         right: -3px;
