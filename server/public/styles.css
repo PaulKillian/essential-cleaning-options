@@ -578,7 +578,6 @@ img {
     background-attachment: fixed;
     background-position: bottom;
     background-repeat: no-repeat;
-    height: 100vh;
 }
 .carpet-estimate {
     background: linear-gradient(
@@ -588,7 +587,6 @@ img {
     background-attachment: fixed;
     background-position: bottom;
     background-repeat: no-repeat;
-    height: 100vh;
 }
 
 .simple {
@@ -699,6 +697,13 @@ ul.top-ul {
     .show {
         width: 70%;
     }
+    .auto-estimate,
+    .carpet-estimate {
+        height: 100vh;
+    }
+    .foot1 {
+        height: 100vh;
+    }
 }
 @media only screen and (max-width: 376px) {
     .simple {
@@ -748,8 +753,13 @@ ul.top-ul {
         background-size: cover;
         box-shadow: 0 16px 14px -16px black;
     }
-}
-@media only screen and (max-width: 376px) {
+    .auto-estimate,
+    .carpet-estimate {
+        height: 100vh;
+    }
+    .foot1 {
+        height: 100vh;
+    }
     .slick-next {
         right: -3px;
     }
