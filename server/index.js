@@ -58,7 +58,48 @@ app.post('/api/estimate', (req, res) => {
   });
   const mailAppearance = {
     from: `${req.body.email}`,
-    to: 'essentialcleaningoptions@gmail.com',
+    to: 'psk65lava@gmail.com',
+    subject: 'New estimate message',
+    text: `
+      Name: ${req.body.name}
+      Email: ${req.body.email}
+      Subject: ${req.body.subject}
+      Rooms: ${req.body.rooms}
+      Stairs: ${req.body.stairs}
+      Stains: ${req.body.stains}
+      Estimate: ${req.body.estimate}
+      Time: ${req.body.time}
+      Date: ${req.body.date}
+      Best Time: ${req.body.bestTime}
+      Best Date: ${req.body.bestDate}`
+  };
+  transport.sendMail(mailAppearance, (error, response) => {
+    if (error) {
+      res.json({ error: 'error' });
+    } else {
+      res.json({ success: 'success' });
+    }
+  });
+});
+
+app.post('/api/auto-estimate', (req, res) => {
+  const gmail = process.env.GMAIL_PASS.toString();
+  const user = process.env.GMAIL_USER.toString();
+  const transport = nodemailer.createTransport({
+    host: 'smtp.mail.gmail.com',
+    port: 587,
+    service: 'gmail',
+    secure: false,
+    auth: {
+      user: user,
+      pass: gmail
+    },
+    debug: false,
+    logger: true
+  });
+  const mailAppearance = {
+    from: `${req.body.email}`,
+    to: 'psk65lava@gmail.com',
     subject: 'New estimate message',
     text: `
       Name: ${req.body.name}

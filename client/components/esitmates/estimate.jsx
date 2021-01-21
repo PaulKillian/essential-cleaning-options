@@ -104,7 +104,7 @@ class Estimate extends React.Component {
         <h1 className="ml16 d-none">Your Message Has Been Sent!</h1>
         <div id="form" className="col-lg-12 d-flex flex-column">
           <div className="row mx-2 my-4 justify-content-center">
-            <div className="col-lg-6 col-md-10 col-sm-12">
+            <div className="col-lg-6 col-md-10 col-sm-12 blur pb-5">
               <form onSubmit={this.SendMessage} action="/estimate" id="contact-form" method="POST" role="form" className="mt-5 text-white">
                 <div className="form-row">
                   <div className="form-group col-6">
@@ -234,8 +234,8 @@ class Estimate extends React.Component {
                     />
                   </div>
                 </div>
-                <div className="d-flex justify-content-center">
-                  <button type="submit" className="btn shadow bg-white col-sm-3 col-md-4 col-lg-4">SEND MESSAGE</button>
+                <div className="d-flex justify-content-center mt-3">
+                  <button type="submit" className="btn shadow bg-success text-white col-sm-3 col-md-4 col-lg-4">SEND MESSAGE</button>
                 </div>
               </form>
             </div>

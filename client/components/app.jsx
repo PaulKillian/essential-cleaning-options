@@ -91,7 +91,7 @@ function Home() {
 
 function EstimateCalendar() {
   return (
-    <motion.div id='main' className="bg-off-white w-100 foot1"
+    <motion.div id='main' className="bg-off-white w-100 carpet-estimate"
       style={pageStyle}
       initial="initial"
       animate="in"

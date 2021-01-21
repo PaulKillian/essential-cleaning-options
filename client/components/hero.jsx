@@ -31,10 +31,10 @@ function Hero(props) {
 
           <div className={'d-flex flex-column'}>
             <div>
-              <div className={'display-2 text-primary text-shadow'}>ESSENTIAL</div>
+              <div className={'display-2 text-white text-shadow'}>ESSENTIAL</div>
             </div>
             <div className={'d-flex'}>
-              <div className={'display-3 text-success text-shadow'}>CLEANING</div>
+              <div className={'display-3 text-white text-shadow'}>CLEANING</div>
               <div className={'display-3 text-white text-shadow'}>OPTIONS</div>
             </div>
           </div>
@@ -56,13 +56,8 @@ function Hero(props) {
           {/* </div> */}
 
           <div className={'d-flex flex-column'}>
-            <div>
-              <div className={'display-2 text-primary text-shadow'}>ESSENTIAL</div>
-            </div>
-            <div className={'d-flex'}>
-              <div className={'display-3 text-success text-shadow'}>CLEANING</div>
-              <div className={'display-3 text-white text-shadow'}>OPTIONS</div>
-            </div>
+            <div className={'display-2 text-white'}>ESSENTIAL</div>
+            <div className={'display-3 text-white'}>CLEANING OPTIONS</div>
           </div>
           {/* </div> */}
           <button className={'text-center bg-primary text-white'} onClick={scroll}>SERVICES</button>
