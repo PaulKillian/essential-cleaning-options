@@ -1,11 +1,12 @@
 import React from 'react';
 import 'bootstrap';
 import { NavLink } from 'react-router-dom';
-import AOS from 'aos';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-
-AOS.init();
+import AccordionSummary from '@material-ui/core/AccordionSummary';
+import AccordionDetails from '@material-ui/core/AccordionDetails';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import Accordion from '@material-ui/core/Accordion';
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -31,17 +32,19 @@ class Navbar extends React.Component {
     });
   }
 
-  hideMenu() {
-    this.setState(function () {
-      const side = document.querySelector('.block');
-      side.classList.add('menu-bg');
-      return { isShown: false };
-    });
+  hideMenu(event) {
+    event.target.className === 'modal-overlay m-0 p-0 block' &&
+      this.setState(function () {
+        const side = document.querySelector('.block');
+        side.classList.add('menu-bg');
+        return { isShown: false };
+      });
   }
 
   render() {
     let modalStyles = 'modal-overlay m-0 p-0';
-    let cssClass = 'side-menu menu-bg text-white';
+    let cssClass = 'side-menu menu-bg text-dark';
+
     if (!this.state.isShown) {
       modalStyles += ' hide';
       cssClass = 'side-menu menu-bg pt-4 ';
@@ -61,22 +64,48 @@ class Navbar extends React.Component {
         </div>
         <div className={cssClass} onClick={this.hideMenu}>
           <ul className="navbar-nav mt-2 menu-text-size shadowed-text">
-            <li className="nav-item ml-3 mb-2">
-              <NavLink to="/" exact className="nav-link2 text-white text-left">HOME</NavLink>
+            <li className="nav-item ml-3">
+              <NavLink to="/" exact className="nav-link2 text-dark text-left">Home</NavLink>
             </li>
-            <li className="nav-item ml-3 mb-2">
-              <NavLink to="/" className="nav-link2 text-white text-left">SERVICES</NavLink>
+            <li>
+              <Accordion className={'bg-white mb-1 text-left text-dark col-12'}>
+                <AccordionSummary
+                  expandIcon={<ExpandMoreIcon />}
+                  aria-controls="panel1a-content"
+                  id="panel1a-header"
+                >
+                  <div>Photos</div>
+                </AccordionSummary>
+                <AccordionDetails className={'text-dark'}>
+                  <div className={'d-flex flex-column'}>
+                    <NavLink to="/carpet-gallery" exact className="text-dark">Carpet</NavLink>
+                    <NavLink to="/auto-detailing" exact className="text-dark">Auto Detailing</NavLink>
+                  </div>
+                </AccordionDetails>
+              </Accordion>
             </li>
-            <li className="nav-item ml-3 mb-2">
-              <NavLink to="/reviews" className="nav-link2 text-white text-left">REVIEWS</NavLink>
-            </li>
-            <div className={'nav-item line ml-3 mb-2 text-left'}></div>
-            <li className="nav-item ml-3 mb-2 text-left">SCHEDULE ESTIMATE:</li>
-            <li className="nav-item ml-3 mb-2">
-              <NavLink to="/carpet-estimate" className="nav-link2 text-white text-left">CARPET/UPHOLSTERY</NavLink>
+            <li>
+              <Accordion className={'bg-white mb-1 text-dark col-12'}>
+                <AccordionSummary
+                  expandIcon={<ExpandMoreIcon />}
+                  aria-controls="panel1a-content"
+                  id="panel1a-header"
+                >
+                  <div>Schedule Estimate</div>
+                </AccordionSummary>
+                <AccordionDetails className={'text-dark'}>
+                  <div className={'d-flex flex-column'}>
+                    <NavLink to="/carpet-estimate" exact className="text-dark">Carpet/Upholstery</NavLink>
+                    <NavLink to="/auto-estimate" exact className="text-dark">Auto Detailing</NavLink>
+                  </div>
+                </AccordionDetails>
+              </Accordion>
             </li>
             <li className="nav-item ml-3">
-              <NavLink to="/auto-estimate" className="nav-link2 text-white text-left">AUTO DETAILING</NavLink>
+              <NavLink to="/" className="nav-link2 text-dark text-left">Services</NavLink>
+            </li>
+            <li className="nav-item ml-3">
+              <NavLink to="/reviews" className="nav-link2 text-dark text-left">Reviews</NavLink>
             </li>
           </ul>
         </div>

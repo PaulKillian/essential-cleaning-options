@@ -14,6 +14,9 @@ h3 {
 span {
     right: 3rem;
 }
+hr {
+    border: 1px solid lightgrey;
+}
 .top1 {
     z-index: 2;
 }
@@ -330,7 +333,7 @@ h1.ml8 {
     box-shadow: inset 8px 0 10px -5px #3e3d3d;
 }
 .show {
-    width: 33%;
+    width: 45%;
 }
 .link {
     color: black;
@@ -346,7 +349,7 @@ h1.ml8 {
     bottom: 0;
     width: 94.1vw;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 2;
 }
 .modal-overlay1 {
@@ -410,7 +413,8 @@ h1.ml8 {
     }
 }
 .menu-bg {
-    background-color: #28A745;
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #ffffff 74%);
     min-height: 100vh;
     max-height: 789px;
 }
@@ -625,6 +629,9 @@ img {
 .no-pad {
     padding-right: 0px;
     padding-left: 0px;
+}
+.accordion-bg {
+    opacity: .5;
 }
 ul.top-ul {
     list-style: none;
