@@ -74,7 +74,7 @@ class Footer extends React.Component {
               </div>
             </div>
           </div>
-          <h2 className="pb-3 text-white text-center"> Any questions or need additional information contact Ken.</h2>
+          <h2 className="pb-3 text-white text-center"> Any questions or need additional<br></br>information contact Ken.</h2>
         </footer>
       </>
     );
