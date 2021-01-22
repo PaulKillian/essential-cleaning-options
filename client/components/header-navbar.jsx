@@ -7,6 +7,14 @@ import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Accordion from '@material-ui/core/Accordion';
+import HomeIcon from '@material-ui/icons/Home';
+import PhotoCamera from '@material-ui/icons/PhotoCamera';
+import DateRangeIcon from '@material-ui/icons/DateRange';
+import { green } from '@material-ui/core/colors';
+import RateReviewIcon from '@material-ui/icons/RateReview';
+import WorkIcon from '@material-ui/icons/Work';
+import { shadows } from '@material-ui/system';
+import Box from '@material-ui/core/Box';
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -58,23 +66,25 @@ class Navbar extends React.Component {
         <div className={modalStyles} onClick={this.hideMenu}></div>
         <div className={ 'd-flex justify-content-end top col-sm-12 col-md-12 col-lg-12 position-absolute pr-3 mt-3' }>
           <div className={ 'row d-flex justify-content-end col-sm-2 col-md-2 col-lg-2' }>
-            <FontAwesomeIcon icon={faBars} size="3x" className="hamburger-color shadowed-text top pointer"
+            <FontAwesomeIcon icon={faBars} size="3x" className="hamburger-color  top pointer"
               onClick={() => this.handleToggleClick()}/>
           </div>
         </div>
         <div className={cssClass} onClick={this.hideMenu}>
-          <ul className="navbar-nav mt-2 menu-text-size shadowed-text">
+          <ul className="navbar-nav mt-2 menu-text-size ">
             <li className="nav-item ml-3">
-              <NavLink to="/" exact className="nav-link2 text-dark text-left">Home</NavLink>
+              <NavLink to="/" exact className="text-dark text-left"><HomeIcon style={{ color: green[500] }}/> Home
+              </NavLink>
+              <hr className={'style'}></hr>
             </li>
-            <li>
-              <Accordion className={'bg-white mb-1 text-left text-dark col-12'}>
+            <li className={'bax-shad'}>
+              <Accordion className={'text-left ml-2 accordion-bg col-12'}>
                 <AccordionSummary
                   expandIcon={<ExpandMoreIcon />}
                   aria-controls="panel1a-content"
                   id="panel1a-header"
                 >
-                  <div>Photos</div>
+                  <div><PhotoCamera style={{ color: green[500] }} /> Photos</div>
                 </AccordionSummary>
                 <AccordionDetails className={'text-dark'}>
                   <div className={'d-flex flex-column'}>
@@ -83,15 +93,16 @@ class Navbar extends React.Component {
                   </div>
                 </AccordionDetails>
               </Accordion>
+              <hr className={'style'}></hr>
             </li>
             <li>
-              <Accordion className={'bg-white mb-1 text-dark col-12'}>
+              <Accordion className={'ml-2 accordion-bg col-12'}>
                 <AccordionSummary
                   expandIcon={<ExpandMoreIcon />}
                   aria-controls="panel1a-content"
                   id="panel1a-header"
                 >
-                  <div>Schedule Estimate</div>
+                  <div><DateRangeIcon style={{ color: green[500] }} /> Schedule Estimate</div>
                 </AccordionSummary>
                 <AccordionDetails className={'text-dark'}>
                   <div className={'d-flex flex-column'}>
@@ -100,12 +111,21 @@ class Navbar extends React.Component {
                   </div>
                 </AccordionDetails>
               </Accordion>
+              <hr className={'style'}></hr>
             </li>
             <li className="nav-item ml-3">
-              <NavLink to="/" className="nav-link2 text-dark text-left">Services</NavLink>
+              <NavLink to="/" className="text-dark text-left"><WorkIcon style={{ color: green[500] }}/> Services</NavLink>
+              <hr className={'style'}></hr>
             </li>
             <li className="nav-item ml-3">
-              <NavLink to="/reviews" className="nav-link2 text-dark text-left">Reviews</NavLink>
+              <NavLink to="/reviews" className="text-dark text-left"><RateReviewIcon style={{ color: green[500] }} /> Reviews</NavLink>
+            </li>
+            <li>
+              <div className={'menu-logo d-flex col-5 mt-5 text-shadow'}>
+                <div className={'text-primary'}>E</div>
+                <div className={'text-success '}>C</div>
+                <div className={'text-white '}>O</div>
+              </div>
             </li>
           </ul>
         </div>

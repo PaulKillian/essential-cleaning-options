@@ -161,7 +161,7 @@ function Detailing() {
 
 function CarpetGallery() {
   return (
-    <motion.div id='main' className="w-100 foot1"
+    <motion.div id='main' className="w-100 bg-g"
       style={pageStyle}
       initial="initial"
       animate="in"

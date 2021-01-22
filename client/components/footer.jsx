@@ -48,7 +48,6 @@ class Footer extends React.Component {
     return (
       <>
         <footer className="pt-3 bg-footer shadowed">
-          <h2 className="text-white text-center">For Additional Information Contact Ken</h2>
           <div className="row sm-col col-md-12 flex justify-content-around align-items-center">
             <div className={'py-4'}>
               <img src="/images/ken.jpg" alt="image of ken mendoza"></img>
@@ -75,7 +74,7 @@ class Footer extends React.Component {
               </div>
             </div>
           </div>
-          <h2 className="pb-3 text-white text-center">Interesting in pricing? Call for a free quote</h2>
+          <h2 className="pb-3 text-white text-center"> Any questions or need additional information contact Ken.</h2>
         </footer>
       </>
     );
