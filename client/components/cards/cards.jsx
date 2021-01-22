@@ -6,16 +6,16 @@ import { green } from '@material-ui/core/colors';
 import PhotoCamera from '@material-ui/icons/PhotoCamera';
 import MonetizationOnIcon from '@material-ui/icons/MonetizationOn';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(theme => ({
   root: {
     '& > *': {
       margin: theme.spacing(1),
       backgroundColor: '#216B9E',
       '&:hover': {
-        backgroundColor: green[700],
-      },
-    },
-  },
+        backgroundColor: green[700]
+      }
+    }
+  }
 }));
 
 function Cards() {
@@ -64,7 +64,7 @@ function Cards() {
               My main product is Nano-Maxx which is a plant based
               registered green cleaner that has a zero residue and is
               totally safe and effective.</p>
-            {/*<NavLink to="/carpet-gallery" className="nav-link  text-dark text-center pb-2">Photos</NavLink>*/}
+            {/* <NavLink to="/carpet-gallery" className="nav-link  text-dark text-center pb-2">Photos</NavLink> */}
           </div>
           <img id={'second'} src="../images/coucha.webp" className="row col-lg-6 card-h bottom card-shadow col-md-12"></img>
         </div>
@@ -93,7 +93,7 @@ function Cards() {
               </div>
             </div>
           </div>
-          <img id={'third'} src="../images/buffing2.webp" className="row card-h bottom col-lg-6 card-shadow col-md-12"></img>
+          <img id={'third'} src='../images/buffing2.webp' className="row card-h bottom col-lg-6 card-shadow col-md-12"></img>
         </div>
       </div>
       {/*    </div> */}
