@@ -8,6 +8,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     '& > *': {
       margin: theme.spacing(20),
+      color: 'black !important',
     },
   },
 }));
@@ -45,7 +46,7 @@ function Hero(props) {
             <div className={'display-3 text-white'}>CLEANING OPTIONS</div>
           </div>
           <div className={classes.root}>
-            <Button onClick={scroll} m={1} variant="contained">Services
+            <Button className={'text-dark'} onClick={scroll} variant="contained">Services
               <DetailsIcon />
             </Button>
           </div>
