@@ -5,7 +5,7 @@ import Button from '@material-ui/core/Button';
 import { green } from '@material-ui/core/colors';
 import PhotoCamera from '@material-ui/icons/PhotoCamera';
 import MonetizationOnIcon from '@material-ui/icons/MonetizationOn';
-import buffing from './buf.png';
+import buffing from './buf1.jpg';
 
 const useStyles = makeStyles(theme => ({
   root: {
