@@ -93,7 +93,7 @@ function Cards() {
               </div>
             </div>
           </div>
-          <img id={'third'} src="../images/buf.png" className="row card-h bottom col-lg-6 card-shadow col-md-12"></img>
+          <img id={'third'} src="../images/coucha.webp" className="row card-h bottom col-lg-6 card-shadow col-md-12"></img>
         </div>
       </div>
     </>
