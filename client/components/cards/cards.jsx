@@ -93,47 +93,9 @@ function Cards() {
               </div>
             </div>
           </div>
-          <img id={'third'} src="../images/buffing3.webp" className="row card-h bottom col-lg-6 card-shadow col-md-12"></img>
+          <img id={'third'} src="../images/buf.png" className="row card-h bottom col-lg-6 card-shadow col-md-12"></img>
         </div>
       </div>
-      {/*    </div> */}
-      {/*    <div id="cards" className="col-lg-3 col-md-11 mb-3 */}
-      {/*       upholstrey-s containTR center-card-text text-white"> */}
-      {/*      <h1 className="text-white ">Upholstery Cleaning</h1> */}
-      {/*      <div className="overlayR"> */}
-      {/*        <div className="blur"> */}
-      {/*          <p className="p-2 text-center">This results in less re-soiling and faster drying times. */}
-      {/*            How does this work? Wet is attracted to dry, so the */}
-      {/*            wet carpet and its sequestered soils are attracted to */}
-      {/*            the drier cleaning pad and are “held” to the cleaning */}
-      {/*            pad as the machine spins, agitates, and scrubs the */}
-      {/*            carpet fibers. */}
-      {/*            The attractive thing about encapsulation is what gets */}
-      {/*            missed by the cleaning pad is crystallized once the */}
-      {/*            carpet is completely dried and encapsulated for future */}
-      {/*            soil removal by the normal vacuuming process. */}
-      {/*            My main product is Nano-Maxx which is a plant based */}
-      {/*            registered green cleaner that has a zero residue and is */}
-      {/*            totally safe and effective.</p> */}
-      {/*        </div> */}
-      {/*      </div> */}
-      {/*    </div> */}
-      {/*    <div id="cards" className="col-lg-3 col-md-11 mb-3 */}
-      {/*       grout-s containBR center-card-text text-white"> */}
-      {/*      <h1 className="text-white ">Auto<br></br>Detailing</h1> */}
-      {/*      <div className="overlayR"> */}
-      {/*        <div className="blur"> */}
-      {/*          <p className="p-2 text-center">Providing cleaning with a chemical free cleaner */}
-      {/*          and sanitizing with steam for refrigerators and freezers. For ovens and stove tops */}
-      {/*           I use a non toxic bio degradable cleaner/degreaser  followed up with steam for a */}
-      {/*           complete sanitization. </p> */}
-      {/*          <NavLink to="/auto-detailing" className="nav-link text-white text-white text-center">Photos</NavLink> */}
-      {/*          <NavLink to="/prices" className="nav-link text-white text-white text-center">Detailing Services and Prices</NavLink> */}
-      {/*        </div> */}
-      {/*      </div> */}
-      {/*    </div> */}
-      {/*  </div> */}
-      {/* </div> */}
     </>
   );
 }
