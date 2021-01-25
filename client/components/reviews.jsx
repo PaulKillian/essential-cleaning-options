@@ -6,10 +6,9 @@ export default function Review() {
       <div className="col-12 scale bottom">
         <div className="d-flex justify-content-center align-items-center flex-column">
           <h1 className="text-font mt-4 shadowed-text text-white">Reviews</h1>
-          {/* <img className="w-25 h-50 shadowed-text" src="/images/reviews.png" alt="image of stars"></img> */}
         </div>
       </div>
-      <div className='col-sm-9 col-md-11 col-lg-10 mt-5 container text-white text-left'>
+      <div className='col-sm-9 col-md-11 col-lg-8 mt-5 container text-white text-left'>
         <div className={'mb-5'}>
           <h5 className={'px-3'}>Ken has been a vendor for our company for several years. He is prompt, trustworthy and does a thorough and comprehensive job. He also is proactive. If he sees a problem he will point it out and help us resolve it or point us to someone who can. We have been very pleased with his service and his ongoing consistency. You can count on Ken to do what he says in a timely and efficient manner.
             <br></br><br></br><span className={'text-center'}><h5>Guy Baker - Wealth Teams Solutions, Irvine CA</h5></span></h5>

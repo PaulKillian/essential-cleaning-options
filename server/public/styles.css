@@ -11,6 +11,9 @@ body {
 h3 {
     font-size: 3vw;
 }
+.MuiButton-label {
+    color: black !important;
+}
 span {
     right: 3rem;
     color: white !important;

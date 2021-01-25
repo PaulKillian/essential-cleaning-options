@@ -125,7 +125,7 @@ function PriceCards() {
           </div>
         </div>
         <div className={'d-flex flex-wrap justify-content-around col-lg-7 align-items-center my-2'}>
-          <div className={'bg-white rounded price1 text-center p-2 mb-2'}>
+          <div className={'bg-white rounded price1 text-center price-shadow p-2 mb-2'}>
             <h4 className={'bg-primary p-3 text-white'}>Small</h4>
             <p><span className={'text-info h3'}>$175</span><br></br>Approximate Time:<br></br>2 hours</p>
           </div>
@@ -136,6 +136,40 @@ function PriceCards() {
           <div className={'bg-white rounded price3 text-center price-shadow p-2 mb-2'}>
             <h4 className={'bg-warning p-3 text-white'}>Large</h4>
             <p><span className={'text-info h3'}>$225</span><br></br>Approximate Time:<br></br>3 hours</p>
+          </div>
+        </div>
+      </div>
+      <div className={'row mt-3 d-flex justify-content-between align-items-center'}>
+        <div id={'price-card'} className={'mt-2 mb-2 rounded text-dark col-lg-5 col-md-12'}>
+          <div className={'text-white'}>
+            <h4 className={'p-2 text-center bg-dark price-shadow rounded'}>Plastic Trim Restoration</h4>
+          </div>
+        </div>
+        <div className={'d-flex flex-wrap justify-content-around col-lg-7 align-items-center my-2'}>
+          <div className={'bg-white rounded price1 text-center price-shadow p-2 mb-2'}>
+            <h4 className={'bg-primary p-3 text-white'}>Small</h4>
+            <p><span className={'text-info h3'}>$10</span><br></br>Approximate Time:<br></br>40 minutes</p>
+          </div>
+          <div className={'bg-white rounded price2 text-center price-shadow p-2 mb-2'}>
+            <h4 className={'bg-success p-3 text-white'}>Medium</h4>
+            <p><span className={'text-info h3'}>$15</span><br></br>Approximate Time:<br></br>45 minutes</p>
+          </div>
+          <div className={'bg-white rounded price3 text-center price-shadow p-2 mb-2'}>
+            <h4 className={'bg-warning p-3 text-white'}>Large</h4>
+            <p><span className={'text-info h3'}>$20</span><br></br>Approximate Time:<br></br>45 minutes</p>
+          </div>
+        </div>
+      </div>
+      <div className={'row mt-3 d-flex justify-content-between align-items-center'}>
+        <div id={'price-card'} className={'mt-2 mb-2 rounded text-dark col-lg-5 col-md-12'}>
+          <div className={'text-white'}>
+            <h4 className={'p-2 text-center bg-dark price-shadow rounded'}>Front Headlight Restoration</h4>
+          </div>
+        </div>
+        <div className={'d-flex flex-wrap justify-content-around col-lg-7 align-items-center my-2'}>
+          <div className={'bg-white rounded price1 text-center price-shadow p-2 mb-2'}>
+            <h4 className={'bg-primary p-3 text-white'}>Small</h4>
+            <p><span className={'text-info h3'}>$125</span><br></br>Approximate Time:<br></br>1 hour</p>
           </div>
         </div>
       </div>

@@ -16,6 +16,10 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.(gif|svg|jpg|png)$/,
+        loader: 'file-loader'
+      },
+      {
         test: /\.css$/,
         use: ['style-loader', 'css-loader']
       },
@@ -67,6 +71,10 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test: /\.(gif|svg|jpg|png)$/,
+        loader: 'file-loader'
+      },
       {
         test: /\.jsx/,
         use: {
