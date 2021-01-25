@@ -84,7 +84,7 @@ function Cards() {
                 </Button>
               </div>
             </div>
-            <div className={'d-flex justify-content-center pb-2'}>
+            <div className={'d-flex row justify-content-center pb-2'}>
               <div className={classes.root}>
                 <Button variant="contained">
                   <NavLink to="/prices" className="nav-link text-white text-center pr-1">

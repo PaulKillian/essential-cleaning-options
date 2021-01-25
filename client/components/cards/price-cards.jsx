@@ -1,15 +1,17 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCar} from '@fortawesome/free-solid-svg-icons';
+import { faCar } from '@fortawesome/free-solid-svg-icons';
 
 function PriceCards() {
   return (
     <div className={'container mt-5 mb-5'}>
-      <ul className={'row top-ul col-lg-12 d-flex justify-content-center'}>
-        <li className={'mr-2 '}><FontAwesomeIcon icon={faCar} className={'fa-3x text-primary'}/>sub/compact 2 door vehicles</li>
-        <li className={'mr-2 '}><FontAwesomeIcon icon={faCar} className={'fa-3x text-success'}/>mid/4 door sedans &#38; hatchbacks</li>
-        <li><FontAwesomeIcon icon={faCar} className={'fa-3x text-warning'}/>full/4 door sedans &#38; small SUV&#39;s</li>
-      </ul>
+      <div className={'row col-lg-12 col-md-6 d-flex justify-content-around'}>
+        <ul className={'top-ul d-flex flex-wrap'}>
+          <li className={'mr-2 '}><FontAwesomeIcon icon={faCar} className={'fa-3x text-primary'}/>sub/compact 2 door vehicles</li>
+          <li className={'mr-2 '}><FontAwesomeIcon icon={faCar} className={'fa-3x text-success'}/>mid/4 door sedans &#38; hatchbacks</li>
+          <li><FontAwesomeIcon icon={faCar} className={'fa-3x text-warning'}/>full/4 door sedans &#38; small SUV&#39;s</li>
+        </ul>
+      </div>
       <div className={'row d-flex mt-5 justify-content-between'}>
         <div id={'price-card'} className={'rounded text-dark col-6-sm col-lg-5 col-md-12'}>
           <div className={'price-shadow text-white'}>
