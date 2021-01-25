@@ -66,7 +66,7 @@ function Cards() {
               totally safe and effective.</p>
             {/* <NavLink to="/carpet-gallery" className="nav-link  text-dark text-center pb-2">Photos</NavLink> */}
           </div>
-          <img id={'second'} src='../images/buffing2.webp' className="row col-lg-6 card-h bottom card-shadow col-md-12"></img>
+          <img id={'second'} src="../images/coucha.webp" className="row col-lg-6 card-h bottom card-shadow col-md-12"></img>
         </div>
         <div className="row mx-1 d-flex justify-content-center mb-5">
           <div className="col-lg-6 col-md-12 bg-white card-shadow">
@@ -93,7 +93,7 @@ function Cards() {
               </div>
             </div>
           </div>
-          <img id={'third'} src='../images/buffing2.webp' className="row card-h bottom col-lg-6 card-shadow col-md-12"></img>
+          <img id={'third'} src="../images/buffing2.webp" className="row card-h bottom col-lg-6 card-shadow col-md-12"></img>
         </div>
       </div>
       {/*    </div> */}
