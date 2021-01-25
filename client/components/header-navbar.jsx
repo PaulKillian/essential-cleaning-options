@@ -71,7 +71,14 @@ class Navbar extends React.Component {
           </div>
         </div>
         <div className={cssClass} onClick={this.hideMenu}>
-          <ul className="navbar-nav mt-2 menu-text-size ">
+          <ul className="navbar-nav menu-text-size">
+            <li>
+              <div className={'menu-logo d-flex col-5 text-shadow'}>
+                <div className={'text-primary'}>E</div>
+                <div className={'text-success '}>C</div>
+                <div className={'text-white '}>O</div>
+              </div>
+            </li>
             <li className="nav-item ml-3">
               <NavLink to="/" exact className="text-dark text-left"><HomeIcon style={{ color: green[500] }}/> Home
               </NavLink>
@@ -111,21 +118,14 @@ class Navbar extends React.Component {
                   </div>
                 </AccordionDetails>
               </Accordion>
-              <hr className={'style'}></hr>
+              <hr id={'second-to-last-hr'} className={'style'}></hr>
             </li>
             <li className="nav-item ml-3">
               <NavLink to="/" className="text-dark text-left"><WorkIcon style={{ color: green[500] }}/> Services</NavLink>
-              <hr className={'style'}></hr>
+              <hr id={'last-hr'} className={'style'}></hr>
             </li>
             <li className="nav-item ml-3">
               <NavLink to="/reviews" className="text-dark text-left"><RateReviewIcon style={{ color: green[500] }} /> Reviews</NavLink>
-            </li>
-            <li>
-              <div className={'menu-logo d-flex col-5 mt-5 text-shadow'}>
-                <div className={'text-primary'}>E</div>
-                <div className={'text-success '}>C</div>
-                <div className={'text-white '}>O</div>
-              </div>
             </li>
           </ul>
         </div>

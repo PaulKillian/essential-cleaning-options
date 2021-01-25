@@ -13,6 +13,7 @@ h3 {
 }
 span {
     right: 3rem;
+    color: white !important;
 }
 hr {
     border: 1px solid lightgrey;
@@ -723,6 +724,12 @@ ul.top-ul {
     }
     .m-icons {
         font-size: 1px;
+    }
+    #second-to-last-hr {
+        margin-bottom: 1.5rem;
+    }
+    #last-hr {
+        margin-top: 1.5rem;
     }
 }
 
