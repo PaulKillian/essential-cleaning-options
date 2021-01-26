@@ -9,7 +9,7 @@ const db = require('./database');
 const ClientError = require('./client-error');
 const staticMiddleware = require('./static-middleware');
 const sessionMiddleware = require('./session-middleware');
-const port = process.env.PORT || 8087;
+const port = process.env.PORT || 8086;
 const app = express();
 const compression = require('compression');
 const URL = process.env.NODE_ENV === 'development' ? process.env.REACT_APP_DEV_URI : process.env.REACT_APP_PROD_URI;
@@ -114,37 +114,6 @@ app.post(`${URL}/auto-estimate`, (req, res) => {
       Date: ${req.body.date}
       BestTime: ${req.body.bestTime}
       BestDate: ${req.body.bestDate}`
-  };
-  transport.sendMail(mailAppearance, (error, response) => {
-    if (error) {
-      res.json({ error: 'error' });
-    } else {
-      res.json({ success: 'success' });
-    }
-  });
-});
-
-app.post('/api/direct', (req, res) => {
-  const gmail = process.env.GMAIL_PASS.toString();
-  const transport = nodemailer.createTransport({
-    host: 'smtp.mail.gmail.com',
-    port: 587,
-    service: 'gmail',
-    secure: false,
-    auth: {
-      user: 'essentialcleaningoptions@gmail.com',
-      pass: gmail
-    },
-    debug: false,
-    logger: true
-  });
-  const mailAppearance = {
-    from: `${req.body.email}`,
-    to: 'essentialcleaningoptions@gmail.com',
-    subject: 'Direct Message',
-    text: `
-      Name: ${req.body.name},
-      Phone #: ${req.body.phone}`
   };
   transport.sendMail(mailAppearance, (error, response) => {
     if (error) {
