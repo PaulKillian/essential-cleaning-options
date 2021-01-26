@@ -596,12 +596,18 @@ img {
 .slick-next, .slick-prev {
     color: black;
 }
-.blur {
-    background: rgba( 74, 144, 226, 0.25 );
+.blur,
+.blur2 {
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
+}
+.blur {
+    background: rgba( 74, 144, 226, 0.25 );
+}
+.blur2 {
+    background: rgba( 65, 117, 5, 0.25 );
 }
 .text-justify {
 	text-align: justify;
