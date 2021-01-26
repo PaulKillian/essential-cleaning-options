@@ -70,7 +70,7 @@ function Cards() {
         </div>
         <div className="row mx-1 d-flex justify-content-center mb-5">
           <div className="col-lg-6 col-md-12 bg-white card-shadow">
-            <h2 className={'display-4 text-center pt-3'}>AUTO<br></br>DETAILING</h2>
+            <h2 className={'display-4 text-center pt-3'}>AUTO DETAILING</h2>
             <hr className={'bg-dark'}></hr>
             <p className="p-2 text-center">Providing cleaning with a chemical free cleaner
               and sanitizing with steam for refrigerators and freezers. For ovens and stove tops

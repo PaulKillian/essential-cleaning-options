@@ -8,7 +8,7 @@ function CarpetGallery() {
     thumbnail: '/images/carpetg2.webp',
     thumbnailWidth: 320,
     thumbnailHeight: 212,
-    tags: [{ value: 'Commercial', title: 'Commercial' }],
+    tags: [{ value: 'Academic Chess Academy -- Before', title: 'Commercial' }],
     caption: 'Academic Chess Academy in Laguna Hills'
   },
   {
@@ -16,7 +16,7 @@ function CarpetGallery() {
     thumbnail: '/images/carpetg3.webp',
     thumbnailWidth: 320,
     thumbnailHeight: 212,
-    tags: [{ value: 'Commercial', title: 'Commercial' }],
+    tags: [{ value: 'Academic Chess Academy -- After', title: 'Commercial' }],
     caption: 'Academic Chess Academy in Laguna Hills'
   },
   {
@@ -24,7 +24,7 @@ function CarpetGallery() {
     thumbnail: '/images/carpetg1.webp',
     thumbnailWidth: 320,
     thumbnailHeight: 212,
-    tags: [{ value: 'Commercial', title: 'Commercial' }],
+    tags: [{ value: 'Academic Chess Academy -- After', title: 'Commercial' }],
     caption: 'Academic Chess Academy in Laguna Hills'
   },
   {
@@ -32,7 +32,7 @@ function CarpetGallery() {
     thumbnail: '/images/carpetg5.webp',
     thumbnailWidth: 320,
     thumbnailHeight: 212,
-    tags: [{ value: 'Residential', title: 'Residential' }],
+    tags: [{ value: 'Residential -- Before', title: 'Residential' }],
     caption: 'Stain Treatment - Before'
   },
   {
@@ -40,7 +40,7 @@ function CarpetGallery() {
     thumbnail: '/images/carpetg6.webp',
     thumbnailWidth: 238,
     thumbnailHeight: 212,
-    tags: [{ value: 'Residential', title: 'Residential' }],
+    tags: [{ value: 'Residential -- After', title: 'Residential' }],
     caption: 'Stain Treatment - After'
   },
   {
@@ -48,7 +48,7 @@ function CarpetGallery() {
     thumbnail: '/images/carpetg7.webp',
     thumbnailWidth: 238,
     thumbnailHeight: 212,
-    tags: [{ value: 'Residential', title: 'Residential' }],
+    tags: [{ value: 'Residential -- After', title: 'Residential' }],
     caption: 'Family room carpet cleaning'
   },
   {
@@ -56,7 +56,7 @@ function CarpetGallery() {
     thumbnail: '/images/carpetg4.webp',
     thumbnailWidth: 238,
     thumbnailHeight: 212,
-    tags: [{ value: 'Residential', title: 'Residential' }],
+    tags: [{ value: 'Residential -- After', title: 'Residential' }],
     caption: 'Stairs cleaning',
     isSelected: false
   }];

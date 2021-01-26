@@ -64,9 +64,9 @@ app.post('/api/estimate', (req, res) => {
       Name: ${req.body.name}
       Email: ${req.body.email}
       Subject: ${req.body.subject}
-      Rooms: ${req.body.rooms}
+      Rooms: ${req.body.make}
       Stairs: ${req.body.stairs}
-      Stains: ${req.body.stains}
+      Pets: ${req.body.pets}
       Estimate: ${req.body.estimate}
       Time: ${req.body.time}
       Date: ${req.body.date}
@@ -100,15 +100,15 @@ app.post('/api/auto-estimate', (req, res) => {
   const mailAppearance = {
     from: `${req.body.email}`,
     to: 'psk65lava@gmail.com',
-    subject: 'New estimate message',
+    subject: 'New auto estimate message',
     text: `
       Name: ${req.body.name}
       Email: ${req.body.email}
       Subject: ${req.body.subject}
-      Rooms: ${req.body.rooms}
-      Stairs: ${req.body.stairs}
-      Stains: ${req.body.stains}
-      Estimate: ${req.body.estimate}
+      Make: ${req.body.make}
+      Model: ${req.body.model}
+      Year: ${req.body.year}
+      Color: ${req.body.color}
       Time: ${req.body.time}
       Date: ${req.body.date}
       Best Time: ${req.body.bestTime}

@@ -1,17 +1,17 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import anime from 'animejs/lib/anime.es.js';
 
-class Estimate extends React.Component {
+class AutoEstimate extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       name: '',
       email: '',
       subject: '',
-      rooms: '',
-      stairs: '',
-      stains: '',
-      estimate: '',
+      make: '',
+      model: '',
+      year: '',
+      color: '',
       time: '',
       date: '',
       bestTime: '',
@@ -38,16 +38,16 @@ class Estimate extends React.Component {
       name: this.state.name,
       email: this.state.email,
       subject: this.state.subject,
-      rooms: this.state.rooms,
-      stairs: this.state.stairs,
-      stains: this.state.stains,
-      estimate: this.state.estimate,
+      make: this.state.make,
+      model: this.state.model,
+      year: this.state.year,
+      color: this.state.color,
       time: this.state.time,
       date: this.state.date,
       bestTime: this.state.bestTime,
       bestDate: this.state.bestDate
     };
-    fetch('api/auto-estimate', {
+    fetch('api/auto-color', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -150,7 +150,7 @@ class Estimate extends React.Component {
                     <input
                       type="text"
                       className="form-control shadowed"
-                      name="rooms"
+                      name="make"
                       value={this.state.message}
                       onChange={this.handleChangeInputs}
                       required
@@ -161,7 +161,7 @@ class Estimate extends React.Component {
                     <input
                       type="text"
                       className="form-control shadowed"
-                      name="stairs"
+                      name="model"
                       value={this.state.message}
                       onChange={this.handleChangeInputs}
                       required
@@ -175,7 +175,7 @@ class Estimate extends React.Component {
                     <input
                       type="text"
                       className="form-control shadowed"
-                      name="stains"
+                      name="year"
                       value={this.state.message}
                       onChange={this.handleChangeInputs}
                       required
@@ -186,7 +186,7 @@ class Estimate extends React.Component {
                     <input
                       type="text"
                       className="form-control shadowed"
-                      name="estimate"
+                      name="color"
                       value={this.state.message}
                       onChange={this.handleChangeInputs}
                       required
@@ -253,4 +253,4 @@ class Estimate extends React.Component {
   }
 }
 
-export default Estimate;
+export default AutoEstimate;
