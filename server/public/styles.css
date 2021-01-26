@@ -41,6 +41,19 @@ a:hover {
 .display-2 {
     font-family: 'Lora', serif;
     font-size: 10vw;
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+    from {
+        margin-bottom: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-bottom: 0%;
+        width: 100%;
+    }
 }
 #p-copy {
     margin: 0 !important;
@@ -48,6 +61,8 @@ a:hover {
 .display-3 {
     font-family: 'Lora', serif;
     font-size: 5.4vw;
+    animation-duration: 2s;
+    animation-name: slidein;
 }
 #logo {
     height: 50px;
@@ -137,7 +152,6 @@ h1 {
     /*top: 14rem;*/
     font-size: 50px;
 }
-li,
 p {
     font-family: "Source Sans Pro", sans-serif;
 }
@@ -643,6 +657,9 @@ ul.top-ul {
 /*        padding-right: 5rem;*/
 /*    }*/
 /*}*/
+.nav-item {
+    font-size: 30px;
+}
 .card-h {
     padding-right: 0;
     padding-left: 0;
@@ -682,6 +699,12 @@ ul.top-ul {
     }
     .show {
         width: 70%;
+    }
+    .auto-estimate {
+        height: 100vh;
+    }
+    .carpet-estimate {
+        height: 100vh;
     }
 }
 @media only screen and (max-width: 376px) {
