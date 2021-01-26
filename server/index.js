@@ -9,9 +9,10 @@ const db = require('./database');
 const ClientError = require('./client-error');
 const staticMiddleware = require('./static-middleware');
 const sessionMiddleware = require('./session-middleware');
-
+const port = process.env.PORT || 8087;
 const app = express();
 const compression = require('compression');
+const URL = process.env.NODE_ENV === 'development' ? process.env.REACT_APP_DEV_URI : process.env.REACT_APP_PROD_URI;
 
 app.use(compression());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -41,7 +42,7 @@ app.get('/api/health-check', (req, res, next) => {
     .catch(err => next(err));
 });
 
-app.post('/api/estimate', (req, res) => {
+app.post(`${URL}/estimate`, (req, res) => {
   const gmail = process.env.GMAIL_PASS.toString();
   const user = process.env.GMAIL_USER.toString();
   const transport = nodemailer.createTransport({
@@ -70,8 +71,8 @@ app.post('/api/estimate', (req, res) => {
       Estimate: ${req.body.estimate}
       Time: ${req.body.time}
       Date: ${req.body.date}
-      Best Time: ${req.body.bestTime}
-      Best Date: ${req.body.bestDate}`
+      BestTime: ${req.body.bestTime}
+      BestDate: ${req.body.bestDate}`
   };
   transport.sendMail(mailAppearance, (error, response) => {
     if (error) {
@@ -82,7 +83,7 @@ app.post('/api/estimate', (req, res) => {
   });
 });
 
-app.post('/api/auto-estimate', (req, res) => {
+app.post(`${URL}/auto-estimate`, (req, res) => {
   const gmail = process.env.GMAIL_PASS.toString();
   const user = process.env.GMAIL_USER.toString();
   const transport = nodemailer.createTransport({
@@ -111,8 +112,8 @@ app.post('/api/auto-estimate', (req, res) => {
       Color: ${req.body.color}
       Time: ${req.body.time}
       Date: ${req.body.date}
-      Best Time: ${req.body.bestTime}
-      Best Date: ${req.body.bestDate}`
+      BestTime: ${req.body.bestTime}
+      BestDate: ${req.body.bestDate}`
   };
   transport.sendMail(mailAppearance, (error, response) => {
     if (error) {
@@ -171,5 +172,5 @@ app.use((err, req, res, next) => {
 
 app.listen(process.env.PORT, () => {
   // eslint-disable-next-line no-console
-  console.log('Listening on port', process.env.PORT);
+  console.log(`Listening on port ${port}`);
 });

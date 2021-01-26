@@ -14,6 +14,9 @@ h3 {
 .MuiButton-label {
     color: black !important;
 }
+span.MuiIconButton-label {
+    color: black !important;
+}
 span {
     right: 3rem;
     color: white !important;
@@ -658,7 +661,7 @@ ul.top-ul {
 /*    }*/
 /*}*/
 .nav-item {
-    font-size: 30px;
+    font-size: 20px;
 }
 .card-h {
     padding-right: 0;

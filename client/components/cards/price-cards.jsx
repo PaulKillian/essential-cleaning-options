@@ -5,7 +5,7 @@ import { faCar } from '@fortawesome/free-solid-svg-icons';
 function PriceCards() {
   return (
     <div className={'container mt-5 mb-5'}>
-      <div className={'row col-lg-12 col-md-7 d-flex justify-content-around'}>
+      <div className={'row col-lg-12 d-flex justify-content-around'}>
         <ul className={'top-ul d-flex flex-wrap'}>
           <li className={'mr-2'}><FontAwesomeIcon icon={faCar} className={'fa-3x text-primary'}/>sub/compact 2 door vehicles</li>
           <li className={'mr-2'}><FontAwesomeIcon icon={faCar} className={'fa-3x text-success'}/>mid/4 door sedans &#38; hatchbacks</li>
