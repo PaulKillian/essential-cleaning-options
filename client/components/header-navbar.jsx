@@ -121,7 +121,7 @@ class Navbar extends React.Component {
               <hr id={'second-to-last-hr'} className={'style'}></hr>
             </li>
             <li className="nav-item ml-3">
-              <NavLink to="/" className="text-dark text-left"><WorkIcon style={{ color: green[500] }}/> Services</NavLink>
+              <NavLink to="/auto-detailing-services" className="text-dark text-left"><WorkIcon style={{ color: green[500] }}/> Auto Detailing Services</NavLink>
               <hr id={'last-hr'} className={'style'}></hr>
             </li>
             <li className="nav-item ml-3">

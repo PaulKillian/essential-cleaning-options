@@ -87,13 +87,13 @@ function Cards() {
             <div className={'d-flex row justify-content-center pb-2'}>
               <div className={classes.root}>
                 <Button variant="contained">
-                  <NavLink to="/prices" className="nav-link text-white text-center pr-1">
+                  <NavLink to="/auto-detailing-services" className="nav-link text-white text-center pr-1">
                     <MonetizationOnIcon className={'text-white'}/> Detailing Services and Prices</NavLink>
                 </Button>
               </div>
             </div>
           </div>
-          <img id={'third'} src="../images/buf.png" className="row card-h bottom col-lg-6 card-shadow col-md-12"></img>
+          <img id={'third'} src="../images/buff.jpg" className="row card-h bottom col-lg-6 card-shadow col-md-12"></img>
         </div>
       </div>
     </>

@@ -47,19 +47,24 @@ class Footer extends React.Component {
   render() {
     return (
       <>
-        <footer className="pt-3 bg-footer shadowed">
-          <div className="row sm-col col-md-12 flex justify-content-around align-items-center">
-            <div className={'py-4'}>
-              <img src="/images/ken.jpg" alt="image of ken mendoza"></img>
+        <footer className="pt-2 bg-footer">
+          <div className="pt-2 d-flex flex-wrap d-flex justify-content-around">
+            <div className="row col-md-6 col-lg-3 d-flex justify-content-around">
+              <div className={'pt-3 pb-4'}>
+                <img src="/images/ken.jpg" alt="image of ken mendoza"></img>
+              </div>
+              <div className={'text-white col-md-12 text-center'}>
+              Independently owned and operated<br></br>in South Orange County since 2014</div>
             </div>
-            <p className={'text-white col-md-6 text-center'}>
-              Independently owned and operated in South Orange County since 2014</p>
-            <div id="contact" className="text-white d-flex flex-column justify-content-center">
+            <div className="pt-4 col-lg-5 text-white text-center">
+              <h2 className={'pb-3'}> Any questions or need additional<br></br>information contact Ken.</h2>
+            </div>
+            <div id="contact" className="text-white pt-3 col-lg-3 d-flex flex-column justify-content-end">
               <div>
                 <div className="d-flex justify-content-center">
                   <img className="mb-2 icon-size" src="/images/telephone.png" alt="image of telephone"></img>
                 </div>
-                <div className={'text-center'}>
+                <div className={'text-center pb-4'}>
                   <a className={'text-white'} href="tel:949-254-7482">Call us at 949-254-7482</a>
                 </div>
               </div>
@@ -74,7 +79,7 @@ class Footer extends React.Component {
               </div>
             </div>
           </div>
-          <h2 className="pb-3 text-white text-center"> Any questions or need additional<br></br>information contact Ken.</h2>
+          <div id={'p-copy'} className={'text-center pb-5 text-white'}>&copy; Ken Mendoza 2021</div>
         </footer>
       </>
     );
