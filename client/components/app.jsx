@@ -27,7 +27,7 @@ function App() {
           <Route path="/auto-detailing" component={Detailing} />
           <Route path="/carpet-gallery" component={CarpetGallery} />
           <Route path="/upholstery-gallery" component={UpholsteryGallery} />
-          <Route path="/prices" component={DetailPrices} />
+          <Route path="/auto-detailing-services" component={DetailPrices} />
           <Route path="/" component={Home} />
         </Switch>
       </AnimatePresence>

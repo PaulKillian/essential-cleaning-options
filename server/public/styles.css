@@ -42,6 +42,9 @@ a:hover {
     font-family: 'Lora', serif;
     font-size: 10vw;
 }
+#p-copy {
+    margin: 0 !important;
+}
 .display-3 {
     font-family: 'Lora', serif;
     font-size: 5.4vw;
@@ -344,7 +347,7 @@ h1.ml8 {
     box-shadow: inset 8px 0 10px -5px #3e3d3d;
 }
 .show {
-    width: 32%;
+    width: 33%;
 }
 .style {
     border: 0;
