@@ -61,17 +61,17 @@ class Footer extends React.Component {
             </div>
             <div id="contact" className="text-white pt-3 col-lg-3 d-flex flex-column justify-content-end">
               <div>
-                <div className="d-flex justify-content-center">
+                <a className="d-flex justify-content-center" href="tel:949-254-7482">
                   <img className="mb-2 icon-size" src="/images/telephone.png" alt="image of telephone"></img>
-                </div>
+                </a>
                 <div className={'text-center pb-4'}>
                   <a className={'text-white'} href="tel:949-254-7482">Call us at 949-254-7482</a>
                 </div>
               </div>
               <div className="pb-2">
-                <div className="d-flex justify-content-center">
+                <a className="d-flex justify-content-center" href='mailto:essentialcleaningoptions@gmail.com'>
                   <img className="icon-size" src="/images/mail.png" alt="image of envelope"></img>
-                </div>
+                </a>
                 <div className={'text-center pb-3'}>
                   <a className={'text-white '} href='mailto:essentialcleaningoptions@gmail.com'
                     title='financedepartment@business.college.edu'>essentialcleaningoptions@gmail.com</a>

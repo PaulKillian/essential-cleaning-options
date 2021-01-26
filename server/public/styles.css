@@ -548,8 +548,8 @@ img {
 }
 .auto-estimate {
     background: linear-gradient(
-            rgba(2, 2, 2.1, 0.50), rgba(2, 2, 2, 0.50) ),
-    url("../images/auto-estimate.jpg");
+            rgba(2, 2, 2.1, 0.75), rgba(2, 2, 2, 0.50) ),
+    url("../images/auto-estimate1.webp");
     background-size: cover;
     background-attachment: fixed;
     background-position: bottom;
@@ -557,8 +557,8 @@ img {
 }
 .carpet-estimate {
     background: linear-gradient(
-            rgba(2, 2, 2.1, 0.50), rgba(2, 2, 2, 0.65) ),
-    url("../images/blue-bg.jpg");
+            rgba(2, 2, 2.1, 0.75), rgba(2, 2, 2, 0.50) ),
+    url("../images/blue-bg2.webp");
     background-size: cover;
     background-attachment: fixed;
     background-position: bottom;
@@ -580,9 +580,11 @@ img {
     color: black;
 }
 .blur {
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 5px;
-    font-family: sans-serif;
+    background: rgba( 74, 144, 226, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
 }
 .text-justify {
 	text-align: justify;

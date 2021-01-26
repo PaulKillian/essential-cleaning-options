@@ -10,7 +10,7 @@ class Estimate extends React.Component {
       subject: '',
       rooms: '',
       stairs: '',
-      stains: '',
+      pets: '',
       estimate: '',
       time: '',
       date: '',
@@ -40,7 +40,7 @@ class Estimate extends React.Component {
       subject: this.state.subject,
       rooms: this.state.rooms,
       stairs: this.state.stairs,
-      stains: this.state.stains,
+      pets: this.state.pets,
       estimate: this.state.estimate,
       time: this.state.time,
       date: this.state.date,
@@ -175,7 +175,7 @@ class Estimate extends React.Component {
                     <input
                       type="text"
                       className="form-control shadowed"
-                      name="stains"
+                      name="pets"
                       value={this.state.message}
                       onChange={this.handleChangeInputs}
                       required
