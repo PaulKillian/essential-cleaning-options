@@ -98,7 +98,7 @@ class Estimate extends React.Component {
       <>
         <div className="col-12 scale bottom">
           <div className="d-flex justify-content-center align-items-center flex-column">
-            <h1 className="text-font shadowed-text text-white pt-5">Schedule Estimate</h1>
+            <h1 className="text-font-text text-white pt-5">Schedule Estimate</h1>
           </div>
         </div>
         <h1 className="ml16 d-none">Your Message Has Been Sent!</h1>
@@ -111,7 +111,7 @@ class Estimate extends React.Component {
                     <label className="mb-0">Name</label>
                     <input
                       type="text"
-                      className="form-control shadowed"
+                      className="form-control"
                       name="name"
                       value={this.state.name}
                       onChange={this.handleChangeInputs}
@@ -122,7 +122,7 @@ class Estimate extends React.Component {
                     <label className="mb-0">Email</label>
                     <input
                       type="text"
-                      className="form-control shadowed"
+                      className="form-control"
                       name="email"
                       value={this.state.email}
                       onChange={this.handleChangeInputs}
@@ -135,7 +135,7 @@ class Estimate extends React.Component {
                     <label className="mb-0">Subject</label>
                     <input
                       type="text"
-                      className="form-control shadowed"
+                      className="form-control"
                       name="subject"
                       value={this.state.subject}
                       onChange={this.handleChangeInputs}
@@ -143,15 +143,14 @@ class Estimate extends React.Component {
                     />
                   </div>
                 </div>
-
                 <div className="form-row">
                   <div className="form-group col-6">
                     <label className="mb-0">Rooms</label>
                     <input
                       type="text"
-                      className="form-control shadowed"
+                      className="form-control"
                       name="rooms"
-                      value={this.state.message}
+                      value={this.state.rooms}
                       onChange={this.handleChangeInputs}
                       required
                     />
@@ -160,23 +159,22 @@ class Estimate extends React.Component {
                     <label className="mb-0">Stairs</label>
                     <input
                       type="text"
-                      className="form-control shadowed"
+                      className="form-control"
                       name="stairs"
-                      value={this.state.message}
+                      value={this.state.stairs}
                       onChange={this.handleChangeInputs}
                       required
                     />
                   </div>
                 </div>
-
                 <div className="form-row">
                   <div className="form-group col-6">
                     <label className="mb-0">Do you have any pets?</label>
                     <input
                       type="text"
-                      className="form-control shadowed"
+                      className="form-control"
                       name="pets"
-                      value={this.state.message}
+                      value={this.state.pets}
                       onChange={this.handleChangeInputs}
                       required
                     />
@@ -185,9 +183,9 @@ class Estimate extends React.Component {
                     <label className="mb-0">Estimated Sq. Footage</label>
                     <input
                       type="text"
-                      className="form-control shadowed"
+                      className="form-control"
                       name="estimate"
-                      value={this.state.message}
+                      value={this.state.estimate}
                       onChange={this.handleChangeInputs}
                       required
                     />
@@ -198,9 +196,9 @@ class Estimate extends React.Component {
                     <label className="mb-0">Time of Service</label>
                     <input
                       type="text"
-                      className="form-control shadowed"
+                      className="form-control"
                       name="time"
-                      value={this.state.message}
+                      value={this.state.time}
                       onChange={this.handleChangeInputs}
                       required
                     />
@@ -209,9 +207,9 @@ class Estimate extends React.Component {
                     <label className="mb-0">Date of Service</label>
                     <input
                       type="text"
-                      className="form-control shadowed"
+                      className="form-control"
                       name="date"
-                      value={this.state.message}
+                      value={this.state.date}
                       onChange={this.handleChangeInputs}
                       required
                     />
@@ -222,9 +220,9 @@ class Estimate extends React.Component {
                     <label className="mb-0">Best Time to Contact You</label>
                     <input
                       type="text"
-                      className="form-control shadowed"
+                      className="form-control"
                       name="bestTime"
-                      value={this.state.message}
+                      value={this.state.bestTime}
                       onChange={this.handleChangeInputs}
                       required
                     />
@@ -233,16 +231,16 @@ class Estimate extends React.Component {
                     <label className="mb-0">Best Way To Contact You</label>
                     <input
                       type="text"
-                      className="form-control shadowed"
+                      className="form-control"
                       name="bestDate"
-                      value={this.state.message}
+                      value={this.state.bestDate}
                       onChange={this.handleChangeInputs}
                       required
                     />
                   </div>
                 </div>
                 <div className="d-flex justify-content-center mt-3">
-                  <button type="submit" className="btn shadow bg-success text-white col-sm-3 col-md-4 col-lg-4">SEND MESSAGE</button>
+                  <button type="submit" className="btn bg-success text-white col-sm-3 col-md-4 col-lg-4">SEND MESSAGE</button>
                 </div>
               </form>
             </div>
