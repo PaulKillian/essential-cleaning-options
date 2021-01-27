@@ -143,7 +143,7 @@ function Reviews() {
 
 function Detailing() {
   return (
-    <motion.div id='main' className="div1 w-100 bg-g"
+    <motion.div id='main' className="div1 w-100 mrble"
       style={pageStyle}
       initial="initial"
       animate="in"
@@ -161,7 +161,7 @@ function Detailing() {
 
 function CarpetGallery() {
   return (
-    <motion.div id='main' className="w-100 bg-g"
+    <motion.div id='main' className="w-100 mrble h-100"
       style={pageStyle}
       initial="initial"
       animate="in"
@@ -179,7 +179,7 @@ function CarpetGallery() {
 
 function UpholsteryGallery() {
   return (
-    <motion.div id='main' className="w-100 foot1"
+    <motion.div id='main' className="w-100 mrble"
       style={pageStyle}
       initial="initial"
       animate="in"
@@ -197,7 +197,7 @@ function UpholsteryGallery() {
 
 function DetailPrices() {
   return (
-    <motion.div id='main' className="w-100 bg-g"
+    <motion.div id='main' className="w-100 mrble"
       style={pageStyle}
       initial="initial"
       animate="in"
