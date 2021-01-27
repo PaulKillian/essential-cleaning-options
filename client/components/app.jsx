@@ -101,6 +101,7 @@ function EstimateCalendar() {
       <Suspense fallback={renderLoader()}>
         <Navbar />
         <Estimate />
+        <Footer />
       </Suspense>
     </motion.div>
   );
@@ -118,6 +119,7 @@ function AutoEstimateCalendar() {
       <Suspense fallback={renderLoader()}>
         <Navbar />
         <AutoEstimate />
+        <Footer />
       </Suspense>
     </motion.div>
   );
@@ -136,6 +138,7 @@ function Reviews() {
       <Suspense fallback={renderLoader()}>
         <Navbar className="position-absolute"/>
         <Review />
+        <Footer />
       </Suspense>
     </motion.div>
   );
@@ -154,6 +157,7 @@ function Detailing() {
       <Suspense fallback={renderLoader()}>
         <Navbar />
         <Auto />
+        <Footer />
       </Suspense>
     </motion.div>
   );
@@ -172,6 +176,7 @@ function CarpetGallery() {
       <Suspense fallback={renderLoader()}>
         <Navbar />
         <Carpet />
+        <Footer />
       </Suspense>
     </motion.div>
   );
@@ -190,6 +195,7 @@ function UpholsteryGallery() {
       <Suspense fallback={renderLoader()}>
         <Navbar />
         <Upholstery />
+        <Footer />
       </Suspense>
     </motion.div>
   );
@@ -208,6 +214,7 @@ function DetailPrices() {
       <Suspense fallback={renderLoader()}>
         <Navbar />
         <Price />
+        <Footer />
       </Suspense>
     </motion.div>
   );
