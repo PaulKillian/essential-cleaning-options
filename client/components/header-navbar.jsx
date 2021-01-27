@@ -79,7 +79,7 @@ class Navbar extends React.Component {
                 <div className={'text-white '}>O</div>
               </div>
             </li >
-            <NavLink to="/" exact className="text-dark text-left nav-item mt-3 ml-3"><HomeIcon style={{ color: green[500] }}/> Home
+            <NavLink to="/" exact className="text-dark text-left nav-item mt-3 ml-3"><HomeIcon style={{ color: green[500] }}/> Home/Services
               <li>
                 <hr className={'style'}></hr>
               </li>
@@ -128,6 +128,9 @@ class Navbar extends React.Component {
             <NavLink to="/reviews" className="text-dark nav-item ml-3 text-left"><RateReviewIcon style={{ color: green[500] }} /> Reviews
               <li className="nav-item ml-3"></li>
             </NavLink>
+            <li>
+              <hr className={'style'}></hr>
+            </li>
           </ul>
         </div>
       </>

@@ -1,6 +1,3 @@
-// import 'slick-carousel/slick/slick.css';
-// import 'slick-carousel/slick/slick-theme.css';
-
 require('dotenv/config');
 const express = require('express');
 const nodemailer = require('nodemailer');
@@ -12,7 +9,7 @@ const sessionMiddleware = require('./session-middleware');
 const port = process.env.PORT || 8086;
 const app = express();
 const compression = require('compression');
-const URL = process.env.NODE_ENV === 'development' ? process.env.REACT_APP_DEV_URI : process.env.REACT_APP_PROD_URI;
+const URL = process.env.NODE_ENV === 'development' ? process.env.REACT_APP_DEV_URL : process.env.REACT_APP_PROD_URL;
 
 app.use(compression());
 app.use(bodyParser.urlencoded({ extended: true }));

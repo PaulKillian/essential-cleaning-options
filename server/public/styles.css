@@ -628,6 +628,7 @@ img {
 .MuiPaper-elevation1 {
     box-shadow: none !important;
     margin-left: 16px !important;
+    margin: -9px;
 }
 .MuiAccordionSummary-root {
     padding-left: 0px !important;
@@ -770,6 +771,9 @@ ul.top-ul {
     }
     #last-hr {
         margin-top: 1.5rem;
+    }
+    ul.top-ul {
+        margin-left: -35px;
     }
 }
 

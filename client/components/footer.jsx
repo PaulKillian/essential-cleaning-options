@@ -1,7 +1,4 @@
 import React from 'react';
-import AOS from 'aos';
-
-AOS.init();
 
 class Footer extends React.Component {
   constructor(props) {
@@ -11,7 +8,6 @@ class Footer extends React.Component {
       phone: ''
     };
     this.handleChangeInputs = this.handleChangeInputs.bind(this);
-    this.SendMessage = this.SendMessage.bind(this);
   }
 
   handleChangeInputs(event) {
@@ -20,27 +16,6 @@ class Footer extends React.Component {
     const name = target.name;
     this.setState({
       [name]: value
-    });
-  }
-
-  SendMessage(event) {
-    event.preventDefault();
-    const formData = {
-      name: this.state.name,
-      phone: this.state.phone
-    };
-    fetch('api/direct', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(formData)
-    })
-      .then(res => res.json())
-      .catch(err => console.error(err));
-    this.setState({
-      name: '',
-      phone: ''
     });
   }
 
