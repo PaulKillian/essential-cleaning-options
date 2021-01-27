@@ -25,8 +25,8 @@ function Cards() {
       <div className="mt-5 container">
         <div id="services" className="row card-parallax mx-1 d-flex justify-content-center mb-5">
           <div className="col-lg-6 col-md-12 bg-white card-shadow">
-            <h2 className={'display-4 text-center pt-3'}>CARPET CLEANING</h2>
-            <hr className={'bg-dark'}></hr>
+            <h2 className={'display-4 text-center pt-3 bg-footer'}>CARPET CLEANING</h2>
+            <hr className={'style'}></hr>
             <p className="p-2">I provide low moisture carpet cleaning with the use of
               a rotary and or Orbital machine and provide a plant
               based low moisture encapsulating green cleaner for all
@@ -49,8 +49,8 @@ function Cards() {
         </div>
         <div className="row mx-1 d-flex justify-content-center mb-5">
           <div className="col-lg-6 col-md-12 bg-white card-shadow">
-            <h2 className={'display-4 text-center pt-3'}>UPHOLSTERY CLEANING</h2>
-            <hr className={'bg-dark'}></hr>
+            <h2 className={'display-4 text-center pt-3 bg-footer'}>UPHOLSTERY CLEANING</h2>
+            <hr className={'style'}></hr>
             <p className="p-2">This results in less re-soiling and faster drying times.
               How does this work? Wet is attracted to dry, so the
               wet carpet and its sequestered soils are attracted to
@@ -70,9 +70,9 @@ function Cards() {
         </div>
         <div className="row mx-1 d-flex justify-content-center mb-5">
           <div className="col-lg-6 col-md-12 bg-white card-shadow">
-            <h2 className={'display-4 text-center pt-3'}>AUTO DETAILING</h2>
-            <hr className={'bg-dark'}></hr>
-            <p className="p-2 text-center">Providing cleaning with a chemical free cleaner
+            <h2 className={'display-4 text-center pt-3 bg-footer'}>AUTO DETAILING</h2>
+            <hr className={'style'}></hr>
+            <p className="p-2">Providing cleaning with a chemical free cleaner
               and sanitizing with steam for refrigerators and freezers. For ovens and stove tops
               I use a non toxic bio degradable cleaner/degreaser  followed up with steam for a
               complete sanitization. </p>

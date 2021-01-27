@@ -95,7 +95,7 @@ class Navbar extends React.Component {
                 </AccordionSummary>
                 <AccordionDetails className={'text-dark'}>
                   <div className={'d-flex flex-column'}>
-                    <NavLink to="/carpet-gallery" exact className="text-dark nav-item">Carpet</NavLink>
+                    <NavLink to="/carpet-gallery" exact className="text-dark nav-item">Carpet Cleaning</NavLink>
                     <NavLink to="/auto-detailing" exact className="text-dark nav-item">Auto Detailing</NavLink>
                   </div>
                 </AccordionDetails>
@@ -114,13 +114,13 @@ class Navbar extends React.Component {
                 <AccordionDetails className={'text-dark'}>
                   <div className={'d-flex flex-column'}>
                     <NavLink to="/carpet-estimate" exact className="text-dark nav-item">Carpet/Upholstery</NavLink>
-                    <NavLink to="/auto-estimate" exact className="text-dark nav-item">Auto Detailing</NavLink>
+                    <NavLink to="/auto-estimate" exact className="text-dark nav-item">Auto Services</NavLink>
                   </div>
                 </AccordionDetails>
               </Accordion>
               <hr id={'second-to-last-hr'} className={'style'}></hr>
             </li>
-            <NavLink to="/auto-detailing-services" className="text-dark ml-3 nav-item text-left"><WorkIcon style={{ color: green[500] }}/> Auto Detailing Services
+            <NavLink to="/auto-detailing-services" className="text-dark ml-3 nav-item text-left"><WorkIcon style={{ color: green[500] }}/> Auto Services
               <li className="nav-item ml-3">
                 <hr id={'last-hr'} className={'style'}></hr>
               </li>

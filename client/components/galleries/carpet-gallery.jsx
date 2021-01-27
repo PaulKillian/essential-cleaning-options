@@ -63,7 +63,7 @@ function CarpetGallery() {
 
   return (
     <>
-      <h1 className=" text-font text-dark text-center mt-4 mb-5 pt-5">Carpet Gallery</h1>
+      <h1 className="text-font text-dark text-center mt-4 mb-5 pt-5">Carpet Cleaning</h1>
       <div className={'d-flex justify-content-center pb-5'}>
         <div style={{
           width: '85%'
