@@ -70,7 +70,7 @@ const pageStyleReview = {
 
 function Home() {
   return (
-    <motion.div id='main' className="col-12 mrble paralax-main"
+    <motion.div id='main' className="col-12 marble paralax-main"
       style={pageStyle}
       initial="initial"
       animate="in"
@@ -143,7 +143,7 @@ function Reviews() {
 
 function Detailing() {
   return (
-    <motion.div id='main' className="div1 w-100 mrble"
+    <motion.div id='main' className="div1 w-100 marble"
       style={pageStyle}
       initial="initial"
       animate="in"
@@ -161,7 +161,7 @@ function Detailing() {
 
 function CarpetGallery() {
   return (
-    <motion.div id='main' className="w-100 mrble h-100"
+    <motion.div id='main' className="w-100 marble h-100"
       style={pageStyle}
       initial="initial"
       animate="in"
@@ -179,7 +179,7 @@ function CarpetGallery() {
 
 function UpholsteryGallery() {
   return (
-    <motion.div id='main' className="w-100 mrble"
+    <motion.div id='main' className="w-100 marble"
       style={pageStyle}
       initial="initial"
       animate="in"
@@ -197,7 +197,7 @@ function UpholsteryGallery() {
 
 function DetailPrices() {
   return (
-    <motion.div id='main' className="w-100 mrble"
+    <motion.div id='main' className="w-100 marble"
       style={pageStyle}
       initial="initial"
       animate="in"
