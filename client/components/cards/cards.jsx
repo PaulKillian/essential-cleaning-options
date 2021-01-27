@@ -28,7 +28,7 @@ function Cards() {
             <h2 className={'display-4 text-center pt-3 bg-footer'}>CARPET CLEANING</h2>
             <hr className={'style'}></hr>
             <p className="p-2">I provide low moisture carpet cleaning with the use of
-              a rotary and or Orbital machine and provide a plant
+              a rotary and or orbital machine and provide a plant
               based low moisture encapsulating green cleaner for all
               types of carpets.<br></br><br></br>The carpets are pre
               sprayed with the encapsulation cleaner, with detailed
@@ -51,7 +51,9 @@ function Cards() {
           <div className="col-lg-6 col-md-12 bg-white card-shadow">
             <h2 className={'display-4 text-center pt-3 bg-footer'}>UPHOLSTERY CLEANING</h2>
             <hr className={'style'}></hr>
-            <p className="p-2">This results in less re-soiling and faster drying times.
+            <p className="p-2">As with carpet cleaning, furniture is
+              pre sprayed with the encapsulation cleaner. This results
+              in less re-soiling and faster drying times.
               How does this work? Wet is attracted to dry, so the
               wet carpet and its sequestered soils are attracted to
               the drier cleaning pad and are “held” to the cleaning
