@@ -9,12 +9,11 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Accordion from '@material-ui/core/Accordion';
 import HomeIcon from '@material-ui/icons/Home';
 import PhotoCamera from '@material-ui/icons/PhotoCamera';
-import DateRangeIcon from '@material-ui/icons/DateRange';
+import DirectionsCarIcon from '@material-ui/icons/DirectionsCar';
 import { green } from '@material-ui/core/colors';
 import RateReviewIcon from '@material-ui/icons/RateReview';
 import WorkIcon from '@material-ui/icons/Work';
-import { shadows } from '@material-ui/system';
-import Box from '@material-ui/core/Box';
+import DateRangeIcon from '@material-ui/icons/DateRange';
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -84,6 +83,20 @@ class Navbar extends React.Component {
                 <hr className={'style'}></hr>
               </li>
             </NavLink>
+            <NavLink to="/carpet-estimate" exact className="text-dark ml-3 nav-item"><DateRangeIcon style={{ color: green[500] }}/> Carpet/Upholstery Estimate</NavLink>
+            <li className="nav-item ml-3">
+              <hr id={'second-to-last-hr'} className={'style'}></hr>
+            </li>
+            <NavLink to="/auto-estimate" exact className="text-dark ml-3 nav-item"><DirectionsCarIcon style={{ color: green[500] }}/> Auto Detailing Estimate
+              <li>
+                <hr className={'style'}></hr>
+              </li>
+            </NavLink>
+            <NavLink to="/auto-detailing-services" className="text-dark ml-3 nav-item text-left"><WorkIcon style={{ color: green[500] }}/> Auto Services
+              <li className="nav-item ml-3">
+                <hr id={'last-hr'} className={'style'}></hr>
+              </li>
+            </NavLink>
             <li className={'bax-shad'}>
               <Accordion className={'text-left ml-2 nav-item accordion-bg col-12'}>
                 <AccordionSummary
@@ -96,35 +109,13 @@ class Navbar extends React.Component {
                 <AccordionDetails className={'text-dark'}>
                   <div className={'d-flex flex-column'}>
                     <NavLink to="/carpet-gallery" exact className="text-dark nav-item">Carpet Cleaning</NavLink>
+                    <NavLink to="/upholstery-gallery" className="text-dark nav-item">Upholstery</NavLink>
                     <NavLink to="/auto-detailing" exact className="text-dark nav-item">Auto Detailing</NavLink>
                   </div>
                 </AccordionDetails>
               </Accordion>
               <hr className={'style'}></hr>
             </li>
-            <li>
-              <Accordion className={'ml-2 accordion-bg nav-item col-12'}>
-                <AccordionSummary
-                  expandIcon={<ExpandMoreIcon />}
-                  aria-controls="panel1a-content"
-                  id="panel1a-header"
-                >
-                  <div><DateRangeIcon style={{ color: green[500] }} /> Schedule Estimate</div>
-                </AccordionSummary>
-                <AccordionDetails className={'text-dark'}>
-                  <div className={'d-flex flex-column'}>
-                    <NavLink to="/carpet-estimate" exact className="text-dark nav-item">Carpet/Upholstery</NavLink>
-                    <NavLink to="/auto-estimate" exact className="text-dark nav-item">Auto Services</NavLink>
-                  </div>
-                </AccordionDetails>
-              </Accordion>
-              <hr id={'second-to-last-hr'} className={'style'}></hr>
-            </li>
-            <NavLink to="/auto-detailing-services" className="text-dark ml-3 nav-item text-left"><WorkIcon style={{ color: green[500] }}/> Auto Services
-              <li className="nav-item ml-3">
-                <hr id={'last-hr'} className={'style'}></hr>
-              </li>
-            </NavLink>
             <NavLink to="/reviews" className="text-dark nav-item ml-3 text-left"><RateReviewIcon style={{ color: green[500] }} /> Reviews
               <li className="nav-item ml-3"></li>
             </NavLink>

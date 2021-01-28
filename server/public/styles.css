@@ -475,6 +475,9 @@ img {
     top: 1.7rem;
     font-size: 2vw;
 }
+.essential {
+    height: 39rem;
+}
 .bg-g {
     background-color: #F3F2EF;
     min-height: 100%;
@@ -634,6 +637,9 @@ ul.top-ul {
     .carpet-estimate {
         height: 100vh;
     }
+    .scale {
+        transform: scale(1);
+    }
 }
 @media only screen and (max-width: 376px) {
     .simple {
@@ -653,9 +659,6 @@ ul.top-ul {
     #eco {
         padding-left: .5rem;
         padding-right: 0;
-    }
-    .showMenu {
-        width: 80%;
     }
     h2 {
         margin-bottom: 0;
@@ -687,20 +690,11 @@ ul.top-ul {
     ul.top-ul {
         margin-left: -35px;
     }
-}
-@media only screen and (min-width: 375px) {
-    .scale {
-        transform: scale(1);
-    }
-}
-@media only screen and (min-width: 768px) {
-    .scale {
-        transform: scale(1);
-    }
-}
-@media only screen and (max-width: 376px) {
     .showMenu {
-        width: 78%;
+        width: 87%;
+    }
+    .scale {
+        transform: scale(1);
     }
 }
 @media only screen and (max-width: 800px) {

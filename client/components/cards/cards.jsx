@@ -51,8 +51,8 @@ function Cards() {
           <div className="col-lg-6 col-md-12 bg-white card-shadow">
             <h2 className={'display-4 text-center pt-3 bg-footer'}>UPHOLSTERY CLEANING</h2>
             <hr className={'style'}></hr>
-            <p className="p-2">As with carpet cleaning, furniture is
-              pre sprayed with the encapsulation cleaner. This results
+            <p className="p-2">Furniture is
+              pre sprayed with a low moisture cleaner. This results
               in less re-soiling and faster drying times.
               How does this work? Wet is attracted to dry, so the
               wet carpet and its sequestered soils are attracted to
@@ -66,7 +66,15 @@ function Cards() {
               My main product is Nano-Maxx which is a plant based
               registered green cleaner that has a zero residue and is
               totally safe and effective.</p>
-            {/* <NavLink to="/carpet-gallery" className="nav-link  text-dark text-center pb-2">Photos</NavLink> */}
+            <div className={'d-flex justify-content-center pb-2'}>
+              <div className={classes.root}>
+                <Button onClick={scroll} variant="contained">
+                  <NavLink to="/upholstery-gallery" className="nav-link text-white text-center pr-1">
+                    <PhotoCamera className={'text-white'}/> Photos
+                  </NavLink>
+                </Button>
+              </div>
+            </div>
           </div>
           <img id={'second'} src="../images/coucha.webp" className="row col-lg-6 card-h bottom card-shadow col-md-12"></img>
         </div>
@@ -74,10 +82,7 @@ function Cards() {
           <div className="col-lg-6 col-md-12 bg-white card-shadow">
             <h2 className={'display-4 text-center pt-3 bg-footer'}>AUTO DETAILING</h2>
             <hr className={'style'}></hr>
-            <p className="p-2">Providing cleaning with a chemical free cleaner
-              and sanitizing with steam for refrigerators and freezers. For ovens and stove tops
-              I use a non toxic bio degradable cleaner/degreaser  followed up with steam for a
-              complete sanitization. </p>
+            <p className="p-2"></p>
             <div className={'d-flex justify-content-center'}>
               <div className={classes.root}>
                 <Button variant="contained">
