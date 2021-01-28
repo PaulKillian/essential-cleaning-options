@@ -1,16 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import Button from '@material-ui/core/Button';
 import { Popover } from '@material-ui/core';
 
-// const useStyles = makeStyles(theme => ({
-//   typography: {
-//     padding: theme.spacing(2)
-//   }
-// }));
-
 function Footer() {
-  // const classes = useStyles();
   const [anchorEl1, setAnchorEl1] = React.useState(null);
   const [anchorEl2, setAnchorEl2] = React.useState(null);
   const handleClick1 = event => {
@@ -24,7 +16,7 @@ function Footer() {
     setAnchorEl1(null);
   };
   const handleClose2 = () => {
-    setAnchorEl1(null);
+    setAnchorEl2(null);
   };
 
   const open1 = Boolean(anchorEl1);
@@ -65,57 +57,57 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div id={'p-copy'} className={'text-center pb-5 text-white'}>&copy; Ken Mendoza 2021</div>
-        <div className={'d-flex justify-content-around'}>
-          <NavLink to="/" exact className="text-dark text-left nav-item mt-3 ml-3">Home/Services</NavLink>
-          <p aria-describedby={id} variant="contained" color="primary" onClick={handleClick1}>
-              Photos
-          </p>
-          <Popover
-            id={id}
-            open={open1}
-            anchorEl={anchorEl1}
-            onClose={handleClose1}
-            anchorOrigin={{
-              vertical: 'bottom',
-              horizontal: 'center',
-            }}
-            transformOrigin={{
-              vertical: 'top',
-              horizontal: 'center',
-            }}
-          >
-            <div className={'d-flex flex-column'}>
-              <NavLink to="/carpet-gallery" exact className="text-dark nav-item">Carpet Cleaning</NavLink>
-              <NavLink to="/auto-detailing" exact className="text-dark nav-item">Auto Detailing</NavLink>
-            </div>
-          </Popover>
-          <Button aria-describedby={id} variant="contained" color="primary" onClick={handleClick2}>
-            Schedule Estimate
-          </Button>
-          <Popover
-            id={id}
-            open={open2}
-            anchorEl={anchorEl2}
-            onClose={handleClose2}
-            anchorOrigin={{
-              vertical: 'bottom',
-              horizontal: 'center',
-            }}
-            transformOrigin={{
-              vertical: 'top',
-              horizontal: 'center',
-            }}
-          >
-            <div className={'d-flex flex-column'}>
-              <NavLink to="/carpet-estimate" exact className="text-dark nav-item">Carpet/Upholstery</NavLink>
-              <NavLink to="/auto-estimate" exact className="text-dark nav-item">Auto Services</NavLink>
-            </div>
-          </Popover>
-          <NavLink to="/auto-detailing-services" className="text-dark ml-3 nav-item text-left">Auto Services</NavLink>
-          <NavLink to="/reviews" className="text-dark nav-item ml-3 text-left">Reviews</NavLink>
-        </div>
+        <div id={'p-copy'} className={'text-center py-4 text-white'}>&copy; Ken Mendoza 2021</div>
       </footer>
+      <div className={'d-flex justify-content-around flex-wrap marble pt-3'}>
+        <NavLink to="/" exact className="text-left nav-item"><span className={'text-dark'}>Home/Services</span></NavLink>
+        <p aria-describedby={id} variant="contained" color="primary" onClick={handleClick1}>
+          <span className={'nav-item nav-bottom text-dark pointer '}>Photos</span>
+        </p>
+        <Popover
+          id={id}
+          open={open1}
+          anchorEl={anchorEl1}
+          onClose={handleClose1}
+          anchorOrigin={{
+            vertical: 'bottom',
+            horizontal: 'center',
+          }}
+          transformOrigin={{
+            vertical: 'top',
+            horizontal: 'center',
+          }}
+        >
+          <div className={'d-flex flex-column footer-bg p-2'}>
+            <NavLink to="/carpet-gallery" exact className="nav-item"><span className={'text-dark'}>Carpet Cleaning</span></NavLink>
+            <NavLink to="/auto-detailing" exact className="nav-item"><span className={'text-dark'}>Auto Detailing</span></NavLink>
+          </div>
+        </Popover>
+        <p aria-describedby={id} variant="contained" color="primary" onClick={handleClick2}>
+          <span className={'nav-item nav-bottom text-dark pointer'}>Schedule Estimate</span>
+        </p>
+        <Popover
+          id={id}
+          open={open2}
+          anchorEl={anchorEl2}
+          onClose={handleClose2}
+          anchorOrigin={{
+            vertical: 'bottom',
+            horizontal: 'center',
+          }}
+          transformOrigin={{
+            vertical: 'top',
+            horizontal: 'center',
+          }}
+        >
+          <div className={'d-flex flex-column p-2'}>
+            <NavLink to="/carpet-estimate" exact className="nav-item"><span className={'text-dark'}>Carpet/Upholstery</span></NavLink>
+            <NavLink to="/auto-estimate" exact className="nav-item"><span className={'text-dark'}>Auto Services</span></NavLink>
+          </div>
+        </Popover>
+        <NavLink to="/auto-detailing-services" className="nav-item text-left"><span className={'text-dark'}>Auto Services</span></NavLink>
+        <NavLink to="/reviews" className="nav-item text-left"><span className={'text-dark'}>Reviews</span></NavLink>
+      </div>
     </>
   );
 }
