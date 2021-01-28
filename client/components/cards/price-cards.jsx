@@ -6,8 +6,8 @@ function PriceCards() {
   return (
     <>
       <div className="col-12 scale bottom">
-        <div className="d-flex justify-content-center align-items-center flex-column">
-          <h1 className=" mt-4 text-font text-dark">Auto Services</h1>
+        <div className="d-flex justify-content-center flex-wrap">
+          <h1 className="mt-4 col-7 text-font text-dark">Auto Services</h1>
         </div>
       </div>
       <div className={'container mt-5 mb-5'}>
@@ -115,14 +115,14 @@ function PriceCards() {
         <div className={'row mt-3 d-flex justify-content-between'}>
           <div id={'price-card'} className={'mt-2 mb-2 rounded text-dark col-lg-5 col-md-12'}>
             <div className={'text-white'}>
-              <h4 className={'p-2 text-center bg-dark price-shadow rounded'}>Clear Coat Decontamination</h4>
+              <h4 className={'p-2 text-center bg-dark price-shadow rounded'}>Clear Coat Decontamination and Paint Polishing</h4>
             </div>
             <div className={'py-4 pr-4 bg-white price-shadow'}>
               <ul>
                 <li>Step 1. Clay towel, clay disc or clay bar to remove embedded
               contaminants from the clear coat and windshield</li>
                 <li>Step 2. Clean all clayed surfaces with a paint prep or APA which is an
-              alcohol wash and distilled to remove any particles left behind on the
+              alcohol wash and distilled water to remove any particles left behind on the
               surface prior to polishing</li>
                 <li>Step 3. One-step polish (Using a D/A dual action polisher) with an AIO
               all in one glaze polish seal or all in one polish finishing with a sealant

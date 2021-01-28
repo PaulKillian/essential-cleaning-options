@@ -4,13 +4,13 @@ import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import DetailsIcon from '@material-ui/icons/Details';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(theme => ({
   root: {
     '& > *': {
-      margin: theme.spacing(20),
-      color: 'black !important',
-    },
-  },
+      margin: theme.spacing(2),
+      color: 'black !important'
+    }
+  }
 }));
 
 function scroll() {
@@ -40,8 +40,8 @@ function Hero(props) {
   } else {
     return (
       <>
-        <div className={'paralax d-flex justify-content-end flex-column align-items-center col-12'}>
-          <div className={'d-flex flex-column'}>
+        <div className={'paralax d-flex justify-content-center flex-column align-items-center col-12'}>
+          <div className={'d-flex flex-column essential justify-content-center'}>
             <div className={'display-2 text-white'}>ESSENTIAL</div>
             <div className={'display-3 text-white'}>CLEANING OPTIONS</div>
           </div>

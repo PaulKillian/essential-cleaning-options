@@ -71,15 +71,16 @@ function Footer() {
           onClose={handleClose1}
           anchorOrigin={{
             vertical: 'bottom',
-            horizontal: 'center',
+            horizontal: 'center'
           }}
           transformOrigin={{
             vertical: 'top',
-            horizontal: 'center',
+            horizontal: 'center'
           }}
         >
           <div className={'d-flex flex-column footer-bg p-2'}>
             <NavLink to="/carpet-gallery" exact className="nav-item"><span className={'text-dark'}>Carpet Cleaning</span></NavLink>
+            <NavLink to="/upholstery-gallery" className="nav-item"><span className={'text-dark'}>Upholstery Cleaning</span></NavLink>
             <NavLink to="/auto-detailing" exact className="nav-item"><span className={'text-dark'}>Auto Detailing</span></NavLink>
           </div>
         </Popover>
@@ -93,11 +94,11 @@ function Footer() {
           onClose={handleClose2}
           anchorOrigin={{
             vertical: 'bottom',
-            horizontal: 'center',
+            horizontal: 'center'
           }}
           transformOrigin={{
             vertical: 'top',
-            horizontal: 'center',
+            horizontal: 'center'
           }}
         >
           <div className={'d-flex flex-column p-2'}>

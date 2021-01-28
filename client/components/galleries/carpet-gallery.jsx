@@ -40,7 +40,7 @@ function CarpetGallery() {
     thumbnail: '/images/carpetg6.webp',
     thumbnailWidth: 238,
     thumbnailHeight: 212,
-    tags: [{ value: 'Residential--After', title: 'Residential' }],
+    tags: [{ value: 'Residential--After', title: 'Residentiall' }],
     caption: 'Stain Treatment--After'
   },
   {
@@ -59,14 +59,84 @@ function CarpetGallery() {
     tags: [{ value: 'Residential--After', title: 'Residential' }],
     caption: 'Stairs cleaning',
     isSelected: false
+  },
+  {
+    src: '/images/Commercial1.jpg',
+    thumbnail: '/images/Commercial1.jpg',
+    thumbnailWidth: 238,
+    thumbnailHeight: 212,
+    tags: [{ value: 'Commercial--After', title: 'Commercial' }],
+    caption: 'Stairs cleaning',
+    isSelected: false
+  },
+  {
+    src: '/images/Commercial2.jpg',
+    thumbnail: '/images/Commercial2.jpg',
+    thumbnailWidth: 238,
+    thumbnailHeight: 212,
+    tags: [{ value: 'Commercial--After', title: 'Commercial' }],
+    caption: 'Stairs cleaning',
+    isSelected: false
+  },
+  {
+    src: '/images/Commercial3.jpg',
+    thumbnail: '/images/Commercial3.jpg',
+    thumbnailWidth: 238,
+    thumbnailHeight: 212,
+    tags: [{ value: 'Commercial--After', title: 'Commercial' }],
+    caption: 'Stairs cleaning',
+    isSelected: false
+  },
+  {
+    src: '/images/Commercial4.jpg',
+    thumbnail: '/images/Commercial4.jpg',
+    thumbnailWidth: 238,
+    thumbnailHeight: 212,
+    tags: [{ value: 'Commercial--After', title: 'Commercial' }],
+    caption: 'Stairs cleaning',
+    isSelected: false
+  },
+  {
+    src: '/images/Commercial5.jpg',
+    thumbnail: '/images/Commercial5.jpg',
+    thumbnailWidth: 238,
+    thumbnailHeight: 212,
+    tags: [{ value: 'Commercial--After', title: 'Commercial' }],
+    caption: 'Stairs cleaning',
+    isSelected: false
+  },
+  {
+    src: '/images/Commercial6.jpg',
+    thumbnail: '/images/Commercial6.jpg',
+    thumbnailWidth: 238,
+    thumbnailHeight: 212,
+    tags: [{ value: 'Commercial--After', title: 'Commercial' }],
+    caption: 'Stairs cleaning',
+    isSelected: false
+  }, {
+    src: '/images/Residential1.jpg',
+    thumbnail: '/images/Residential1.jpg',
+    thumbnailWidth: 238,
+    thumbnailHeight: 212,
+    tags: [{ value: 'Residential--Before', title: 'Residential' }],
+    caption: 'Stairs cleaning',
+    isSelected: false
+  }, {
+    src: '/images/Residential2.jpg',
+    thumbnail: '/images/Residential2.jpg',
+    thumbnailWidth: 238,
+    thumbnailHeight: 212,
+    tags: [{ value: 'Residential--Before', title: 'Residential' }],
+    caption: 'Stairs cleaning',
+    isSelected: false
   }];
 
   return (
     <>
       <h1 className="text-font text-dark text-center mt-4 mb-5 pt-5">Carpet Cleaning</h1>
-      <div className={'d-flex justify-content-center pb-5'}>
+      <div className={'d-flex justify-content-center col-md-12 pb-5'}>
         <div style={{
-          width: '85%'
+          width: '87%'
         }}>
           < Gallery images={IMAGES} />
         </div>
