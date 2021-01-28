@@ -3,7 +3,7 @@ import React from 'react';
 export default function Review() {
   return (
     <>
-      <div className="col-12 scale bottom">
+      <div className="col-12 bottom">
         <div className="d-flex justify-content-center align-items-center flex-column">
           <h1 className=" mt-4 shadowed-text text-font text-white">Reviews</h1>
         </div>
