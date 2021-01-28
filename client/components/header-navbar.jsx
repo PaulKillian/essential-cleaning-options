@@ -109,7 +109,7 @@ class Navbar extends React.Component {
                 <AccordionDetails className={'text-dark'}>
                   <div className={'d-flex flex-column'}>
                     <NavLink to="/carpet-gallery" exact className="text-dark nav-item">Carpet Cleaning</NavLink>
-                    <NavLink to="/upholstery-gallery" className="text-dark nav-item">Upholstery</NavLink>
+                    <NavLink to="/upholstery-gallery" className="text-dark nav-item">Upholstery Cleaning</NavLink>
                     <NavLink to="/auto-detailing" exact className="text-dark nav-item">Auto Detailing</NavLink>
                   </div>
                 </AccordionDetails>

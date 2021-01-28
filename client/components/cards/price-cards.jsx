@@ -5,9 +5,9 @@ import { faCar } from '@fortawesome/free-solid-svg-icons';
 function PriceCards() {
   return (
     <>
-      <div className="col-12 scale bottom">
+      <div className="col-12 bottom">
         <div className="d-flex justify-content-center flex-wrap">
-          <h1 className="mt-4 col-7 text-font text-dark">Auto Services</h1>
+          <h1 className="mt-4 pt-5 col-7 text-font text-dark">Auto Services</h1>
         </div>
       </div>
       <div className={'container mt-5 mb-5'}>

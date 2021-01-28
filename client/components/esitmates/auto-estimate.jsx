@@ -120,9 +120,9 @@ class AutoEstimate extends React.Component {
   render() {
     return (
       <>
-        <div className="col-12 scale bottom">
+        <div className="col-12 bottom">
           <div className="d-flex justify-content-center align-items-center flex-column">
-            <h1 className="text-font text-white pt-5">Schedule Estimate</h1>
+            <h1 className="text-font text-white text-center mt-4 mb-5 pt-5">Schedule Estimate</h1>
           </div>
         </div>
         <h1 id={'message'} className="ml16 d-none">Your Message Has Been Sent!<br></br><br></br> We will response with 24 hours</h1>
