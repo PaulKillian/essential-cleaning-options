@@ -1,11 +1,19 @@
 import React from 'react';
 import 'bootstrap';
 import { NavLink } from 'react-router-dom';
-import AOS from 'aos';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-
-AOS.init();
+import AccordionSummary from '@material-ui/core/AccordionSummary';
+import AccordionDetails from '@material-ui/core/AccordionDetails';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import Accordion from '@material-ui/core/Accordion';
+import HomeIcon from '@material-ui/icons/Home';
+import PhotoCamera from '@material-ui/icons/PhotoCamera';
+import DirectionsCarIcon from '@material-ui/icons/DirectionsCar';
+import { green } from '@material-ui/core/colors';
+import RateReviewIcon from '@material-ui/icons/RateReview';
+import WorkIcon from '@material-ui/icons/Work';
+import DateRangeIcon from '@material-ui/icons/DateRange';
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -31,23 +39,25 @@ class Navbar extends React.Component {
     });
   }
 
-  hideMenu() {
-    this.setState(function () {
-      const side = document.querySelector('.block');
-      side.classList.add('menu-bg');
-      return { isShown: false };
-    });
+  hideMenu(event) {
+    event.target.className === 'modal-overlay m-0 p-0 block' &&
+      this.setState(function () {
+        const side = document.querySelector('.block');
+        side.classList.add('menu-bg');
+        return { isShown: false };
+      });
   }
 
   render() {
     let modalStyles = 'modal-overlay m-0 p-0';
-    let cssClass = 'side-menu menu-bg text-white shadowed';
+    let cssClass = 'side-menu menu-bg text-dark';
+
     if (!this.state.isShown) {
       modalStyles += ' hide';
-      cssClass = 'side-menu pt-4 ';
+      cssClass = 'side-menu menu-bg pt-4 ';
     } else {
       modalStyles += ' block';
-      cssClass += ' show pt-4';
+      cssClass += ' showMenu';
     }
 
     return (
@@ -55,31 +65,62 @@ class Navbar extends React.Component {
         <div className={modalStyles} onClick={this.hideMenu}></div>
         <div className={ 'd-flex justify-content-end top col-sm-12 col-md-12 col-lg-12 position-absolute pr-3 mt-3' }>
           <div className={ 'row d-flex justify-content-end col-sm-2 col-md-2 col-lg-2' }>
-            <FontAwesomeIcon icon={faBars} size="3x" className="hamburger-color shadowed-text  top pointer"
+            <FontAwesomeIcon icon={faBars} size="3x" className="hamburger-color  top pointer"
               onClick={() => this.handleToggleClick()}/>
           </div>
         </div>
         <div className={cssClass} onClick={this.hideMenu}>
-          <ul className="navbar-nav mt-2 menu-text-size">
-            <li className="nav-item ml-3 mb-2">
-              <NavLink to="/" exact className="nav-link text-white text-left">HOME</NavLink>
-            </li>
-            <li className="nav-item ml-3 mb-2">
-              <NavLink to="/" className="nav-link text-white text-left">SERVICES</NavLink>
-            </li>
-            <li className="nav-item ml-3 mb-2">
-              <NavLink to="/reviews" className="nav-link text-white text-left">REVIEWS</NavLink>
-            </li>
-            <div className={'nav-item line ml-3 mb-2 text-left'}></div>
-            <li className="nav-item ml-3 mb-2 text-left">SCHEDULE ESTIMATE:</li>
-            <li className="nav-item ml-3 mb-2">
-              <NavLink to="/carpet-estimate" className="nav-link text-white text-left">CARPET/UPHOLSTERY</NavLink>
-            </li>
+          <ul className="navbar-nav ">
+            <li className={'bg-footer shadowed col-12'}>
+              <div className={'menu-logo ml-3 d-flex text-shadow '}>
+                <div className={'text-primary'}>E</div>
+                <div className={'text-success '}>C</div>
+                <div className={'text-white '}>O</div>
+              </div>
+            </li >
+            <NavLink to="/" exact className="text-dark text-left nav-item mt-3 ml-3"><HomeIcon style={{ color: green[500] }}/> Home/Services
+              <li>
+                <hr className={'style'}></hr>
+              </li>
+            </NavLink>
+            <NavLink to="/carpet-estimate" exact className="text-dark ml-3 nav-item"><DateRangeIcon style={{ color: green[500] }}/> Carpet/Upholstery Estimate</NavLink>
             <li className="nav-item ml-3">
-              <NavLink to="/auto-estimate" className="nav-link text-white text-left">AUTO DETAILING</NavLink>
+              <hr id={'second-to-last-hr'} className={'style'}></hr>
             </li>
-            <li className="nav-item ml-2 mb-2">
-              <img id='logo-m' src="images/1.png" alt="image of logo"></img>
+            <NavLink to="/auto-estimate" exact className="text-dark ml-3 nav-item"><DirectionsCarIcon style={{ color: green[500] }}/> Auto Detailing Estimate
+              <li>
+                <hr className={'style'}></hr>
+              </li>
+            </NavLink>
+            <NavLink to="/auto-detailing-services" className="text-dark ml-3 nav-item text-left"><WorkIcon style={{ color: green[500] }}/> Auto Services
+              <li className="nav-item ml-3">
+                <hr id={'last-hr'} className={'style'}></hr>
+              </li>
+            </NavLink>
+            <li className={'bax-shad'}>
+              <Accordion className={'text-left ml-2 nav-item accordion-bg col-12'}>
+                <AccordionSummary
+                  expandIcon={<ExpandMoreIcon />}
+                  aria-controls="panel1a-content"
+                  id="panel1a-header"
+                >
+                  <div><PhotoCamera style={{ color: green[500] }} /> Photos</div>
+                </AccordionSummary>
+                <AccordionDetails className={'text-dark'}>
+                  <div className={'d-flex flex-column'}>
+                    <NavLink to="/carpet-gallery" exact className="text-dark nav-item">Carpet Cleaning</NavLink>
+                    <NavLink to="/upholstery-gallery" className="text-dark nav-item">Upholstery Cleaning</NavLink>
+                    <NavLink to="/auto-detailing" exact className="text-dark nav-item">Auto Detailing</NavLink>
+                  </div>
+                </AccordionDetails>
+              </Accordion>
+              <hr className={'style'}></hr>
+            </li>
+            <NavLink to="/reviews" className="text-dark nav-item ml-3 text-left"><RateReviewIcon style={{ color: green[500] }} /> Reviews
+              <li className="nav-item ml-3"></li>
+            </NavLink>
+            <li>
+              <hr className={'style'}></hr>
             </li>
           </ul>
         </div>

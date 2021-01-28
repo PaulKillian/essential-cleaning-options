@@ -27,7 +27,7 @@ function App() {
           <Route path="/auto-detailing" component={Detailing} />
           <Route path="/carpet-gallery" component={CarpetGallery} />
           <Route path="/upholstery-gallery" component={UpholsteryGallery} />
-          <Route path="/prices" component={DetailPrices} />
+          <Route path="/auto-detailing-services" component={DetailPrices} />
           <Route path="/" component={Home} />
         </Switch>
       </AnimatePresence>
@@ -62,12 +62,15 @@ const pageTransition = {
 
 const pageStyle = {
   position: 'absolute'
-
+};
+const pageStyleReview = {
+  position: 'absolute',
+  overflow: 'hidden'
 };
 
 function Home() {
   return (
-    <motion.div id='main' className="col-12 border mrble paralax-main"
+    <motion.div id='main' className="col-12 marble paralax-main"
       style={pageStyle}
       initial="initial"
       animate="in"
@@ -87,7 +90,7 @@ function Home() {
 
 function EstimateCalendar() {
   return (
-    <motion.div id='main' className="bg-off-white border w-100 foot1"
+    <motion.div id='main' className="bg-off-white w-100 carpet-estimate"
       style={pageStyle}
       initial="initial"
       animate="in"
@@ -98,13 +101,14 @@ function EstimateCalendar() {
       <Suspense fallback={renderLoader()}>
         <Navbar />
         <Estimate />
+        <Footer />
       </Suspense>
     </motion.div>
   );
 }
 function AutoEstimateCalendar() {
   return (
-    <motion.div id='main' className="bg-off-white border w-100 auto-estimate"
+    <motion.div id='main' className="bg-off-white w-100 auto-estimate"
       style={pageStyle}
       initial="initial"
       animate="in"
@@ -115,6 +119,7 @@ function AutoEstimateCalendar() {
       <Suspense fallback={renderLoader()}>
         <Navbar />
         <AutoEstimate />
+        <Footer />
       </Suspense>
     </motion.div>
   );
@@ -122,8 +127,8 @@ function AutoEstimateCalendar() {
 
 function Reviews() {
   return (
-    <motion.div id='main' className="border foot1 position-relative"
-      style={pageStyle}
+    <motion.div id='main' className="foot1"
+      style={pageStyleReview}
       initial="initial"
       animate="in"
       exit="out"
@@ -133,6 +138,7 @@ function Reviews() {
       <Suspense fallback={renderLoader()}>
         <Navbar className="position-absolute"/>
         <Review />
+        <Footer />
       </Suspense>
     </motion.div>
   );
@@ -140,7 +146,7 @@ function Reviews() {
 
 function Detailing() {
   return (
-    <motion.div id='main' className="div1 w-100 border foot1"
+    <motion.div id='main' className="div1 w-100 marble"
       style={pageStyle}
       initial="initial"
       animate="in"
@@ -151,6 +157,7 @@ function Detailing() {
       <Suspense fallback={renderLoader()}>
         <Navbar />
         <Auto />
+        <Footer />
       </Suspense>
     </motion.div>
   );
@@ -158,7 +165,7 @@ function Detailing() {
 
 function CarpetGallery() {
   return (
-    <motion.div id='main' className="border w-100 foot1"
+    <motion.div id='main' className="w-100 marble h-100"
       style={pageStyle}
       initial="initial"
       animate="in"
@@ -169,6 +176,7 @@ function CarpetGallery() {
       <Suspense fallback={renderLoader()}>
         <Navbar />
         <Carpet />
+        <Footer />
       </Suspense>
     </motion.div>
   );
@@ -176,7 +184,7 @@ function CarpetGallery() {
 
 function UpholsteryGallery() {
   return (
-    <motion.div id='main' className="border w-100 foot1"
+    <motion.div id='main' className="w-100 marble"
       style={pageStyle}
       initial="initial"
       animate="in"
@@ -187,6 +195,7 @@ function UpholsteryGallery() {
       <Suspense fallback={renderLoader()}>
         <Navbar />
         <Upholstery />
+        <Footer />
       </Suspense>
     </motion.div>
   );
@@ -194,7 +203,7 @@ function UpholsteryGallery() {
 
 function DetailPrices() {
   return (
-    <motion.div id='main' className="border w-100 foot1"
+    <motion.div id='main' className="w-100 marble"
       style={pageStyle}
       initial="initial"
       animate="in"
@@ -205,6 +214,7 @@ function DetailPrices() {
       <Suspense fallback={renderLoader()}>
         <Navbar />
         <Price />
+        <Footer />
       </Suspense>
     </motion.div>
   );

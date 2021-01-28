@@ -1,5 +1,6 @@
-import React, { useEffect } from 'react';
-import anime from 'animejs/lib/anime.es.js';
+import React from 'react';
+import emailjs from 'emailjs-com';
+import anime from 'animejs';
 
 class Estimate extends React.Component {
   constructor(props) {
@@ -10,7 +11,7 @@ class Estimate extends React.Component {
       subject: '',
       rooms: '',
       stairs: '',
-      stains: '',
+      pets: '',
       estimate: '',
       time: '',
       date: '',
@@ -19,8 +20,56 @@ class Estimate extends React.Component {
 
     };
     this.handleChangeInputs = this.handleChangeInputs.bind(this);
-    this.SentMessage = this.SentMessage.bind(this);
-    this.SendMessage = this.SendMessage.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+    this.resetForm = this.resetForm.bind(this);
+    this.scroll = this.scroll.bind(this);
+  }
+
+  handleSubmit(e) {
+    const { name, email, subject, rooms, stairs, pets, estimate, time, date, bestTime, bestDate } = this.state;
+    const templateParams = {
+      name: name,
+      email: email,
+      subject: subject,
+      rooms: rooms,
+      stairs: stairs,
+      pets: pets,
+      estimate: estimate,
+      time: time,
+      date: date,
+      bestTime: bestTime,
+      bestDate: bestDate
+    };
+    e.preventDefault();
+    emailjs.sendForm(
+      'service_o7ar5nb',
+      'template_hhdonmo',
+      e.target, 'user_yN08fOCXM5x88VIH3gTgA',
+      templateParams
+    )
+      .then(result => {
+        console.log(result.text);
+      }, error => {
+        console.log(error.text);
+      });
+    this.resetForm();
+    this.SentMessage();
+  }
+
+  resetForm() {
+    this.setState({
+      name: '',
+      email: '',
+      subject: '',
+      rooms: '',
+      stairs: '',
+      pets: '',
+      estimate: '',
+      time: '',
+      date: '',
+      bestTime: '',
+      bestDate: ''
+    });
   }
 
   handleChangeInputs(event) {
@@ -32,37 +81,12 @@ class Estimate extends React.Component {
     });
   }
 
-  SendMessage(event) {
-    event.preventDefault();
-    const formData = {
-      name: this.state.name,
-      email: this.state.email,
-      subject: this.state.subject,
-      rooms: this.state.rooms,
-      stairs: this.state.stairs,
-      stains: this.state.stains,
-      estimate: this.state.estimate,
-      time: this.state.time,
-      date: this.state.date,
-      bestTime: this.state.bestTime,
-      bestDate: this.state.bestDate
-    };
-    fetch('api/estimate', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(formData)
-    })
-      .then(res => res.json())
-      .catch(err => console.error(err));
-    this.setState({
-      name: '',
-      email: '',
-      subject: '',
-      message: ''
+  scroll() {
+    const anchor = document.querySelector('#message');
+    anchor.scrollIntoView({
+      behavior: 'smooth',
+      block: 'center'
     });
-    this.SentMessage();
   }
 
   SentMessage() {
@@ -96,22 +120,22 @@ class Estimate extends React.Component {
   render() {
     return (
       <>
-        <div className="col-12 scale bottom">
+        <div className="col-12 bottom">
           <div className="d-flex justify-content-center align-items-center flex-column">
-            <p className="text-font shadowed-text text-white">Schedule Estimate</p>
+            <h1 className="text-font text-white mb-5 pt-5 pt-5">Schedule Estimate</h1>
           </div>
         </div>
-        <h1 className="ml16 d-none">Your Message Has Been Sent!</h1>
+        <h1 id={'message'} className="ml16 d-none">Your Message Has Been Sent!<br></br><br></br> We will response with 24 hours</h1>
         <div id="form" className="col-lg-12 d-flex flex-column">
           <div className="row mx-2 my-4 justify-content-center">
-            <div className="col-lg-6 col-md-10 col-sm-12">
-              <form onSubmit={this.SendMessage} action="/estimate" id="contact-form" method="POST" role="form" className="mt-5 text-white">
+            <div className="col-lg-6 col-md-10 col-sm-12 blur pb-5">
+              <form onSubmit={this.handleSubmit} id="contact-form" className="mt-5 text-white">
                 <div className="form-row">
                   <div className="form-group col-6">
-                    <label className="mb-0">Name<span className="star-red">*</span></label>
+                    <label className="mb-0">Name</label>
                     <input
                       type="text"
-                      className="form-control shadowed"
+                      className="form-control"
                       name="name"
                       value={this.state.name}
                       onChange={this.handleChangeInputs}
@@ -119,10 +143,10 @@ class Estimate extends React.Component {
                     />
                   </div>
                   <div className="form-group col-6">
-                    <label className="mb-0">Email<span className="star-red">*</span></label>
+                    <label className="mb-0">Email</label>
                     <input
                       type="text"
-                      className="form-control shadowed"
+                      className="form-control"
                       name="email"
                       value={this.state.email}
                       onChange={this.handleChangeInputs}
@@ -132,10 +156,10 @@ class Estimate extends React.Component {
                 </div>
                 <div className="form-row">
                   <div className="form-group col-12">
-                    <label className="mb-0">Subject<span className="star-red">*</span></label>
+                    <label className="mb-0">Subject</label>
                     <input
                       type="text"
-                      className="form-control shadowed"
+                      className="form-control"
                       name="subject"
                       value={this.state.subject}
                       onChange={this.handleChangeInputs}
@@ -143,15 +167,14 @@ class Estimate extends React.Component {
                     />
                   </div>
                 </div>
-
                 <div className="form-row">
                   <div className="form-group col-6">
-                    <label className="mb-0">Rooms<span className="star-red">*</span></label>
+                    <label className="mb-0">Rooms</label>
                     <input
                       type="text"
-                      className="form-control shadowed"
+                      className="form-control"
                       name="rooms"
-                      value={this.state.message}
+                      value={this.state.rooms}
                       onChange={this.handleChangeInputs}
                       required
                     />
@@ -160,33 +183,35 @@ class Estimate extends React.Component {
                     <label className="mb-0">Stairs</label>
                     <input
                       type="text"
-                      className="form-control shadowed"
+                      className="form-control"
                       name="stairs"
-                      value={this.state.message}
+                      value={this.state.stairs}
                       onChange={this.handleChangeInputs}
+                      required
                     />
                   </div>
                 </div>
-
                 <div className="form-row">
                   <div className="form-group col-6">
-                    <label className="mb-0">How Many Stains</label>
+                    <label className="mb-0">Do you have any pets?</label>
                     <input
                       type="text"
-                      className="form-control shadowed"
-                      name="stains"
-                      value={this.state.message}
+                      className="form-control"
+                      name="pets"
+                      value={this.state.pets}
                       onChange={this.handleChangeInputs}
+                      required
                     />
                   </div>
                   <div className="form-group col-6">
                     <label className="mb-0">Estimated Sq. Footage</label>
                     <input
                       type="text"
-                      className="form-control shadowed"
+                      className="form-control"
                       name="estimate"
-                      value={this.state.message}
+                      value={this.state.estimate}
                       onChange={this.handleChangeInputs}
+                      required
                     />
                   </div>
                 </div>
@@ -195,20 +220,22 @@ class Estimate extends React.Component {
                     <label className="mb-0">Time of Service</label>
                     <input
                       type="text"
-                      className="form-control shadowed"
+                      className="form-control"
                       name="time"
-                      value={this.state.message}
+                      value={this.state.time}
                       onChange={this.handleChangeInputs}
+                      required
                     />
                   </div>
                   <div className="form-group col-6">
                     <label className="mb-0">Date of Service</label>
                     <input
                       type="text"
-                      className="form-control shadowed"
+                      className="form-control"
                       name="date"
-                      value={this.state.message}
+                      value={this.state.date}
                       onChange={this.handleChangeInputs}
+                      required
                     />
                   </div>
                 </div>
@@ -217,25 +244,27 @@ class Estimate extends React.Component {
                     <label className="mb-0">Best Time to Contact You</label>
                     <input
                       type="text"
-                      className="form-control shadowed"
+                      className="form-control"
                       name="bestTime"
-                      value={this.state.message}
+                      value={this.state.bestTime}
                       onChange={this.handleChangeInputs}
+                      required
                     />
                   </div>
                   <div className="form-group col-6">
                     <label className="mb-0">Best Way To Contact You</label>
                     <input
                       type="text"
-                      className="form-control shadowed"
+                      className="form-control"
                       name="bestDate"
-                      value={this.state.message}
+                      value={this.state.bestDate}
                       onChange={this.handleChangeInputs}
+                      required
                     />
                   </div>
                 </div>
-                <div className="d-flex justify-content-center">
-                  <button type="submit" className="btn shadow bg-white col-sm-3 col-md-4 col-lg-4">SEND MESSAGE</button>
+                <div className="d-flex justify-content-center mt-3">
+                  <button onClick={this.scroll} type="submit" className="btn bg-success text-white col-sm-3 col-md-4 col-lg-4">SEND MESSAGE</button>
                 </div>
               </form>
             </div>
@@ -245,5 +274,4 @@ class Estimate extends React.Component {
     );
   }
 }
-
 export default Estimate;

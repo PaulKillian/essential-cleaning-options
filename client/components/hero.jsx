@@ -1,10 +1,20 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import 'lazysizes';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
+import { makeStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
+import DetailsIcon from '@material-ui/icons/Details';
+
+const useStyles = makeStyles(theme => ({
+  root: {
+    '& > *': {
+      margin: theme.spacing(2),
+      color: 'black !important'
+    }
+  }
+}));
 
 function scroll() {
-  const anchor = document.querySelector('#cards');
+  const anchor = document.querySelector('#services');
   anchor.scrollIntoView({
     behavior: 'smooth',
     block: 'center'
@@ -12,40 +22,38 @@ function scroll() {
 }
 
 function Hero(props) {
-  useEffect(() => {
-    const main = document.getElementById('main');
-    main.classList.remove('position-absolute');
-    main.classList.add('position-absolute');
-  });
-  return (
-    <>
-      <div className={'paralax d-flex justify-content-center align-items-center col-12'}>
-
-        {/* <div id="eco" className="row text-white d-flex justify-content-left align-items-center pb-5"> */}
-
-        {/* <div className={'display-1 d-flex col-5 justify-content-center'}> */}
-        {/*  <div className={'text-primary col-2 top1'}>E</div> */}
-        {/*  <div className={'text-success col-2 top'}>C</div> */}
-        {/*  <div className={'text-white col-2'}>O</div> */}
-        {/* </div> */}
-
-        <div className={'d-flex flex-column'}>
-          <div>
-            <div className={'display-2 text-primary text-shadow'}>ESSENTIAL</div>
-          </div>
-          <div className={'d-flex'}>
-            <div className={'display-3 text-success text-shadow'}>CLEANING</div>
-            <div className={'display-3 text-white text-shadow'}>OPTIONS</div>
+  const classes = useStyles();
+  const x = window.matchMedia('(max-width: 768px)');
+  if (x.matches) {
+    return (
+      <>
+        <div className={'paralax d-flex justify-content-around flex-column align-items-center col-12'}>
+          <div className={'d-flex flex-column'}>
+            <div>
+              <div className={'display-2 text-white text-shadow'}>ESSENTIAL</div>
+              <div className={'display-3 text-white'}>CLEANING OPTIONS</div>
+            </div>
           </div>
         </div>
-        {/* </div> */}
-      </div>
-      <div className={ 'text-center' }>
-        <h4>SERVICES</h4>
-        <FontAwesomeIcon className={'text-center pointer fa-2x'} onClick={scroll} icon={faArrowDown} />
-      </div>
-    </>
-  );
+      </>
+    );
+  } else {
+    return (
+      <>
+        <div className={'paralax d-flex justify-content-center flex-column align-items-center col-12'}>
+          <div className={'d-flex flex-column essential justify-content-center'}>
+            <div className={'display-2 text-white'}>ESSENTIAL</div>
+            <div className={'display-3 text-white'}>CLEANING OPTIONS</div>
+          </div>
+          <div className={classes.root}>
+            <Button className={'text-dark'} onClick={scroll} variant="contained">Services
+              <DetailsIcon />
+            </Button>
+          </div>
+        </div>
+      </>
+    );
+  }
 }
 
 export default Hero;
