@@ -1,5 +1,6 @@
 import React from 'react';
-import anime from 'animejs/lib/anime.es.js';
+import emailjs from 'emailjs-com';
+import anime from 'animejs';
 
 class Estimate extends React.Component {
   constructor(props) {
@@ -19,8 +20,56 @@ class Estimate extends React.Component {
 
     };
     this.handleChangeInputs = this.handleChangeInputs.bind(this);
-    this.SentMessage = this.SentMessage.bind(this);
-    this.SendMessage = this.SendMessage.bind(this);
+    // this.SendMessage = this.SendMessage.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+    // this.resetForm = this.resetForm.bind(this);
+  }
+
+  handleSubmit(e) {
+    const { name, email, subject, rooms, stairs, pets, estimate, time, date, bestTime, bestDate } = this.state;
+    const templateParams = {
+      name: name,
+      email: email,
+      subject: subject,
+      rooms: rooms,
+      stairs: stairs,
+      pets: pets,
+      estimate: estimate,
+      time: time,
+      date: date,
+      bestTime: bestTime,
+      bestDate: bestDate
+    };
+    e.preventDefault();
+    emailjs.sendForm(
+      'service_o7ar5nb',
+      'template_hhdonmo',
+      e.target, 'user_yN08fOCXM5x88VIH3gTgA',
+      templateParams
+    )
+      .then(result => {
+        console.log(result.text);
+      }, error => {
+        console.log(error.text);
+      });
+    this.resetForm();
+    this.SentMessage();
+  }
+
+  resetForm() {
+    this.setState({
+      name: '',
+      email: '',
+      subject: '',
+      rooms: '',
+      stairs: '',
+      pets: '',
+      estimate: '',
+      time: '',
+      date: '',
+      bestTime: '',
+      bestDate: ''
+    });
   }
 
   handleChangeInputs(event) {
@@ -30,39 +79,6 @@ class Estimate extends React.Component {
     this.setState({
       [name]: value
     });
-  }
-
-  SendMessage(event) {
-    event.preventDefault();
-    const formData = {
-      name: this.state.name,
-      email: this.state.email,
-      subject: this.state.subject,
-      rooms: this.state.rooms,
-      stairs: this.state.stairs,
-      pets: this.state.pets,
-      estimate: this.state.estimate,
-      time: this.state.time,
-      date: this.state.date,
-      bestTime: this.state.bestTime,
-      bestDate: this.state.bestDate
-    };
-    fetch('api/estimate', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(formData)
-    })
-      .then(res => res.json())
-      .catch(err => console.error(err));
-    this.setState({
-      name: '',
-      email: '',
-      subject: '',
-      message: ''
-    });
-    this.SentMessage();
   }
 
   SentMessage() {
@@ -101,11 +117,10 @@ class Estimate extends React.Component {
             <h1 className="text-font text-white pt-5">Schedule Estimate</h1>
           </div>
         </div>
-        <h1 className="ml16 d-none">Your Message Has Been Sent!</h1>
         <div id="form" className="col-lg-12 d-flex flex-column">
           <div className="row mx-2 my-4 justify-content-center">
             <div className="col-lg-6 col-md-10 col-sm-12 blur pb-5">
-              <form onSubmit={this.SendMessage} action="/estimate" id="contact-form" method="POST" role="form" className="mt-5 text-white">
+              <form onSubmit={this.handleSubmit} id="contact-form" className="mt-5 text-white">
                 <div className="form-row">
                   <div className="form-group col-6">
                     <label className="mb-0">Name</label>
@@ -243,6 +258,7 @@ class Estimate extends React.Component {
                   <button type="submit" className="btn bg-success text-white col-sm-3 col-md-4 col-lg-4">SEND MESSAGE</button>
                 </div>
               </form>
+              <h1 className="ml16 d-none">Your Message Has Been Sent!<br></br><br></br> We will response with 24 hours</h1>
             </div>
           </div>
         </div>
@@ -250,5 +266,4 @@ class Estimate extends React.Component {
     );
   }
 }
-
 export default Estimate;

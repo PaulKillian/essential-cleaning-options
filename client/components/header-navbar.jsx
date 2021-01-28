@@ -58,7 +58,7 @@ class Navbar extends React.Component {
       cssClass = 'side-menu menu-bg pt-4 ';
     } else {
       modalStyles += ' block';
-      cssClass += ' show';
+      cssClass += ' showMenu';
     }
 
     return (
