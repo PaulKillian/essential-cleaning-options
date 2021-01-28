@@ -1,4 +1,5 @@
 import React from 'react';
+import emailjs from 'emailjs-com';
 import anime from 'animejs/lib/anime.es.js';
 
 class AutoEstimate extends React.Component {
@@ -19,50 +20,55 @@ class AutoEstimate extends React.Component {
 
     };
     this.handleChangeInputs = this.handleChangeInputs.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
     this.SentMessage = this.SentMessage.bind(this);
-    this.SendMessage = this.SendMessage.bind(this);
   }
 
-  handleChangeInputs(event) {
-    const target = event.target;
-    const value = target.value;
-    const name = target.name;
-    this.setState({
-      [name]: value
-    });
-  }
-
-  SendMessage(event) {
-    event.preventDefault();
-    const formData = {
-      name: this.state.name,
-      email: this.state.email,
-      subject: this.state.subject,
-      make: this.state.make,
-      model: this.state.model,
-      year: this.state.year,
-      color: this.state.color,
-      time: this.state.time,
-      date: this.state.date,
-      bestTime: this.state.bestTime,
-      bestDate: this.state.bestDate
+  handleSubmit(e) {
+    const { name, email, subject, make, model, year, color, time, date, bestTime, bestDate } = this.state;
+    const templateParams = {
+      name: name,
+      email: email,
+      subject: subject,
+      make: make,
+      model: model,
+      year: year,
+      color: color,
+      time: time,
+      date: date,
+      bestTime: bestTime,
+      bestDate: bestDate
     };
-    fetch('api/auto-color', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify(formData)
-    })
-      .then(res => res.json())
-      .catch(err => console.error(err));
+    e.preventDefault();
+    emailjs.sendForm(
+      'service_o7ar5nb',
+      'template_6g67bah',
+      e.target, 'user_yN08fOCXM5x88VIH3gTgA',
+      templateParams
+    )
+      .then(result => {
+        console.log(result.text);
+      }, error => {
+        console.log(error.text);
+      });
+    this.resetForm();
+    this.SentMessage();
+  }
+
+  resetForm() {
     this.setState({
       name: '',
       email: '',
       subject: '',
-      message: ''
+      make: '',
+      model: '',
+      year: '',
+      color: '',
+      time: '',
+      date: '',
+      bestTime: '',
+      bestDate: ''
     });
-    this.SentMessage();
   }
 
   SentMessage() {
@@ -87,6 +93,15 @@ class AutoEstimate extends React.Component {
       });
   }
 
+  handleChangeInputs(event) {
+    const target = event.target;
+    const value = target.value;
+    const name = target.name;
+    this.setState({
+      [name]: value
+    });
+  }
+
   componentDidMount() {
     const main = document.getElementById('main');
     main.classList.remove('position-absolute');
@@ -101,11 +116,10 @@ class AutoEstimate extends React.Component {
             <h1 className="text-font shadowed-text text-white pt-5">Schedule Estimate</h1>
           </div>
         </div>
-        <h1 className="ml16 d-none">Your Message Has Been Sent!</h1>
         <div id="form" className="col-lg-12 d-flex flex-column">
           <div className="row mx-2 my-4 justify-content-center">
             <div className="col-lg-6 col-md-10 col-sm-12 blur pb-5">
-              <form onSubmit={this.SendMessage} action="/estimate" id="contact-form" method="POST" role="form" className="mt-5 text-white">
+              <form onSubmit={this.handleSubmit} action="/estimate" id="contact-form" method="POST" role="form" className="mt-5 text-white">
                 <div className="form-row">
                   <div className="form-group col-6">
                     <label className="mb-0">Name</label>
@@ -151,7 +165,7 @@ class AutoEstimate extends React.Component {
                       type="text"
                       className="form-control shadowed"
                       name="make"
-                      value={this.state.message}
+                      value={this.state.make}
                       onChange={this.handleChangeInputs}
                       required
                     />
@@ -162,7 +176,7 @@ class AutoEstimate extends React.Component {
                       type="text"
                       className="form-control shadowed"
                       name="model"
-                      value={this.state.message}
+                      value={this.state.model}
                       onChange={this.handleChangeInputs}
                       required
                     />
@@ -176,7 +190,7 @@ class AutoEstimate extends React.Component {
                       type="text"
                       className="form-control shadowed"
                       name="year"
-                      value={this.state.message}
+                      value={this.state.year}
                       onChange={this.handleChangeInputs}
                       required
                     />
@@ -187,7 +201,7 @@ class AutoEstimate extends React.Component {
                       type="text"
                       className="form-control shadowed"
                       name="color"
-                      value={this.state.message}
+                      value={this.state.color}
                       onChange={this.handleChangeInputs}
                       required
                     />
@@ -200,7 +214,7 @@ class AutoEstimate extends React.Component {
                       type="text"
                       className="form-control shadowed"
                       name="time"
-                      value={this.state.message}
+                      value={this.state.time}
                       onChange={this.handleChangeInputs}
                       required
                     />
@@ -211,7 +225,7 @@ class AutoEstimate extends React.Component {
                       type="text"
                       className="form-control shadowed"
                       name="date"
-                      value={this.state.message}
+                      value={this.state.date}
                       onChange={this.handleChangeInputs}
                       required
                     />
@@ -224,7 +238,7 @@ class AutoEstimate extends React.Component {
                       type="text"
                       className="form-control shadowed"
                       name="bestTime"
-                      value={this.state.message}
+                      value={this.state.bestTime}
                       onChange={this.handleChangeInputs}
                       required
                     />
@@ -235,16 +249,18 @@ class AutoEstimate extends React.Component {
                       type="text"
                       className="form-control shadowed"
                       name="bestDate"
-                      value={this.state.message}
+                      value={this.state.bestDate}
                       onChange={this.handleChangeInputs}
                       required
                     />
                   </div>
                 </div>
                 <div className="d-flex justify-content-center mt-3">
-                  <button type="submit" className="btn shadow bg-success text-white col-sm-3 col-md-4 col-lg-4">SEND MESSAGE</button>
+                  <button type="submit" className="btn shadow bg-success text-white col-sm-3 col-md-4 col-lg-4"
+                    data-toggle="modal" data-target="#exampleModal">SEND MESSAGE</button>
                 </div>
               </form>
+              <h1 className="ml16 d-none">Your Message Has Been Sent!<br></br><br></br> We will response with 24 hours</h1>
             </div>
           </div>
         </div>

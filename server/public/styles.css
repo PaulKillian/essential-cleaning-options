@@ -335,7 +335,7 @@ h1.ml8 {
     }
 }
 @media only screen and (max-width: 376px) {
-    .show {
+    .showMenu {
         width: 78%;
     }
 }
@@ -363,7 +363,7 @@ h1.ml8 {
     /*outline: 1px solid #000000;*/
     box-shadow: inset 8px 0 10px -5px #3e3d3d;
 }
-.show {
+.showMenu {
     width: 33%;
 }
 .style {
@@ -387,6 +387,9 @@ h1.ml8 {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 2;
+}
+.modal-backdrop {
+     width: 0 !important;
 }
 .modal-overlay1 {
     position: absolute;
@@ -710,7 +713,7 @@ ul.top-ul {
     .side-menu {
         font-size: 4vw;
     }
-    .show {
+    .showMenu {
         width: 70%;
     }
     .auto-estimate {
@@ -739,7 +742,7 @@ ul.top-ul {
         padding-left: .5rem;
         padding-right: 0;
     }
-    .show {
+    .showMenu {
         width: 80%;
     }
     h2 {

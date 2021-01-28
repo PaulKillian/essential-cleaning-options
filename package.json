@@ -112,6 +112,8 @@
     "compression": "1.7.4",
     "delay-react-route-exit": "1.0.0",
     "dotenv": "8.2.0",
+    "emailjs": "3.4.0",
+    "emailjs-com": "2.6.4",
     "express": "4.17.1",
     "express-session": "1.17.0",
     "file-loader": "6.2.0",
