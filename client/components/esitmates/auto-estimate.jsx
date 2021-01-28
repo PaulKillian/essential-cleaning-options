@@ -22,6 +22,7 @@ class AutoEstimate extends React.Component {
     this.handleChangeInputs = this.handleChangeInputs.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.SentMessage = this.SentMessage.bind(this);
+    this.scroll = this.scroll.bind(this);
   }
 
   handleSubmit(e) {
@@ -102,6 +103,14 @@ class AutoEstimate extends React.Component {
     });
   }
 
+  scroll() {
+    const anchor = document.querySelector('#message');
+    anchor.scrollIntoView({
+      behavior: 'smooth',
+      block: 'center'
+    });
+  }
+
   componentDidMount() {
     const main = document.getElementById('main');
     main.classList.remove('position-absolute');
@@ -113,9 +122,10 @@ class AutoEstimate extends React.Component {
       <>
         <div className="col-12 scale bottom">
           <div className="d-flex justify-content-center align-items-center flex-column">
-            <h1 className="text-font shadowed-text text-white pt-5">Schedule Estimate</h1>
+            <h1 className="text-font text-white pt-5">Schedule Estimate</h1>
           </div>
         </div>
+        <h1 id={'message'} className="ml16 d-none">Your Message Has Been Sent!<br></br><br></br> We will response with 24 hours</h1>
         <div id="form" className="col-lg-12 d-flex flex-column">
           <div className="row mx-2 my-4 justify-content-center">
             <div className="col-lg-6 col-md-10 col-sm-12 blur pb-5">
@@ -125,7 +135,7 @@ class AutoEstimate extends React.Component {
                     <label className="mb-0">Name</label>
                     <input
                       type="text"
-                      className="form-control shadowed"
+                      className="form-control"
                       name="name"
                       value={this.state.name}
                       onChange={this.handleChangeInputs}
@@ -136,7 +146,7 @@ class AutoEstimate extends React.Component {
                     <label className="mb-0">Email</label>
                     <input
                       type="text"
-                      className="form-control shadowed"
+                      className="form-control"
                       name="email"
                       value={this.state.email}
                       onChange={this.handleChangeInputs}
@@ -149,7 +159,7 @@ class AutoEstimate extends React.Component {
                     <label className="mb-0">Subject</label>
                     <input
                       type="text"
-                      className="form-control shadowed"
+                      className="form-control"
                       name="subject"
                       value={this.state.subject}
                       onChange={this.handleChangeInputs}
@@ -163,7 +173,7 @@ class AutoEstimate extends React.Component {
                     <label className="mb-0">Make</label>
                     <input
                       type="text"
-                      className="form-control shadowed"
+                      className="form-control"
                       name="make"
                       value={this.state.make}
                       onChange={this.handleChangeInputs}
@@ -174,7 +184,7 @@ class AutoEstimate extends React.Component {
                     <label className="mb-0">Model</label>
                     <input
                       type="text"
-                      className="form-control shadowed"
+                      className="form-control"
                       name="model"
                       value={this.state.model}
                       onChange={this.handleChangeInputs}
@@ -188,7 +198,7 @@ class AutoEstimate extends React.Component {
                     <label className="mb-0">Year</label>
                     <input
                       type="text"
-                      className="form-control shadowed"
+                      className="form-control"
                       name="year"
                       value={this.state.year}
                       onChange={this.handleChangeInputs}
@@ -199,7 +209,7 @@ class AutoEstimate extends React.Component {
                     <label className="mb-0">Color</label>
                     <input
                       type="text"
-                      className="form-control shadowed"
+                      className="form-control"
                       name="color"
                       value={this.state.color}
                       onChange={this.handleChangeInputs}
@@ -212,7 +222,7 @@ class AutoEstimate extends React.Component {
                     <label className="mb-0">Time of Service</label>
                     <input
                       type="text"
-                      className="form-control shadowed"
+                      className="form-control"
                       name="time"
                       value={this.state.time}
                       onChange={this.handleChangeInputs}
@@ -223,7 +233,7 @@ class AutoEstimate extends React.Component {
                     <label className="mb-0">Date of Service</label>
                     <input
                       type="text"
-                      className="form-control shadowed"
+                      className="form-control"
                       name="date"
                       value={this.state.date}
                       onChange={this.handleChangeInputs}
@@ -236,7 +246,7 @@ class AutoEstimate extends React.Component {
                     <label className="mb-0">Best Time to Contact You</label>
                     <input
                       type="text"
-                      className="form-control shadowed"
+                      className="form-control"
                       name="bestTime"
                       value={this.state.bestTime}
                       onChange={this.handleChangeInputs}
@@ -247,7 +257,7 @@ class AutoEstimate extends React.Component {
                     <label className="mb-0">Best Way To Contact You</label>
                     <input
                       type="text"
-                      className="form-control shadowed"
+                      className="form-control"
                       name="bestDate"
                       value={this.state.bestDate}
                       onChange={this.handleChangeInputs}
@@ -256,11 +266,10 @@ class AutoEstimate extends React.Component {
                   </div>
                 </div>
                 <div className="d-flex justify-content-center mt-3">
-                  <button type="submit" className="btn shadow bg-success text-white col-sm-3 col-md-4 col-lg-4"
-                    data-toggle="modal" data-target="#exampleModal">SEND MESSAGE</button>
+                  <button type="submit" onClick={this.scroll} className="btn shadow bg-success text-white col-sm-3 col-md-4 col-lg-4">
+                    <a href="#message"></a>SEND MESSAGE</button>
                 </div>
               </form>
-              <h1 className="ml16 d-none">Your Message Has Been Sent!<br></br><br></br> We will response with 24 hours</h1>
             </div>
           </div>
         </div>

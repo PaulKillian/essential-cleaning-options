@@ -20,9 +20,9 @@ class Estimate extends React.Component {
 
     };
     this.handleChangeInputs = this.handleChangeInputs.bind(this);
-    // this.SendMessage = this.SendMessage.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-    // this.resetForm = this.resetForm.bind(this);
+    this.resetForm = this.resetForm.bind(this);
+    this.scroll = this.scroll.bind(this);
   }
 
   handleSubmit(e) {
@@ -81,6 +81,14 @@ class Estimate extends React.Component {
     });
   }
 
+  scroll() {
+    const anchor = document.querySelector('#message');
+    anchor.scrollIntoView({
+      behavior: 'smooth',
+      block: 'center'
+    });
+  }
+
   SentMessage() {
     const form = document.getElementById('form');
     form.classList.add('hidden');
@@ -117,6 +125,7 @@ class Estimate extends React.Component {
             <h1 className="text-font text-white pt-5">Schedule Estimate</h1>
           </div>
         </div>
+        <h1 id={'message'} className="ml16 d-none">Your Message Has Been Sent!<br></br><br></br> We will response with 24 hours</h1>
         <div id="form" className="col-lg-12 d-flex flex-column">
           <div className="row mx-2 my-4 justify-content-center">
             <div className="col-lg-6 col-md-10 col-sm-12 blur pb-5">
@@ -255,10 +264,9 @@ class Estimate extends React.Component {
                   </div>
                 </div>
                 <div className="d-flex justify-content-center mt-3">
-                  <button type="submit" className="btn bg-success text-white col-sm-3 col-md-4 col-lg-4">SEND MESSAGE</button>
+                  <button onClick={this.scroll} type="submit" className="btn bg-success text-white col-sm-3 col-md-4 col-lg-4">SEND MESSAGE</button>
                 </div>
               </form>
-              <h1 className="ml16 d-none">Your Message Has Been Sent!<br></br><br></br> We will response with 24 hours</h1>
             </div>
           </div>
         </div>
