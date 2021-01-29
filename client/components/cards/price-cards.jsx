@@ -2,11 +2,11 @@ import React, { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCar } from '@fortawesome/free-solid-svg-icons';
 
-useEffect(() => {
-  document.title = 'Essential Cleaning Options: Auto detailing services and prices in Orange County, California';
-});
-
 function PriceCards() {
+  useEffect(() => {
+    document.title = 'Auto detailing services and prices in Orange County, California';
+  });
+
   return (
     <>
       <div className="col-12 bottom">

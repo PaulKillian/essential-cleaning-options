@@ -1,10 +1,9 @@
 import React, { useEffect } from 'react';
 
-useEffect(() => {
-  document.title = 'Essential Cleaning Options: Reviews for carpet cleaning and auto detailing, Orange County';
-});
-
 export default function Review() {
+  useEffect(() => {
+    document.title = 'Reviews for carpet cleaning and auto detailing, Orange County';
+  });
   return (
     <>
       <div className="col-12 bottom">

@@ -115,7 +115,7 @@ class AutoEstimate extends React.Component {
     const main = document.getElementById('main');
     main.classList.remove('position-absolute');
     main.classList.add('position-absolute');
-    document.title = 'Essential Cleaning Options: Schedule your auto detailing estimate in Orange County, today!';
+    document.title = 'Schedule your auto detailing estimate in Orange County, today!';
   }
 
   render() {

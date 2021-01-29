@@ -18,11 +18,10 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-useEffect(() => {
-  document.title = 'Essential Cleaning Options: Carpet Cleaning, Upholstery Cleaning, Auto detailing services and prices in Orange County, California';
-});
-
 function Cards() {
+  useEffect(() => {
+    document.title = 'Essential Cleaning Options: Carpet Cleaning, Upholstery Cleaning, Auto detailing services and prices in Orange County, California';
+  });
   const classes = useStyles();
   return (
     <>
