@@ -115,7 +115,7 @@ class Estimate extends React.Component {
     const main = document.getElementById('main');
     main.classList.remove('position-absolute');
     main.classList.add('position-absolute');
-    document.title = 'Essential Cleaning Options: Schedule your carpet cleaning or upholstery cleaning estimate in Orange County, today!';
+    document.title = 'Schedule your carpet cleaning or upholstery cleaning estimate in Orange County, today!';
   }
 
   render() {
