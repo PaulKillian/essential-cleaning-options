@@ -1,6 +1,7 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
 import anime from 'animejs/lib/anime.es.js';
+import MetaTags from 'react-meta-tags';
 
 class AutoEstimate extends React.Component {
   constructor(props) {
@@ -115,12 +116,17 @@ class AutoEstimate extends React.Component {
     const main = document.getElementById('main');
     main.classList.remove('position-absolute');
     main.classList.add('position-absolute');
-    document.title = 'Schedule your auto detailing estimate in Orange County, today!';
   }
 
   render() {
     return (
       <>
+        <MetaTags>
+          <title>Schedule your auto detailing estimate in Orange County, today!</title>
+          <meta name="description" content="Schedule your auto detailing estimate in Orange County, today!" />
+          <meta property="og:title" content="Essential Cleaning Options: Auto Detailing Estimate" />
+          <meta property="og:image" content="http://essentialcleaningoptions.com/images/auto-detailing-meta.jpg" />
+        </MetaTags>
         <div className="col-12 bottom">
           <div className="d-flex justify-content-center align-items-center flex-column">
             <h1 className="text-font text-white text-center mt-4 mb-5 pt-5">Schedule Estimate</h1>
