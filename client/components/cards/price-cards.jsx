@@ -187,7 +187,7 @@ function PriceCards() {
           </div>
           <div className={'d-flex flex-wrap justify-content-around col-lg-7 align-items-center my-2'}>
             <div className={'bg-white rounded price1 text-center price-shadow p-2 mb-2'}>
-              <h4 className={'bg-primary p-3 text-white'}>Small</h4>
+              <h4 className={'bg-secondary p-3 text-white'}>All</h4>
               <p><span className={'text-info h3'}>$125</span><br></br>Approximate Time:<br></br>1 hour</p>
             </div>
           </div>
