@@ -124,9 +124,10 @@ function PriceCards() {
                 <li>Step 2. Clean all clayed surfaces with a paint prep or APA which is an
               alcohol wash and distilled water to remove any particles left behind on the
               surface prior to polishing</li>
-                <li>Step 3. One-step polish (Using a D/A dual action polisher) with an AIO
-              all in one glaze polish seal or all in one polish finishing with a sealant
-              wax or graphene coating for up to 6 months of clear coat protection</li>
+                <li>Step 3. Paint polishing-(Using a D/A dual action polisher) with an AIO
+                  (All In One) polish or glaze polish & seal. Then applying either a spray or
+                  liquid synthetic copolymer wax or a spray or liquid synthetic copolymer sealant
+                  for clear coat protection. </li>
               </ul>
             </div>
           </div>
@@ -150,6 +151,12 @@ function PriceCards() {
             <div className={'text-white'}>
               <h4 className={'p-2 text-center bg-dark price-shadow rounded'}>Plastic Trim Restoration</h4>
             </div>
+            <div className={'py-4 pr-4 bg-white price-shadow'}>
+              <ul>
+                <li>Clean plastic with an all purpose cleaner/degreaser and completely wipe dry.</li>
+                <li>Apply one even coat of sealer for up to 6 months of protection.</li>
+              </ul>
+            </div>
           </div>
           <div className={'d-flex flex-wrap justify-content-around col-lg-7 align-items-center my-2'}>
             <div className={'bg-white rounded price1 text-center price-shadow p-2 mb-2'}>
@@ -170,6 +177,12 @@ function PriceCards() {
           <div id={'price-card'} className={'mt-2 mb-2 rounded text-dark col-lg-5 col-md-12'}>
             <div className={'text-white'}>
               <h4 className={'p-2 text-center bg-dark price-shadow rounded'}>Front Headlight Restoration</h4>
+            </div>
+            <div className={'py-4 pr-4 bg-white price-shadow'}>
+              <ul>
+                <li>Clean each lens individually with a solution to remove excess yellowing and residue prior to restoring.</li>
+                <li>Each lens will be completely sanded smooth and treated with either a ceramic coating or sealant for clarity and protection.</li>
+              </ul>
             </div>
           </div>
           <div className={'d-flex flex-wrap justify-content-around col-lg-7 align-items-center my-2'}>

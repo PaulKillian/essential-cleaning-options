@@ -51,22 +51,11 @@ function Cards() {
           <div className="col-lg-6 col-md-12 bg-white card-shadow">
             <h2 className={'display-4 text-center pt-3 bg-footer'}>UPHOLSTERY CLEANING</h2>
             <hr className={'style'}></hr>
-            <p className="p-2">Furniture is
-              pre sprayed with a low moisture cleaner. This results
-              in less re-soiling and faster drying times.
-              How does this work? Wet is attracted to dry, so the
-              wet carpet and its sequestered soils are attracted to
-              the drier cleaning pad and are “held” to the cleaning
-              pad as the machine spins, agitates, and scrubs the
-              carpet fibers.<br></br><br></br>
-              The attractive thing about encapsulation is what gets
-              missed by the cleaning pad is crystallized once the
-              carpet is completely dried and encapsulated for future
-              soil removal by the normal vacuuming process.
-              My main product is Nano-Maxx which is a plant based
-              registered green cleaner that has a zero residue and is
-              totally safe and effective.</p>
-            <div className={'d-flex justify-content-center pb-2'}>
+            <p className="p-2">Furniture is completely vacuumed and pre sprayed with a low moisture neutral
+              PH cleaner/deodorizer and a hand held orbital machine driven with a microfiber extraction pad
+              for stain/soil removal ad followed by steam for a sanitizing. Note: It is highly recommended that
+              your furniture tag is inspected for proper cleaning method prior to any type of cleaning procedures.</p>
+            <div className={'d-flex justify-content-center'}>
               <div className={classes.root}>
                 <Button onClick={scroll} variant="contained">
                   <NavLink to="/upholstery-gallery" className="nav-link text-white text-center pr-1">
