@@ -5,6 +5,7 @@ import Button from '@material-ui/core/Button';
 import { green } from '@material-ui/core/colors';
 import PhotoCamera from '@material-ui/icons/PhotoCamera';
 import MonetizationOnIcon from '@material-ui/icons/MonetizationOn';
+import MetaTags from 'react-meta-tags';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -19,12 +20,15 @@ const useStyles = makeStyles(theme => ({
 }));
 
 function Cards() {
-  useEffect(() => {
-    document.title = 'Essential Cleaning Options: Carpet Cleaning, Upholstery Cleaning, Auto detailing services and prices in Orange County, California';
-  });
   const classes = useStyles();
   return (
     <>
+      <MetaTags>
+        <title>Essential Cleaning Options: Carpet Cleaning, Upholstery Cleaning, Auto detailing services and prices in Orange County, California</title>
+        <meta name="description" content="Essential Cleaning Options: Carpet Cleaning, Upholstery Cleaning, Auto detailing services and prices in Orange County, California" />
+        <meta property="og:title" content="Essential Cleaning Options" />
+        <meta property="og:image" content="http://essentialcleaningoptions.com/images/meta.png" />
+      </MetaTags>
       <div className="mt-5 container">
         <div id="services" className="row card-parallax mx-1 d-flex justify-content-center mb-5">
           <div className="col-lg-6 col-md-12 bg-white card-shadow">

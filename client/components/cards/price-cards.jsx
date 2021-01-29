@@ -1,14 +1,17 @@
 import React, { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCar } from '@fortawesome/free-solid-svg-icons';
+import MetaTags from 'react-meta-tags';
 
 function PriceCards() {
-  useEffect(() => {
-    document.title = 'Auto detailing services and prices in Orange County, California';
-  });
-
   return (
     <>
+      <MetaTags>
+        <title>Schedule your auto detailing estimate in Orange County, today!</title>
+        <meta name="description" content="Schedule your auto detailing estimate in Orange County, today!" />
+        <meta property="og:title" content="Essential Cleaning Options: Auto Detailing Estimate" />
+        <meta property="og:image" content="http://essentialcleaningoptions.com/images/auto-detailing-meta.jpg" />
+      </MetaTags>
       <div className="col-12 bottom">
         <div className="d-flex justify-content-center flex-wrap">
           <h1 className="mt-4 pt-5 col-7 text-font text-dark">Auto Services</h1>
