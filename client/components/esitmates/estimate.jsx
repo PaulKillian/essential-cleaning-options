@@ -122,10 +122,10 @@ class Estimate extends React.Component {
     return (
       <>
         <MetaTags>
-          <title>Schedule your auto detailing estimate in Orange County, today!</title>
-          <meta name="description" content="Schedule your auto detailing estimate in Orange County, today!" />
-          <meta property="og:title" content="Essential Cleaning Options: Auto Detailing Estimate" />
-          <meta property="og:image" content="http://essentialcleaningoptions.com/images/auto-detailing-meta.jpg" />
+          <title>Schedule your carpet cleaning or upholstery in Orange County, today!</title>
+          <meta name="description" content="Schedule your carpet cleaning or upholstery cleaning estimate in Orange County, today!" />
+          <meta property="og:title" content="Essential Cleaning Options: Carpet cleaning or Upholstery cleaning Estimate" />
+          <meta property="og:image" content="http://essentialcleaningoptions.com/images/carpet-estimage.png" />
         </MetaTags>
         <div className="col-12 bottom">
           <div className="d-flex justify-content-center align-items-center flex-column">
