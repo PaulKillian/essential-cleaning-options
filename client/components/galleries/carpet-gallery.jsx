@@ -128,7 +128,7 @@ function CarpetGallery() {
     thumbnail: '/images/Residential2.jpg',
     thumbnailWidth: 238,
     thumbnailHeight: 212,
-    tags: [{ value: 'Residential-Before', title: 'Residential' }],
+    tags: [{ value: 'Residential-After', title: 'Residential' }],
     caption: 'Residential',
     isSelected: false
   }];
