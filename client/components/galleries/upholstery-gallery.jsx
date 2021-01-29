@@ -1,5 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Gallery from 'react-grid-gallery';
+
+useEffect(() => {
+  document.title = 'Essential Cleaning Options: Upholstery cleaning photos, Orange County';
+});
 
 function UpholsteryGallery() {
 

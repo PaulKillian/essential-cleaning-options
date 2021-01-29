@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
@@ -17,6 +17,10 @@ const useStyles = makeStyles(theme => ({
     }
   }
 }));
+
+useEffect(() => {
+  document.title = 'Essential Cleaning Options: Carpet Cleaning, Upholstery Cleaning, Auto detailing services and prices in Orange County, California';
+});
 
 function Cards() {
   const classes = useStyles();

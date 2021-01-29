@@ -5,6 +5,7 @@ function AutoGallery() {
     const main = document.getElementById('main');
     main.classList.remove('position-absolute');
     main.classList.add('position-absolute');
+    document.title = 'Essential Cleaning Options: Auto detailing photos, Orange County';
   });
   return (
     <>
