@@ -1,12 +1,10 @@
 import React, { useEffect } from 'react';
 import Gallery from 'react-grid-gallery';
 
-useEffect(() => {
-  document.title = 'Essential Cleaning Options: Upholstery cleaning photos, Orange County';
-});
-
 function UpholsteryGallery() {
-
+  useEffect(() => {
+    document.title = 'Essential Cleaning Options: Upholstery cleaning photos, Orange County';
+  });
   const IMAGES = [{
     src: '/images/up1.jpg',
     thumbnail: '/images/up1.jpg',

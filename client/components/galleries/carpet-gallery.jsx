@@ -1,12 +1,10 @@
 import React, { useEffect } from 'react';
 import Gallery from 'react-grid-gallery';
 
-useEffect(() => {
-  document.title = 'Essential Cleaning Options: Carpet cleaning photos, Orange County';
-});
-
 function CarpetGallery() {
-
+  useEffect(() => {
+    document.title = 'Essential Cleaning Options: Carpet cleaning photos, Orange County';
+  });
   const IMAGES = [{
     src: '/images/carpet1m.jpg',
     thumbnail: '/images/carpetg2.webp',
