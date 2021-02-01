@@ -3,7 +3,14 @@
 The business website for Essential Cleaning Options in Orange Country, CA.
 
 https://essentialcleaningoptions.com
+https://github.com/PaulKillian/essential-cleaning-options/blob/main/Screenshot%202021-01-28%20101805.png
 
 ### Technologies Used
 
-HTML, CSS, JavaScript, BootStrap, React Transition Group, Material UI and EmailJS.
+- HTML 
+- CSS
+- JavaScript
+- BootStrap
+- React Transition Group
+- Material UI
+- EmailJS.
