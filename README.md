@@ -2,7 +2,7 @@
 
 The bussiness website for Essential Cleaning Options in Orange Country, CA.
 
-https://essentialcleaningoptions.com.
+https://essentialcleaningoptions.com
 
 ### Technologies Used
 
