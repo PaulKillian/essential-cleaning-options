@@ -14,4 +14,4 @@ https://essentialcleaningoptions.com
 - BootStrap
 - React Transition Group
 - Material UI
-- EmailJS.
+- EmailJS
