@@ -15,7 +15,7 @@ function AutoGallery() {
         </div>
       </div>
       <h2 className="mt-4 text-dark text-center pt-5 pb-2">Tesla: Clay Polish & Sealant</h2>
-      <div className="d-flex row mx-3justify-content-center">
+      <div className="d-flex row mx-3 justify-content-center">
         <img className="mt-1 simple col-lg-3 col-md-6 col-sm-12 price-shadow" src="images/richa.webp" alt="image of car detail"></img>
         <img className="mt-1 simple col-lg-3 col-md-6 col-sm-12 price-shadow" src="images/richb.webp" alt="image of car detail"></img>
         <img className="mt-1 simple col-lg-3 col-md-6 col-sm-12 price-shadow" src="images/richc.webp" alt="image of car detail"></img>
@@ -32,7 +32,7 @@ function AutoGallery() {
       <div className="d-flex row mx-3 pb-4 my-3 justify-content-center">
         <img className="mt-1 simple col-lg-3 col-md-6 col-sm-12 price-shadow" src="images/cam.jpg" alt="image of car detail"></img>
         <img className="mt-1 simple col-lg-3 col-md-6 col-sm-12 price-shadow" src="images/cam1.jpg" alt="image of car detail"></img>
-        <img className="mt-1 simple col-lg-3 col-md-6 col-sm-12 price-shadow" src="images/cam3.jpg" alt="image of car detail"></img>
+        <img className="mt-1 simpl                            e col-lg-3 col-md-6 col-sm-12 price-shadow" src="images/cam3.jpg" alt="image of car detail"></img>
         <img className="mt-1 simple col-lg-3 col-md-6 col-sm-12 price-shadow" src="images/cam4.jpg" alt="image of car detail"></img>
         <img className="mt-1 simple col-lg-3 col-md-6 col-sm-12 price-shadow" src="images/cam5.jpg" alt="image of car detail"></img>
         <img className="mt-1 simple col-lg-3 col-md-6 col-sm-12 price-shadow" src="images/cam6.jpg" alt="image of car detail"></img>
