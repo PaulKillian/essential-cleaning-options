@@ -34,15 +34,12 @@ function Cards() {
           <div className="col-lg-6 col-md-12 bg-white card-shadow">
             <h2 className={'display-4 text-center pt-3 bg-footer'}>CARPET CLEANING</h2>
             <hr className={'style'}></hr>
-            <p className="p-2">I provide low moisture carpet cleaning with the use of
-              a rotary and or orbital machine and provide a plant
-              based low moisture encapsulating green cleaner for all
-              types of carpets.<br></br><br></br>The carpets are pre
-              sprayed with the encapsulation cleaner, with detailed
-              attention to moisture control and then agitated with a
-              either a soft brush or carpet fiber pad followed by a
-              cotton or microfiber pad for dirt and soil removal from
-              the carpet fibers.</p>
+            <p className="p-2">I provide low-moisture cleaning with the use of a rotary
+            and/or orbital machine. I also provide a plant-based, low moisture encapsulating
+              green cleaning solution for all types of carpets.<br></br><br></br>
+              The carpets are pre-sprayed, with detailed attention to moisture control. The carpets
+              are then agitated with either a soft brush or carpet pad. This is followed by a cotton
+              or microfiber pad for dirt and soil extraction from the carpet fibers.</p>
             <div className={'d-flex justify-content-center pb-2'}>
               <div className={classes.root}>
                 <Button onClick={scroll} variant="contained">
@@ -58,10 +55,11 @@ function Cards() {
           <div className="col-lg-6 col-md-12 bg-white card-shadow">
             <h2 className={'display-4 text-center pt-3 bg-footer'}>UPHOLSTERY CLEANING</h2>
             <hr className={'style'}></hr>
-            <p className="p-2">Furniture is completely vacuumed and pre sprayed with a low moisture neutral
-              PH cleaner/deodorizer and a hand held orbital machine driven with a microfiber extraction pad
-              for stain/soil removal ad followed by steam for a sanitizing. Note: It is highly recommended that
-              your furniture tag is inspected for proper cleaning method prior to any type of cleaning procedures.</p>
+            <p className="p-2">I provide low-moisture cleaning with the use of a rotary and/or orbital machine.
+            I also provide a plant-based, low moisture encapsulating green cleaning solution for all types of carpets.
+            <br></br><br></br>
+            NOTE:
+            It is highly recommended that your furniture tag be inspected prior to cleaning for proper cleaning method.</p>
             <div className={'d-flex justify-content-center'}>
               <div className={classes.root}>
                 <Button onClick={scroll} variant="contained">

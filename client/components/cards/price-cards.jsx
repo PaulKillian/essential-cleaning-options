@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCar } from '@fortawesome/free-solid-svg-icons';
 import MetaTags from 'react-meta-tags';
@@ -14,7 +14,7 @@ function PriceCards() {
       </MetaTags>
       <div className="col-12 bottom">
         <div className="d-flex justify-content-center flex-wrap">
-          <h1 className="mt-4 pt-5 col-7 text-font text-dark">Auto Services</h1>
+          <h1 className="mt-4 pt-5 col-10 col-md-7 col-lg-7 text-font text-dark">Auto Services</h1>
         </div>
       </div>
       <div className={'container mt-5 mb-5'}>

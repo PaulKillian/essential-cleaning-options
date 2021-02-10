@@ -1,18 +1,18 @@
 import React, { lazy, Suspense } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Switch, Route, useLocation } from 'react-router-dom';
+import Navbar from './header-navbar';
+import Hero from './hero';
+import Cards from './cards/cards';
+import Review from './reviews';
+import Footer from './footer';
+import Estimate from './esitmates/estimate';
+import Auto from './galleries/auto-gallery';
+import AutoEstimate from './esitmates/auto-estimate';
+import Carpet from './galleries/carpet-gallery';
+import Upholstery from './galleries/upholstery-gallery';
+import Price from './cards/price-cards';
 
-export const Navbar = lazy(() => import('./header-navbar'));
-const Hero = lazy(() => import('./hero'));
-const Cards = lazy(() => import('./cards/cards'));
-const Review = lazy(() => import('./reviews'));
-const Footer = lazy(() => import('./footer'));
-const Estimate = lazy(() => import('./esitmates/estimate'));
-const Auto = lazy(() => import('./galleries/auto-gallery'));
-const AutoEstimate = lazy(() => import('./esitmates/auto-estimate'));
-const Carpet = lazy(() => import('./galleries/carpet-gallery'));
-const Upholstery = lazy(() => import('./galleries/upholstery-gallery'));
-const Price = lazy(() => import('./cards/price-cards'));
 const renderLoader = () => <p>...Loading</p>;
 
 function App() {
