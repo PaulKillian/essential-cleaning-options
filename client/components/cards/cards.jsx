@@ -55,8 +55,8 @@ function Cards() {
           <div className="col-lg-6 col-md-12 bg-white card-shadow">
             <h2 className={'display-4 text-center pt-3 bg-footer'}>UPHOLSTERY CLEANING</h2>
             <hr className={'style'}></hr>
-            <p className="p-2">I provide low-moisture cleaning with the use of a rotary and/or orbital machine.
-            I also provide a plant-based, low moisture encapsulating green cleaning solution for all types of carpets.
+            <p className="p-2">Furniture is thoroughly vacuumed and pre-sprayed with a low moisture, neutral pH
+            cleaner/deodorizer. This is done by using a handheld orbital machine for optimal stain/soil removal.
             <br></br><br></br>
             NOTE:
             It is highly recommended that your furniture tag be inspected prior to cleaning for proper cleaning method.</p>
