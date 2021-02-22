@@ -11,10 +11,7 @@ const useStyles = makeStyles(theme => ({
   root: {
     '& > *': {
       margin: theme.spacing(1),
-      backgroundColor: '#216B9E',
-      '&:hover': {
-        backgroundColor: green[700]
-      }
+      backgroundColor: '#216B9E'
     }
   }
 }));
@@ -95,6 +92,11 @@ function Cards() {
             </div>
           </div>
           <img id={'third'} src="../images/buff.jpg" className="row card-h bottom col-lg-6 card-shadow col-md-12"></img>
+        </div>
+        <div className={'d-flex flex-wrap justify-content-center align-items-center'}>
+          <img className={'col-6 col-lg-4 pb-5'} src={'../images/waterless.png'} />
+          <a className={classes.root} href={'https://www.buydualpolymer.com/#KENMENDOZA'} target="blank">
+            <span className={'p-3 border'}>Shop Dualpolymer Products!</span></a>
         </div>
       </div>
     </>

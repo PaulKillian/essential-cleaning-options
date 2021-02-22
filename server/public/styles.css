@@ -57,6 +57,7 @@ a:hover {
         width: 100%;
     }
 }
+
 #p-copy {
     margin: 0 !important;
 }
@@ -194,6 +195,9 @@ p {
 }
 .inset {
     box-shadow: inset 0px 0px 5px 0px rgba(2, 33, 172, 0.9);
+}
+.border {
+    border-radius: 5px
 }
 .border-5 {
     border-width: 10px !important;
