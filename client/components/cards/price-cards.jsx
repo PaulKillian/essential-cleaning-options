@@ -131,7 +131,7 @@ function PriceCards() {
                 <li>Step 2. Clean all clayed surfaces with a paint prep or APA which is an
               alcohol wash and distilled water to remove any particles left behind on the
               surface prior to polishing</li>
-                <li>Step 3. Paint polishing-(Using a D/A dual action polisher) with an AIO
+                <li>Step 3. Paint polishing-(Using a D/A dual action or rotary polisher) with an AIO
                   (All In One) polish or glaze polish & seal. Then applying either a spray or
                   liquid synthetic copolymer wax or a spray or liquid synthetic copolymer sealant
                   for clear coat protection. </li>
