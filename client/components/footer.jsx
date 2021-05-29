@@ -29,7 +29,7 @@ function Footer() {
         <div className="pt-2 d-flex flex-wrap d-flex justify-content-around">
           <div className="row col-md-6 col-lg-3 d-flex justify-content-around">
             <div className={'pt-3 pb-4'}>
-              <img src="/images/ken.jpg" alt="image of ken mendoza"></img>
+              <img src="/images/Buisiness Photo.jpeg" alt="image of ken mendoza"></img>
             </div>
             <div className={'text-white col-md-12 text-center'}>
               Independently owned and operated<br></br>in South Orange County since 2014</div>
