@@ -132,8 +132,8 @@ function PriceCards() {
               alcohol wash and distilled water to remove any particles left behind on the
               surface prior to polishing</li>
                 <li>Step 3. Paint polishing-(Using a D/A dual action or rotary polisher) with an AIO
-                  (All In One) polish or glaze polish & seal. Then applying either a spray or
-                  liquid synthetic copolymer wax or a spray or liquid synthetic copolymer sealant
+                  (All In One) polish or glaze polish & seal. Then applying a spray 
+                  liquid synthetic wax, spray sealant, Dual Polymer acrylic coating or a Hybrid Ceramic Sealant.
                   for clear coat protection. </li>
               </ul>
             </div>
