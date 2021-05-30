@@ -9,12 +9,11 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import Accordion from '@material-ui/core/Accordion';
 import HomeIcon from '@material-ui/icons/Home';
 import PhotoCamera from '@material-ui/icons/PhotoCamera';
-import DateRangeIcon from '@material-ui/icons/DateRange';
+import DirectionsCarIcon from '@material-ui/icons/DirectionsCar';
 import { green } from '@material-ui/core/colors';
 import RateReviewIcon from '@material-ui/icons/RateReview';
 import WorkIcon from '@material-ui/icons/Work';
-import { shadows } from '@material-ui/system';
-import Box from '@material-ui/core/Box';
+import DateRangeIcon from '@material-ui/icons/DateRange';
 
 class Navbar extends React.Component {
   constructor(props) {
@@ -58,7 +57,7 @@ class Navbar extends React.Component {
       cssClass = 'side-menu menu-bg pt-4 ';
     } else {
       modalStyles += ' block';
-      cssClass += ' show pt-4';
+      cssClass += ' showMenu';
     }
 
     return (
@@ -71,14 +70,35 @@ class Navbar extends React.Component {
           </div>
         </div>
         <div className={cssClass} onClick={this.hideMenu}>
-          <ul className="navbar-nav mt-2 menu-text-size ">
+          <ul className="navbar-nav ">
+            <li className={'bg-footer shadowed col-12'}>
+              <div className={'menu-logo ml-3 d-flex text-shadow '}>
+                <div className={'text-primary'}>E</div>
+                <div className={'text-success '}>C</div>
+                <div className={'text-white '}>O</div>
+              </div>
+            </li >
+            <NavLink to="/" exact className="text-dark text-left nav-item mt-3 ml-3"><HomeIcon style={{ color: green[500] }}/> Home/Services
+              <li>
+                <hr className={'style'}></hr>
+              </li>
+            </NavLink>
+            <NavLink to="/carpet-estimate" exact className="text-dark ml-3 nav-item"><DateRangeIcon style={{ color: green[500] }}/> Carpet/Upholstery Estimate</NavLink>
             <li className="nav-item ml-3">
-              <NavLink to="/" exact className="text-dark text-left"><HomeIcon style={{ color: green[500] }}/> Home
-              </NavLink>
-              <hr className={'style'}></hr>
+              <hr id={'second-to-last-hr'} className={'style'}></hr>
             </li>
+            <NavLink to="/auto-estimate" exact className="text-dark ml-3 nav-item"><DirectionsCarIcon style={{ color: green[500] }}/> Auto Detailing Estimate
+              <li>
+                <hr className={'style'}></hr>
+              </li>
+            </NavLink>
+            <NavLink to="/auto-detailing-services" className="text-dark ml-3 nav-item text-left"><WorkIcon style={{ color: green[500] }}/> Auto Services
+              <li className="nav-item ml-3">
+                <hr id={'last-hr'} className={'style'}></hr>
+              </li>
+            </NavLink>
             <li className={'bax-shad'}>
-              <Accordion className={'text-left ml-2 accordion-bg col-12'}>
+              <Accordion className={'text-left ml-2 nav-item accordion-bg col-12'}>
                 <AccordionSummary
                   expandIcon={<ExpandMoreIcon />}
                   aria-controls="panel1a-content"
@@ -88,44 +108,19 @@ class Navbar extends React.Component {
                 </AccordionSummary>
                 <AccordionDetails className={'text-dark'}>
                   <div className={'d-flex flex-column'}>
-                    <NavLink to="/carpet-gallery" exact className="text-dark">Carpet</NavLink>
-                    <NavLink to="/auto-detailing" exact className="text-dark">Auto Detailing</NavLink>
+                    <NavLink to="/carpet-gallery" exact className="text-dark nav-item">Carpet Cleaning</NavLink>
+                    <NavLink to="/upholstery-gallery" className="text-dark nav-item">Upholstery Cleaning</NavLink>
+                    <NavLink to="/auto-detailing" exact className="text-dark nav-item">Auto Detailing</NavLink>
                   </div>
                 </AccordionDetails>
               </Accordion>
               <hr className={'style'}></hr>
             </li>
+            <NavLink to="/reviews" className="text-dark nav-item ml-3 text-left"><RateReviewIcon style={{ color: green[500] }} /> Reviews
+              <li className="nav-item ml-3"></li>
+            </NavLink>
             <li>
-              <Accordion className={'ml-2 accordion-bg col-12'}>
-                <AccordionSummary
-                  expandIcon={<ExpandMoreIcon />}
-                  aria-controls="panel1a-content"
-                  id="panel1a-header"
-                >
-                  <div><DateRangeIcon style={{ color: green[500] }} /> Schedule Estimate</div>
-                </AccordionSummary>
-                <AccordionDetails className={'text-dark'}>
-                  <div className={'d-flex flex-column'}>
-                    <NavLink to="/carpet-estimate" exact className="text-dark">Carpet/Upholstery</NavLink>
-                    <NavLink to="/auto-estimate" exact className="text-dark">Auto Detailing</NavLink>
-                  </div>
-                </AccordionDetails>
-              </Accordion>
               <hr className={'style'}></hr>
-            </li>
-            <li className="nav-item ml-3">
-              <NavLink to="/" className="text-dark text-left"><WorkIcon style={{ color: green[500] }}/> Services</NavLink>
-              <hr className={'style'}></hr>
-            </li>
-            <li className="nav-item ml-3">
-              <NavLink to="/reviews" className="text-dark text-left"><RateReviewIcon style={{ color: green[500] }} /> Reviews</NavLink>
-            </li>
-            <li>
-              <div className={'menu-logo d-flex col-5 mt-5 text-shadow'}>
-                <div className={'text-primary'}>E</div>
-                <div className={'text-success '}>C</div>
-                <div className={'text-white '}>O</div>
-              </div>
             </li>
           </ul>
         </div>

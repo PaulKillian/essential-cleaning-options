@@ -1,4 +1,3 @@
-/* *{outline: 1px solid red;}*/
 html,
 body {
     overflow: hidden;
@@ -11,8 +10,15 @@ body {
 h3 {
     font-size: 3vw;
 }
+.MuiButton-label {
+    color: black !important;
+}
+span.MuiIconButton-label {
+    color: black !important;
+}
 span {
     right: 3rem;
+    color: white !important;
 }
 hr {
     border: 1px solid lightgrey;
@@ -37,10 +43,29 @@ a:hover {
 .display-2 {
     font-family: 'Lora', serif;
     font-size: 10vw;
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+    from {
+        margin-bottom: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-bottom: 0%;
+        width: 100%;
+    }
+}
+
+#p-copy {
+    margin: 0 !important;
 }
 .display-3 {
     font-family: 'Lora', serif;
     font-size: 5.4vw;
+    animation-duration: 2s;
+    animation-name: slidein;
 }
 #logo {
     height: 50px;
@@ -130,7 +155,6 @@ h1 {
     /*top: 14rem;*/
     font-size: 50px;
 }
-li,
 p {
     font-family: "Source Sans Pro", sans-serif;
 }
@@ -161,63 +185,6 @@ p {
     min-height: 550px;
     max-height: 600px;
 }
-h1.ml8 {
-    font-weight: 900;
-    font-size: 4.5em;
-    color: #fff;
-    width: 3em;
-    height: 3em;
-}
-.ml8 .letters-container {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    height: 1em;
-}
-.ml8 .letters {
-    position: relative;
-    z-index: 2;
-    display: inline-block;
-    line-height: 0.7em;
-    right: -0.12em;
-    top: -0.2em;
-}
-.ml8 .bang {
-    font-size: 1.4em;
-    top: auto;
-    left: -0.06em;
-}
-.ml8 .circle {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-}
-.ml8 .circle-white {
-    width: 3em;
-    height: 3em;
-    border: 2px dashed white;
-    border-radius: 2em;
-}
-.ml8 .circle-dark {
-    width: 2.2em;
-    height: 2.2em;
-    background-color: #4f7b86;
-    border-radius: 3em;
-    z-index: 1;
-}
-.ml8 .circle-dark-dashed {
-    border-radius: 2.4em;
-    background-color: transparent;
-    border: 2px dashed #4f7b86;
-    width: 2.3em;
-    height: 2.3em;
-}
 .display-4 {
     background-color: #000000;
     color: transparent;
@@ -228,6 +195,9 @@ h1.ml8 {
 }
 .inset {
     box-shadow: inset 0px 0px 5px 0px rgba(2, 33, 172, 0.9);
+}
+.border {
+    border-radius: 5px
 }
 .border-5 {
     border-width: 10px !important;
@@ -300,26 +270,6 @@ h1.ml8 {
 .scale1 {
     transform: scale(2);
 }
-@media only screen and (min-width: 375px) {
-    .scale {
-        transform: scale(1);
-    }
-}
-@media only screen and (min-width: 768px) {
-    .scale {
-        transform: scale(1);
-    }
-}
-@media only screen and (max-width: 376px) {
-    .show {
-        width: 78%;
-    }
-}
-@media only screen and (max-width: 800px) {
-    .hamburger-color {
-        font-size: 6vw;
-    }
-}
 .side-menu {
     top: 0;
     height: 100vh;
@@ -339,8 +289,8 @@ h1.ml8 {
     /*outline: 1px solid #000000;*/
     box-shadow: inset 8px 0 10px -5px #3e3d3d;
 }
-.show {
-    width: 32%;
+.showMenu {
+    width: 33%;
 }
 .style {
     border: 0;
@@ -363,6 +313,9 @@ h1.ml8 {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 2;
+}
+.modal-backdrop {
+     width: 0 !important;
 }
 .modal-overlay1 {
     position: absolute;
@@ -436,6 +389,9 @@ h1.ml8 {
 .pointer {
     cursor: pointer;
 }
+.nav-bottom {
+    font-family: "Merriweather", serif;
+}
 .clean {
     background-image: url(/images/clean.jpg);
     width: 100%;
@@ -446,11 +402,14 @@ h1.ml8 {
     font-size: 3em;
     font-family: arial;
 }
-.mrble {
+.marble {
     background-color: #EEF2F7;
 }
 .card-shadow {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+.card-bg {
+    background-color: #EEEEEE;
 }
 .dec-height {
     height: 53vh;
@@ -520,6 +479,9 @@ img {
     top: 1.7rem;
     font-size: 2vw;
 }
+.essential {
+    height: 39rem;
+}
 .bg-g {
     background-color: #F3F2EF;
     min-height: 100%;
@@ -541,8 +503,8 @@ img {
 }
 .auto-estimate {
     background: linear-gradient(
-            rgba(2, 2, 2.1, 0.50), rgba(2, 2, 2, 0.50) ),
-    url("../images/auto-estimate.jpg");
+            rgba(2, 2, 2.1, 0.75), rgba(2, 2, 2, 0.50) ),
+    url("../images/auto-estimate1.webp");
     background-size: cover;
     background-attachment: fixed;
     background-position: bottom;
@@ -550,8 +512,8 @@ img {
 }
 .carpet-estimate {
     background: linear-gradient(
-            rgba(2, 2, 2.1, 0.50), rgba(2, 2, 2, 0.65) ),
-    url("../images/blue-bg.jpg");
+            rgba(2, 2, 2.1, 0.75), rgba(2, 2, 2, 0.50) ),
+    url("../images/blue-bg2.webp");
     background-size: cover;
     background-attachment: fixed;
     background-position: bottom;
@@ -566,16 +528,21 @@ img {
 .text-shadow {
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
-/*.menu-text-size {*/
-/*    font-size: 2vw;*/
-/*}*/
 .slick-next, .slick-prev {
     color: black;
 }
+.blur,
+.blur2 {
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+}
 .blur {
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 5px;
-    font-family: sans-serif;
+    background: rgba( 74, 144, 226, 0.25 );
+}
+.blur2 {
+    background: rgba( 65, 117, 5, 0.25 );
 }
 .text-justify {
 	text-align: justify;
@@ -596,6 +563,7 @@ img {
 .MuiPaper-elevation1 {
     box-shadow: none !important;
     margin-left: 16px !important;
+    margin: -9px;
 }
 .MuiAccordionSummary-root {
     padding-left: 0px !important;
@@ -608,6 +576,13 @@ ul.top-ul {
 }
 .price-back {
     background-color: #242424;
+}
+.nav-item {
+    font-size: 20px;
+}
+.card-h {
+    padding-right: 0;
+    padding-left: 0;
 }
 @media only screen and (max-width: 990px) {
   #cards {
@@ -623,20 +598,6 @@ ul.top-ul {
     .modal-overlay {
         width: 92.1vw;
     }
-}
-/*@media only screen and (min-width: 800px) {*/
-/*    #eco {*/
-/*        padding-right: 5rem;*/
-/*    }*/
-/*}*/
-/*@media only screen and (max-width: 799px) {*/
-/*    #eco {*/
-/*        padding-right: 5rem;*/
-/*    }*/
-/*}*/
-.card-h {
-    padding-right: 0;
-    padding-left: 0;
 }
 @media only screen and (width: 768px) {
     .simple {
@@ -671,8 +632,17 @@ ul.top-ul {
     .side-menu {
         font-size: 4vw;
     }
-    .show {
+    .showMenu {
         width: 70%;
+    }
+    .auto-estimate {
+        height: 100vh;
+    }
+    .carpet-estimate {
+        height: 100vh;
+    }
+    .scale {
+        transform: scale(1);
     }
 }
 @media only screen and (max-width: 376px) {
@@ -694,17 +664,11 @@ ul.top-ul {
         padding-left: .5rem;
         padding-right: 0;
     }
-    .show {
-        width: 80%;
-    }
     h2 {
         margin-bottom: 0;
     }
     h3 {
         padding: 0;
-    }
-    .nav-item {
-        margin-left: 2rem;
     }
     .card-h {
         height: 224px;
@@ -724,7 +688,21 @@ ul.top-ul {
     .m-icons {
         font-size: 1px;
     }
+    #second-to-last-hr {
+        margin-bottom: 1.5rem;
+    }
+    ul.top-ul {
+        margin-left: -35px;
+    }
+    .showMenu {
+        width: 87%;
+    }
+    .scale {
+        transform: scale(1);
+    }
 }
-
-
-
+@media only screen and (max-width: 800px) {
+    .hamburger-color {
+        font-size: 6vw;
+    }
+}
