@@ -40,7 +40,10 @@ module.exports = {
                 }
               ]
             ],
-            plugins: ['@babel/plugin-transform-react-jsx']
+            plugins: [
+              '@babel/plugin-transform-react-jsx',
+              "@babel/plugin-proposal-object-rest-spread"
+            ]
           }
         }
       }
