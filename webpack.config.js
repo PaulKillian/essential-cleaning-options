@@ -103,7 +103,7 @@ module.exports = {
             ],
             plugins: [
               '@babel/plugin-transform-react-jsx',
-              "@babel/plugin-proposal-object-rest-spread"
+              '@babel/plugin-proposal-object-rest-spread'
               ]
           }
         }
