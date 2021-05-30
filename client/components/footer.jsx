@@ -28,8 +28,8 @@ function Footer() {
       <footer className="pt-2 bg-footer">
         <div className="pt-2 d-flex flex-wrap d-flex justify-content-around">
           <div className="row col-md-6 col-lg-3 d-flex justify-content-around">
-            <div className={'pt-3 pb-4 ml-5'} style={{width: "50%"}}>
-              <img src="/images/Buisiness Photo.jpeg" alt="image of ken mendoza"></img>
+            <div className={'pt-3 pb-4 ml-5'}>
+              <img style={{width: "50%"}} src="/images/Buisiness Photo.jpeg" alt="image of ken mendoza"></img>
             </div>
             <div className={'text-white col-md-12 text-center'}>
               Independently owned and operated<br></br>in South Orange County since 2014</div>
