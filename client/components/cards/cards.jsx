@@ -98,7 +98,7 @@ function Cards() {
           <a className={classes.root} href={'https://www.buydualpolymer.com/#KENMENDOZA'} target="blank">
             <span className={'p-3 border'}>Shop Dualpolymer Products!</span></a>
         </div>
-        <div className={'d-flex flex-wrap justify-content-center align-items-center pb-5'}>
+        <div className={'d-flex flex-wrap justify-content-center align-items-center mb-5'}>
           <div className={'col-6 col-lg-4'}>Highest Quality Commercial Cleaning</div>
           <a className={classes.root} href={'https://www.simplycrystalclean.net/'} target="blank">
             <span className={'p-3 border'}>simplycrystalclean.net</span></a>
