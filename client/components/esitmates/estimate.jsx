@@ -132,7 +132,7 @@ class Estimate extends React.Component {
             <h1 className="text-font text-white mb-5 pt-5 pt-5">Schedule Estimate</h1>
           </div>
         </div>
-        <h1 id={'message'} className="ml16 d-none">Your Message Has Been Sent!<br></br><br></br> We will response with 24 hours</h1>
+        <h1 id={'message'} className="ml16 d-none">Your Message Has Been Sent!<br></br><br></br> We will respond within 24 hours</h1>
         <div id="form" className="col-lg-12 d-flex flex-column">
           <div className="row mx-2 my-4 justify-content-center">
             <div className="col-lg-6 col-md-10 col-sm-12 blur pb-5">
